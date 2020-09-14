@@ -8,12 +8,15 @@ import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 import org.apache.commons.io.IOUtils;
 import org.kohsuke.accmod.Restricted;
+import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
 import org.kohsuke.stapler.WebMethod;
 
 import static java.util.Objects.requireNonNull;
 
 abstract class AbstractMaterialThemeRootAction implements UnprotectedRootAction {
+    public static final String ICON_CSS = "icons.css";
+    public static final String MATERIAL_THEME_CSS = "material-theme.css";
 
     @Override
     public String getIconFileName() {
@@ -25,12 +28,23 @@ abstract class AbstractMaterialThemeRootAction implements UnprotectedRootAction 
         return null;
     }
 
-    void tryWritingCss(StaplerResponse res, String css_name) throws IOException {
-        try (InputStream themeInputStream = getClass().getResourceAsStream(css_name)) {
-            res.setContentType("text/css");
-            requireNonNull(themeInputStream);
-            String s1 = IOUtils.toString(themeInputStream, StandardCharsets.UTF_8);
-            res.getWriter().print(s1);
+    public abstract String getThemeCss() throws IOException;
+
+    public String getIconCss() throws IOException {
+        return readCssFile(this.ICON_CSS);
+    }
+
+    String readCssFile(String css_filename) throws IOException  {
+        try (InputStream cssInputStream = getClass().getResourceAsStream(css_filename)) {
+            requireNonNull(cssInputStream);
+            return IOUtils.toString(cssInputStream, StandardCharsets.UTF_8);
         }
+    }
+
+    @WebMethod(name = MATERIAL_THEME_CSS)
+    public void doMaterialRedoThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
+        res.setContentType("text/css");
+        res.getWriter().print(this.getThemeCss());
+        res.getWriter().print(this.getIconCss());
     }
 }

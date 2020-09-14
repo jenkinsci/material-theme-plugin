@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
+:root {
+    --material-primary: <MATERIAL_PRIMARY>;
+    --material-secondary: <MATERIAL_SECONDARY>;
+
+    /* Font */
+    --font-family-sans: Roboto !important;
+
+    /* Header */
+    --header-bg-classic: var(--material-primary);
+    --header-link-bg-classic-hover: var(--material-secondary);
+    --header-link-bg-classic-active: var(--material-secondary);
+
+    /* links */
+    --link-color: var(--material-primary);
+    --link-color--hover: var(--material-secondary);
+    --link-color--active: var(--material-secondary);
+
+    /* Pane */
+    --pane-link-color: var(--material-primary);
+    --pane-link-color--visited: var(--material-primary);
+
+    /* Buttons */
+    --btn-primary-bg: var(--material-primary);
+    --btn-primary-bg-hover: var(--material-secondary);
+    --btn-primary-bg-active: var(--primary-active);
+    --btn-secondary-color: var(--material-primary);
+    --btn-secondary-bg: var(--btn-text-color);
+    --btn-secondary-border: var(--material-primary);
+    --btn-text-color: var(--white);
+    --btn-link-bg--hover: var(--very-light-grey);
+    --btn-link-bg--active: var(--light-grey);
+
+    /* Table */
+    --bigtable-header-bg: var(--light-grey);
+    --bigtable-header-border-color: var(--light-grey);
+    --bigtable-header-text-color: var(--dark-grey);
+    --bigtable-row-border-color: var(--light-grey);
+    /* Remove if you don't light the alternating coloured rows */
+    --even-row-color: var(--very-light-grey);
+    --table-striped-bg--hover: var(--very-light-grey);
+
+    /* Tab bar widget */
+    --tab-link-border-color: var(--light-grey);
+    --tab-link-text-color: var(--dark-grey);
+    --tab-link-checked-bg: var(--light-grey);
+    --tab-link-checked-text-color: var(--dark-grey);
+    --tab-link-bg--hover: var(--light-grey);
+    --tab-link-bg--active: var(--light-grey);
+    --tab-link-bg: var(--very-light-grey);
+}
+
+/* Manually change some header settings (these aren't available through theme.less */
+#header {
+    height: 64px;
+    text-transform: uppercase;
+    padding: 12px 10px;
+}
+
+/* Change tab background so tabs down float when there are multiple rows 
+this doesn't look great, but I think it's less bad than when it's left white. */
+.tabBarFrame {
+    position: relative;
+    background: var(--very-light-grey);
+}
+
+.yui-button button {
+    text-transform: uppercase;
+}
+
+a, a:link, a:hover, a:visited {
+    text-decoration: none!important;
+    color: var(--material-primary);
+}
+
+.jenkins_ver:after {
+    margin-left: 15px;
+    content:"Material Theme Plugin v0.1.0"
+}
