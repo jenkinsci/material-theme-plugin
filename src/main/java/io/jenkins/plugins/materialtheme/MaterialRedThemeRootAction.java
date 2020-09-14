@@ -13,6 +13,7 @@ import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
 import org.kohsuke.stapler.WebMethod;
 
+import static io.jenkins.plugins.materialtheme.AbstractMaterialThemeRootAction.MATERIAL_THEME_CSS;
 import static io.jenkins.plugins.materialtheme.MaterialRedThemeManagerFactory.MATERIAL_RED_CSS;
 import static io.jenkins.plugins.materialtheme.MaterialRedThemeManagerFactory.MATERIAL_RED_URL_NAME;
 
@@ -26,53 +27,11 @@ public class MaterialRedThemeRootAction extends AbstractMaterialThemeRootAction 
         return MATERIAL_RED_URL_NAME;
     }
 
-    @WebMethod(name = MATERIAL_RED_CSS)
-    public void doMaterialRedThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
-        tryWritingCss(res, MATERIAL_RED_CSS);
-        tryWritingCss(res, "icons.css");
+    @Override
+    public String getThemeCss() throws IOException {
+        String base_css = readCssFile(MATERIAL_THEME_CSS);
+        base_css = base_css.replace("<MATERIAL_PRIMARY>", "#f44336");
+        base_css = base_css.replace("<MATERIAL_SECONDARY>", "#e76056");
+        return base_css;
     }
 }
-
-
-/*
-@Extension
-@Restricted(NoExternalUse.class)
-public class MaterialBlueThemeRootAction implements UnprotectedRootAction {
-
-    @Override
-    public String getIconFileName() {
-        return null;
-    }
-
-    @Override
-    public String getDisplayName() {
-        return null;
-    }
-
-    @Override
-    public String getUrlName() {
-        return BLUE_URL_NAME;
-    }
-
-    private void tryWritingCss(StaplerResponse res, String css_name) throws IOException {
-        try (InputStream themeInputStream = getClass().getResourceAsStream(css_name)) {
-            res.setContentType("text/css");
-            requireNonNull(themeInputStream);
-            String s1 = IOUtils.toString(themeInputStream, StandardCharsets.UTF_8);
-            res.getWriter().print(s1);
-        }
-    }
-
-    @WebMethod(name = BLUE_CSS)
-    public void doMaterialThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
-        tryWritingCss(res, BLUE_CSS);
-        tryWritingCss(res, "icons.css");
-    }
-
-    @WebMethod(name = GC_RED_CSS)
-    public void doMaterialThemeGCRedCss(StaplerRequest req, StaplerResponse res) throws IOException {
-        tryWritingCss(res, GC_RED_CSS);
-        tryWritingCss(res, "icons.css");
-    }
-}
-*/
