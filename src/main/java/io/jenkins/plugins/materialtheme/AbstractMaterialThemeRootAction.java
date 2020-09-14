@@ -42,7 +42,7 @@ abstract class AbstractMaterialThemeRootAction implements UnprotectedRootAction 
     }
 
     @WebMethod(name = MATERIAL_THEME_CSS)
-    public void doMaterialRedoThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
+    public void doMaterialThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
         res.setContentType("text/css");
         res.getWriter().print(this.getThemeCss());
         res.getWriter().print(this.getIconCss());

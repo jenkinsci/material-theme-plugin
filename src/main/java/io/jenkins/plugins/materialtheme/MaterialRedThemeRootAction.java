@@ -29,7 +29,7 @@ public class MaterialRedThemeRootAction extends AbstractMaterialThemeRootAction 
 
     @Override
     public String getThemeCss() throws IOException {
-        String base_css = readCssFile(MATERIAL_THEME_CSS);
+        String base_css = this.readCssFile(MATERIAL_THEME_CSS);
         base_css = base_css.replace("<MATERIAL_PRIMARY>", "#f44336");
         base_css = base_css.replace("<MATERIAL_SECONDARY>", "#e76056");
         return base_css;
