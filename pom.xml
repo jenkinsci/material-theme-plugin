@@ -19,7 +19,7 @@
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
   </properties>
-  <name>Dark Theme</name>
+  <name>Material Theme</name>
   <url>https://github.com/timbrown5/jenkins-material-theme-plugin</url>
   <dependencyManagement>
     <dependencies>
