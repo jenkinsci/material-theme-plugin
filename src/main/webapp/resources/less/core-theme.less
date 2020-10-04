@@ -1,0 +1,460 @@
+// Copyright (c) 2016 Afonso F
+
+// Copied from functions.less
+// Change to use masks - so we can change svg icon color
+.icon-img(@url, @icon-color) {
+  background-color: @icon-color !important;
+  -webkit-mask-image: url(@url) !important;
+  mask-image: url(@url) !important;
+}
+
+.icon(@size) { // outer mixin
+    @icon-size: @size * 1.2;
+    padding-left: @icon-size !important;
+    padding-top: @icon-size !important;
+    height: 0 !important;
+    width: 0 !important;
+    mask-size: @icon-size @icon-size !important;
+    font-size: 0 !important;
+  }
+
+.shadow1() {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+// Animations
+
+@keyframes keyframes-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate() {
+  animation: keyframes-rotate 2s linear infinite;
+}
+
+@keyframes keyframes-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-pulse() {
+  animation: keyframes-pulse ease-in-out 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+}
+// Default Colors
+@color-primary: #26a69a;
+@color-bg: #fff;
+@color-text: #444;
+@color-link: #26a69a;
+@color-grey: #9E9E9E;
+@color-green: #009688;
+@color-yellow: #FFC107;
+@color-red: #F44336;
+@color-white: #fff;
+@color-black: #263238;
+@color-selection: #80CBC4;
+
+// Default Sizes
+@size-sm: 18px;
+@size-md: 24px;
+@size-lg: 36px;
+@size-xl: 48px;
+
+// Src
+// Reminder: Each selector using `.icon-img` must be declared bellow using .icon-size too
+
+[src$='blue.png'] {
+  .icon-img('../plugin/material-theme/resources/images/check_circle.svg', @color-green);
+}
+
+[src$='red.png'] {
+  .icon-img('../plugin/material-theme/resources/images/error.svg', @color-red);
+}
+
+[src$='yellow.png'] {
+  .icon-img('../plugin/material-theme/resources/images/warning.svg', @color-yellow);
+}
+
+[src$='grey.png'], [src$='aborted.png'], [src$='nobuilt.png'], [src$='disabled.png'] {
+  .icon-img('../plugin/material-theme/resources/images/remove_circle.svg', @color-grey);
+}
+
+.icon-health-80plus {
+  .icon-img('../plugin/material-theme/resources/images/weather-sunny.svg', @color-grey);
+}
+
+.icon-health-60to79 {
+  .icon-img('../plugin/material-theme/resources/images/weather-partlycloudy.svg', @color-grey);
+}
+
+.icon-health-40to59 {
+  .icon-img('../plugin/material-theme/resources/images/weather-cloudy.svg', @color-grey);
+}
+
+.icon-health-20to39 {
+  .icon-img('../plugin/material-theme/resources/images/weather-rainy.svg', @color-grey);
+}
+
+.icon-health-00to19 {
+  .icon-img('../plugin/material-theme/resources/images/weather-pouring.svg', @color-grey);
+}
+
+.icon-blue-anime, [src$='blue_anime.gif'] {
+  .icon-img('../plugin/material-theme/resources/images/autorenew.svg', @color-green);
+}
+
+.icon-red-anime, [src$='red_anime.gif'] {
+  .icon-img('../plugin/material-theme/resources/images/autorenew.svg', @color-red);
+}
+
+.icon-grey-anime, [src$='grey_anime.gif'], .icon-nobuilt-anime, .icon-aborted-anime {
+  .icon-img('../plugin/material-theme/resources/images/autorenew.svg', @color-grey);
+}
+
+.icon-yellow-anime, [src$='yellow_anime.gif'] {
+  .icon-img('../plugin/material-theme/resources/images/autorenew.svg', @color-yellow);
+}
+
+.icon-new-package, [src$='new-package.png'] {
+  .icon-img('../plugin/material-theme/resources/images/add_circle_outline.svg', @color-grey);
+}
+
+.icon-user, [src$='user.png'] {
+  .icon-img('../plugin/material-theme/resources/images/people.svg', @color-grey);
+}
+
+.icon-notepad, [src$='notepad.png'] {
+  .icon-img('../plugin/material-theme/resources/images/history.svg', @color-grey);
+}
+
+.icon-setting, [src$='setting.png'], .icon-gear2, [src$='gear2.png'] {
+  .icon-img('../plugin/material-theme/resources/images/settings.svg', @color-grey);
+}
+
+.icon-up, .task-icon-link[href='/'] img {
+  .icon-img('../plugin/material-theme/resources/images/arrow_back.svg', @color-grey);
+}
+
+.icon-edit-delete {
+  .icon-img('../plugin/material-theme/resources/images/delete.svg', @color-grey);
+}
+
+.icon-fingerprint, [src$='fingerprint.png'] {
+  .icon-img('../plugin/material-theme/resources/images/fingerprint.svg', @color-grey);
+}
+
+.icon-graph, [src$='graph.png'] {
+  .icon-img('../plugin/material-theme/resources/images/insert_chart.svg', @color-grey);
+}
+
+.icon-collapse {
+  .icon-img('../plugin/material-theme/resources/images/expand_less.svg', @color-grey);
+}
+
+.icon-expand {
+  .icon-img('../plugin/material-theme/resources/images/expand_more.svg', @color-grey);
+}
+
+.icon-help, [src$='help.png'] {
+  .icon-img('../plugin/material-theme/resources/images/help_outline.svg', @color-grey);
+}
+
+.icon-secure, .icon-lock, [src$='secure.png'] {
+  .icon-img('../plugin/material-theme/resources/images/lock.svg', @color-grey);
+}
+
+.icon-plugin, [src$='plugin.png'] {
+  .icon-img('../plugin/material-theme/resources/images/extension.svg', @color-grey);
+}
+
+.icon-system-log-out, [src$='system-log-out.png'] {
+  .icon-img('../plugin/material-theme/resources/images/power_settings_new.svg', @color-grey);
+}
+
+.icon-refresh, [src$='refresh.png'] {
+  .icon-img('../plugin/material-theme/resources/images/refresh.svg', @color-grey);
+}
+
+.icon-computer, [src$='computer.png'] {
+  .icon-img('../plugin/material-theme/resources/images/computer.svg', @color-grey);
+}
+
+.icon-computer-x {
+  .icon-img('../plugin/material-theme/resources/images/computer_offline.svg', @color-grey);
+}
+
+.icon-new-computer {
+  .icon-img('../plugin/material-theme/resources/images/computer_new.svg', @color-grey);
+}
+
+.icon-clipboard, [src$='clipboard.png'] {
+  .icon-img('../plugin/material-theme/resources/images/assignment.svg', @color-grey);
+}
+
+.icon-monitor, [src$='monitor.png'] {
+  .icon-img('../plugin/material-theme/resources/images/chart-areaspline.svg', @color-grey);
+}
+
+.icon-terminal, [src$='terminal.png'] {
+  .icon-img('../plugin/material-theme/resources/images/console.svg', @color-grey);
+}
+
+.icon-network, [src$='network.png'] {
+  .icon-img('../plugin/material-theme/resources/images/server-network.svg', @color-grey);
+}
+
+.icon-document, .icon-text {
+  .icon-img('../plugin/material-theme/resources/images/file.svg', @color-grey);
+}
+
+.icon-folder, [src$='folder.png'], [src$='/directory16.png'] {
+  .icon-img('../plugin/material-theme/resources/images/folder.svg', @color-grey);
+}
+
+.icon-clock, .icon-clock-anime, [src$='clock.png'] {
+  .icon-img('../plugin/material-theme/resources/images/play_circle_outline.svg', @color-grey);
+}
+
+.icon-folder-delete, [src$='edit-delete.png'] {
+  .icon-img('../plugin/material-theme/resources/images/folder-remove.svg', @color-grey);
+}
+
+.icon-previous {
+  .icon-img('../plugin/material-theme/resources/images/skip_previous.svg', @color-grey);
+}
+
+.icon-next {
+  .icon-img('../plugin/material-theme/resources/images/skip_next.svg', @color-grey);
+}
+
+.icon-save, [src$='/save.png'] {
+  .icon-img('../plugin/material-theme/resources/images/save.svg', @color-grey);
+}
+
+.icon-package, [src$='package.gif'] {
+  .icon-img('../plugin/material-theme/resources/images/package-down.svg', @color-grey);
+}
+
+.icon-search, [src$='search.png'] {
+  .icon-img('../plugin/material-theme/resources/images/info_outline.svg', @color-grey);
+}
+
+.icon-stop {
+  .icon-img('../plugin/material-theme/resources/images/stop.svg', @color-grey);
+}
+
+[src$='/move.png'] {
+  .icon-img('../plugin/material-theme/resources/images/folder-move.svg', @color-grey);
+}
+
+[src$='/atom.gif'] {
+  .icon(@size-md);
+  .icon-img('../plugin/material-theme/resources/images/rss-box.svg', @color-yellow);
+}
+
+[src$='credentials.png'] {
+  .icon(@size-xl);
+  .icon-img('../plugin/material-theme/resources/images/key.svg', @color-grey);
+}
+
+[src$='confighistory.png'] {
+  .icon-img('../plugin/material-theme/resources/images/build.svg', @color-grey);
+}
+
+[src$='domain.png'] {
+  .icon(@size-xl);
+  .icon-img('../plugin/material-theme/resources/images/domain.svg', @color-grey);
+}
+
+#description-link img, .icon-gear, [src$='gear.png'] {
+  .icon-img('../plugin/material-theme/resources/images/pencil.svg', @color-grey);
+}
+
+.icon-go-next {
+  .icon-img('../plugin/material-theme/resources/images/arrow_forward.svg', @color-grey);
+}
+
+[src$='diskusage48.png'] {
+  .icon(@size-xl);
+  .icon-img('../plugin/material-theme/resources/images/storage.svg', @color-grey);
+}
+
+[src$='git-32x32.png'] {
+  .icon-img('../plugin/material-theme/resources/images/git.svg', @color-grey);
+}
+
+[src$='logov3.png'] {
+  .icon-img('../plugin/material-theme/resources/images/github-circle.svg', @color-grey);
+}
+
+[src$='findbugs-24x24.png'], [src$='findbugs-48x48.png'] {
+  .icon-img('../plugin/material-theme/resources/images/bug_report.svg', @color-grey);
+}
+
+[src$='dry-24x24.png'], [src$='dry-48x48.png'] {
+  .icon-img('../plugin/material-theme/resources/images/compare.svg', @color-grey);
+}
+
+[src$='checkstyle-24x24.png'], [src$='checkstyle-48x48.png'] {
+  .icon-img('../plugin/material-theme/resources/images/flag.svg', @color-grey);
+}
+
+[src$='pmd-24x24.png'], [src$='pmd-48x48.png'] {
+  .icon-img('../plugin/material-theme/resources/images/feedback.svg', @color-grey);
+}
+
+[src$='tasks-24x24.png'], [src$='tasks-48x48.png'] {
+  .icon-img('../plugin/material-theme/resources/images/assignment_late.svg', @color-grey);
+}
+
+[src$='analysis-24x24.png'], [src$='analysis-48x48.png'], 
+[src$='go-24x24.png'], [src$='go-48x48.png'], 
+[src$='idea-24x24.png'], [src$='idea-48x48.png'], 
+[src$='java-24x24.png'], [src$='java-48x48.png'], 
+[src$='resharper-24x24.png'], [src$='resharper-48x48.png'], 
+[src$='scala-24x24.png'], [src$='scala-48x48.png'], 
+[src$='warnings-24x24.png'], [src$='warnings-48x48.png'] {
+  .icon-img('../plugin/material-theme/resources/images/warning.svg', @color-grey);
+}
+
+// Size
+
+[src$='red.png'],
+[src$='blue.png'],
+[src$='yellow.png'],
+[src$='grey.png'], [src$='aborted.png'], [src$='nobuilt.png'], [src$='disabled.png'],
+.icon-health-80plus,
+.icon-health-60to79,
+.icon-health-40to59,
+.icon-health-20to39,
+.icon-health-00to19,
+.icon-blue-anime, [src$='blue_anime.gif'],
+.icon-red-anime, [src$='red_anime.gif'],
+.icon-grey-anime, [src$='grey_anime.gif'], .icon-nobuilt-anime, .icon-aborted-anime,
+.icon-yellow-anime, [src$='yellow_anime.gif'],
+.icon-new-package, [src$='new-package.png'],
+.icon-user, [src$='user.png'],
+.icon-notepad, [src$='notepad.png'],
+.icon-setting, [src$='setting.png'],
+.icon-gear2, [src$='gear2.png'],
+.icon-up,
+.icon-edit-delete,
+.icon-fingerprint, [src$='fingerprint.png'],
+.icon-graph, [src$='graph.png'],
+.icon-collapse,
+.icon-expand,
+.icon-help, [src$='help.png'],
+.icon-secure, .icon-lock, [src$='secure.png'],
+.icon-plugin, [src$='plugin.png'],
+.icon-system-log-out, [src$='system-log-out.png'],
+.icon-refresh, [src$='refresh.png'],
+.icon-computer, [src$='computer.png'],
+.icon-computer-x,
+.icon-new-computer,
+.icon-clipboard, [src$='clipboard.png'],
+.icon-monitor, [src$='monitor.png'],
+.icon-terminal, [src$='terminal.png'],
+.icon-network, [src$='network.png'],
+.icon-document, .icon-text,
+.icon-folder, [src$='folder.png'], [src$='/directory16.png'],
+.icon-clock, .icon-clock-anime, [src$='clock.png'],
+.icon-folder-delete, [src$='edit-delete.png'],
+.icon-previous,
+.icon-next,
+.icon-save, [src$='/save.png'],
+.icon-package, [src$='package.gif'],
+.icon-search, [src$='search.png'],
+.icon-stop,
+[src$='/move.png'],
+[src$='/atom.gif'],
+[src$='credentials.png'],
+[src$='confighistory.png'],
+[src$='domain.png'],
+#description-link img, .icon-gear, [src$='gear.png'],
+.icon-go-next,
+[src$='diskusage48.png'],
+[src$='git-32x32.png'],
+[src$='findbugs-24x24.png'], [src$='findbugs-48x48.png'],
+[src$='checkstyle-24x24.png'], [src$='checkstyle-48x48.png'],
+[src$='analysis-24x24.png'], [src$='analysis-48x48.png'], 
+[src$='go-24x24.png'], [src$='go-48x48.png'], 
+[src$='idea-24x24.png'], [src$='idea-48x48.png'], 
+[src$='java-24x24.png'], [src$='java-48x48.png'], 
+[src$='resharper-24x24.png'], [src$='resharper-48x48.png'], 
+[src$='scala-24x24.png'], [src$='scala-48x48.png'], 
+[src$='warnings-24x24.png'], [src$='warnings-48x48.png'],
+[src$='dry-24x24.png'], [src$='dry-48x48.png'],
+[src$='pmd-24x24.png'], [src$='pmd-48x48.png'],
+[src$='tasks-24x24.png'], [src$='tasks-48x48.png'],
+[src$='logov3.png'] {
+
+  &.icon-xlg, &[src*='48x'], &.icon48x48 {
+    .icon(@size-xl);
+  }
+
+  &.icon-lg, &[src*='32x'], &.icon32x32, &[style*='width: 32p'], &[width="32"] {
+    .icon(@size-lg);
+  }
+
+  &.icon-md, &[src*='24x'], &.icon24x24, &[style*='width: 24p'], &[width="24"] {
+    .icon(@size-md);
+  }
+
+  &.icon-sm, &[src*='16x'], &.icon16x16, &[style*='width: 16p'], &[width="16"] {
+    .icon(@size-sm);
+  }
+}
+
+#header {
+  .icon-help {
+    filter: brightness(10000);
+  }
+}
+
+// Animations
+
+.icon-clock-anime {
+  .animate-pulse()
+}
+
+[src$='blue_anime.gif'],
+[src$='red_anime.gif'],
+[src$='grey_anime.gif'],
+[src$='yellow_anime.gif'],
+.icon-blue-anime,
+.icon-red-anime,
+.icon-grey-anime,
+.icon-yellow-anime,
+.icon-nobuilt-anime,
+.icon-aborted-anime {
+  .animate-rotate();
+}
+
+// Hacks
+
+[src*='www.gravatar.com'] {
+  height: auto !important;
+  width: auto !important;
+  padding: 0 !important;
+}
+
+.task-icon-link[href='/'] {
+  img {
+    padding: 36px 0 0 36px !important;
+    filter: brightness(10000);
+  }
+}

@@ -7,7 +7,7 @@
     <version>4.2</version>
     <relativePath />
   </parent>
-  <groupId>io.jenkins.plugins</groupId>
+  <groupId>org.timbrown5.plugins</groupId>
   <artifactId>material-theme</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
@@ -61,8 +61,8 @@
 
   <developers>
     <developer>
-      <id>timja</id>
-      <name>Tim Jacomb</name>
+      <id>timbrown5</id>
+      <name>Tim Brown</name>
     </developer>
   </developers>
 
@@ -85,4 +85,33 @@
       <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
+
+  <!-- Pre-compile CSS from from .less files -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>ro.isdc.wro4j</groupId>
+        <artifactId>wro4j-maven-plugin</artifactId>
+        <version>1.7.0</version>
+        <configuration>
+          <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
+          <wroFile>${basedir}/src/main/config/wro.xml</wroFile>
+          <extraConfigFile>${basedir}/src/main/config/wro.properties</extraConfigFile>
+          <targetGroups>core-theme</targetGroups>
+          <cssDestinationFolder>${project.build.directory}/../src/main/resources/org/timbrown5/plugins/materialtheme/style/</cssDestinationFolder>
+          <jsDestinationFolder>${project.build.directory}/../src/main/resources/org/timbrown5/plugins/materialtheme/script/</jsDestinationFolder>
+          <contextFolder>${basedir}/src/main/webapp/</contextFolder>
+          <ignoreMissingResources>true</ignoreMissingResources>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <phase>generate-resources</phase>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
