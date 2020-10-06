@@ -1,4 +1,4 @@
-package org.timbrown5.plugins.materialtheme.jcasc.materialindigo;
+package io.jenkins.plugins.materialtheme.jcasc.materialindigo;
 
 import io.jenkins.plugins.casc.ConfigurationContext;
 import io.jenkins.plugins.casc.ConfiguratorRegistry;
@@ -9,7 +9,7 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerPageDecorator;
 import org.junit.ClassRule;
 import org.junit.Test;
-import org.timbrown5.plugins.materialtheme.MaterialIndigoThemeManagerFactory;
+import io.jenkins.plugins.materialtheme.MaterialIndigoThemeManagerFactory;
 
 import static io.jenkins.plugins.casc.misc.Util.getUnclassifiedRoot;
 import static io.jenkins.plugins.casc.misc.Util.toStringFromYamlFile;

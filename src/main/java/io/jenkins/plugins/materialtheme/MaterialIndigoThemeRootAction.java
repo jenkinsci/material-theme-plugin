@@ -1,4 +1,4 @@
-package org.timbrown5.plugins.materialtheme;
+package io.jenkins.plugins.materialtheme;
 
 import hudson.Extension;
 import hudson.model.UnprotectedRootAction;
@@ -13,29 +13,28 @@ import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
 import org.kohsuke.stapler.WebMethod;
 
-import static org.timbrown5.plugins.materialtheme.AbstractMaterialThemeRootAction.MATERIAL_THEME_CSS;
-import static org.timbrown5.plugins.materialtheme.MaterialRedThemeManagerFactory.MATERIAL_RED_CSS;
-import static org.timbrown5.plugins.materialtheme.MaterialRedThemeManagerFactory.MATERIAL_RED_URL_NAME;
-
+import static io.jenkins.plugins.materialtheme.AbstractMaterialThemeRootAction.MATERIAL_THEME_CSS;
+import static io.jenkins.plugins.materialtheme.MaterialIndigoThemeManagerFactory.MATERIAL_INDIGO_CSS;
+import static io.jenkins.plugins.materialtheme.MaterialIndigoThemeManagerFactory.MATERIAL_INDIGO_URL_NAME;
 
 @Extension
 @Restricted(NoExternalUse.class)
-public class MaterialRedThemeRootAction extends AbstractMaterialThemeRootAction {
+public class MaterialIndigoThemeRootAction extends AbstractMaterialThemeRootAction {
 
     @Override
     public String getUrlName() {
-        return MATERIAL_RED_URL_NAME;
+        return MATERIAL_INDIGO_URL_NAME;
     }
 
     @Override
     public String getThemeCss() throws IOException {
         String base_css = this.readCssFile(MATERIAL_THEME_CSS);
-        base_css = base_css.replace("<MATERIAL_PRIMARY>", "#f44336");
-        base_css = base_css.replace("<MATERIAL_SECONDARY>", "#e76056");
+        base_css = base_css.replace("<MATERIAL_PRIMARY>", "#3f51b5");
+        base_css = base_css.replace("<MATERIAL_SECONDARY>", "#606FC7");
         return base_css;
     }
 
-    @WebMethod(name = MATERIAL_RED_CSS)
+    @WebMethod(name = MATERIAL_INDIGO_CSS)
     public void doMaterialRedoThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
         this.doRedoThemeCss(req, res);
     }

@@ -1,4 +1,4 @@
-package org.timbrown5.plugins.materialtheme;
+package io.jenkins.plugins.materialtheme;
 
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
@@ -11,7 +11,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
 public class MaterialIndigoThemeManagerFactory extends ThemeManagerFactory {
 
     public static final String MATERIAL_INDIGO_CSS = "theme-indigo.css";
-    public static final String MATERIAL_RED_SYMBOL = "material-indigo";
+    public static final String MATERIAL_INDIGO_SYMBOL = "material-indigo";
     // Seems like this needs to be 'theme-<descriptor_symbol>'
     public static final String MATERIAL_INDIGO_URL_NAME = "theme-material-indigo";
 
@@ -27,7 +27,7 @@ public class MaterialIndigoThemeManagerFactory extends ThemeManagerFactory {
     }
     
     @Extension
-    @Symbol(MATERIAL_RED_SYMBOL)
+    @Symbol(MATERIAL_INDIGO_SYMBOL)
     public static class MaterialIndigoThemeManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
 
         @NonNull
@@ -49,7 +49,7 @@ public class MaterialIndigoThemeManagerFactory extends ThemeManagerFactory {
         @NonNull
         @Override
         public String getThemeId() {
-            return MATERIAL_RED_SYMBOL;
+            return MATERIAL_INDIGO_SYMBOL;
         }
     }
 }

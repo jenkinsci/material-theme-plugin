@@ -7,12 +7,12 @@
     <version>4.2</version>
     <relativePath />
   </parent>
-  <groupId>org.timbrown5.plugins</groupId>
+  <groupId>io.jenkins.plugins</groupId>
   <artifactId>material-theme</artifactId>
-  <version>0.2.0-SNAPSHOT</version>
+  <version>0.3.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
   <properties>
-    <revision>0.2.0</revision>
+    <revision>0.3.0</revision>
     <changelist>-SNAPSHOT</changelist>
     <jenkins.version>2.249.1</jenkins.version>
     <java.level>8</java.level>
@@ -20,7 +20,7 @@
     <useBeta>true</useBeta>
   </properties>
   <name>Material Theme</name>
-  <url>https://github.com/timbrown5/jenkins-material-theme-plugin</url>
+  <url>https://github.com/jenkinsci/material-theme-plugin</url>
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -98,8 +98,8 @@
           <wroFile>${basedir}/src/main/config/wro.xml</wroFile>
           <extraConfigFile>${basedir}/src/main/config/wro.properties</extraConfigFile>
           <targetGroups>core-theme</targetGroups>
-          <cssDestinationFolder>${project.build.directory}/../src/main/resources/org/timbrown5/plugins/materialtheme/style/</cssDestinationFolder>
-          <jsDestinationFolder>${project.build.directory}/../src/main/resources/org/timbrown5/plugins/materialtheme/script/</jsDestinationFolder>
+          <cssDestinationFolder>${project.build.directory}/../src/main/resources/io/jenkins/plugins/materialtheme/style/</cssDestinationFolder>
+          <jsDestinationFolder>${project.build.directory}/../src/main/resources/io/jenkins/plugins/materialtheme/script/</jsDestinationFolder>
           <contextFolder>${basedir}/src/main/webapp/</contextFolder>
           <ignoreMissingResources>true</ignoreMissingResources>
         </configuration>

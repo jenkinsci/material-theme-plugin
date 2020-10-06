@@ -1,4 +1,4 @@
-package org.timbrown5.plugins.materialtheme;
+package io.jenkins.plugins.materialtheme;
 
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
