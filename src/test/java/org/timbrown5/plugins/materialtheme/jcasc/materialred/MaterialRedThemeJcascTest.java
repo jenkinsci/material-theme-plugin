@@ -1,15 +1,15 @@
-package io.jenkins.plugins.materialtheme.jcasc.materialred;
+package org.timbrown5.plugins.materialtheme.jcasc.materialred;
 
 import io.jenkins.plugins.casc.ConfigurationContext;
 import io.jenkins.plugins.casc.ConfiguratorRegistry;
 import io.jenkins.plugins.casc.misc.ConfiguredWithCode;
 import io.jenkins.plugins.casc.misc.JenkinsConfiguredWithCodeRule;
 import io.jenkins.plugins.casc.model.CNode;
-import io.jenkins.plugins.materialtheme.MaterialRedThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerPageDecorator;
 import org.junit.ClassRule;
 import org.junit.Test;
+import org.timbrown5.plugins.materialtheme.MaterialRedThemeManagerFactory;
 
 import static io.jenkins.plugins.casc.misc.Util.getUnclassifiedRoot;
 import static io.jenkins.plugins.casc.misc.Util.toStringFromYamlFile;
