@@ -1,6 +1,10 @@
-# jenkins-material-theme-plugin
-## Summary
-A Material Theme plugin for Jenkins.
+# A Material Theme plugin for Jenkins.
+
+[![Build Status](https://ci.jenkins.io/job/Plugins/job/material-theme-plugin/job/master/badge/icon)](https://ci.jenkins.io/job/Plugins/job/material-theme-plugin/job/master/)
+[![Gitter](https://badges.gitter.im/jenkinsci/ux-sig.svg)](https://gitter.im/jenkinsci/ux-sig?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Changelog](https://img.shields.io/github/release/jenkinsci/material-theme.svg?label=changelog)](https://github.com/jenkinsci/material-theme/releases/)
+[![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/material-theme.svg)](https://plugins.jenkins.io/material-theme)
+[![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/material-theme.svg?color=blue)](https://plugins.jenkins.io/material-theme)
 
 ## Description
 This is an attempt to port the Afonso F's Jenkins material theme (http://afonsof.com/jenkins-material-theme/) to use Theme Manager plugin (https://github.com/jenkinsci/theme-manager-plugin#configuring-the-plugin).
@@ -9,11 +13,11 @@ This should allow Jenkins administrators to easily switch themes and allow users
 ## Screenshots
 'Red':
 
-[![Screenshot jenkins-material-red main](images/red_main_small.png)](images/red_main_large.png)
+[![Screenshot jenkins-material-red main](screenshots/red_main_small.png)](screenshots/red_main_large.png)
 
 'Indigo':
 
-[![Screenshot jenkins-material-red main](images/indigo_main_small.png)](images/indigo_main_large.png)
+[![Screenshot jenkins-material-red main](screenshots/indigo_main_small.png)](screenshots/indigo_main_large.png)
 
 ## Running (development)
 To build and run this plugin you should only need to run:
@@ -26,6 +30,7 @@ I am not a front-end web or Java developer. The CCS in the project has mostly be
 
 ## Future work
 - Add the ability for users to define custom theme pallets.
+- Add icons for widely used Plugins icons (e.g. Docker, JCasC, Locked Resources)
 - Need to add tests to check:
   - That when a theme is loaded through the UI, that the correct theme is loaded.
 
