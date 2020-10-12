@@ -539,6 +539,11 @@
   .icon-img('../plugin/material-theme/resources/images/file-cog.svg', @color-grey);
 }
 
+// Computer User offline
+.icon-computer-user-offline, [src$="computer-user-offline.png"] {
+  .icon-img('../plugin/material-theme/resources/images/laptop-off.svg', @color-grey);
+}
+
 
 // Remove the background from icons on the New Item page.
 div.icon {
@@ -591,10 +596,11 @@ div.icon {
 }
 
 // Extension sizes
-[src$='copy.png'],
+.icon-computer-user-offline, [src$="computer-user-offline.png"],
 .icon-config, [src$='logo-head.svg'], [src$='matrixproject.png'],
-.icon-disk, [src$='disk.png'],
+[src$='copy.png'],
 .icon-device, [src$='device-24x24.png'], [src$='device-48x48.png'],
+.icon-disk, [src$='disk.png'],
 .icon-docker, [src$='docker.png'],
 .icon-document, [src$='document.png'],
 .icon-document-properties, [src$='document-properties.png'],
@@ -603,8 +609,8 @@ div.icon {
 .icon-monitor, [src$='monitor.gif'], [src$='systemmonitor.png'],
 .icon-orange-square, [src$='orange-square.png'], [src$='orange-square.svg'],
 [src$='pause.png'], [src$='48x48/pipelinejob.png'],
-[src$='pipelinejob.png'],
 .icon-pipeine-multibranch-project, [src$='pipelinemultibranchproject.png'],
+[src$='pipelinejob.png'],
 .icon-repo, [src$='redo.png'],
 [src$='test-results-analyzer/images/icon.png'] {
   // Replace icons with ones with the appropriate size.
