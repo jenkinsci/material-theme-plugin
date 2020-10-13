@@ -523,7 +523,6 @@
   .icon-img('../plugin/material-theme/resources/images/clipboard-pulse.svg', @color-grey);
 }
 
-
 // Pause build
 [src$='pause.png'] {
   .icon-img('../plugin/material-theme/resources/images/play-pause.svg', @color-grey);
@@ -564,7 +563,25 @@ div.icon {
 // Multi-configuration project
 [src$='matrixproject.png'] {
   .icon(@size-xl);
-  .icon-img('../plugin/material-theme/resources/images/file-multiple.svg', @color-grey);
+  .icon-img('../plugin/material-theme/resources/images/file-table.svg', @color-grey);
+}
+
+// External Job
+[src$='externaljob.png'] {
+  .icon(@size-xl);
+  .icon-img('../plugin/material-theme/resources/images/plus-network.svg', @color-grey);
+}
+
+// Maven
+.icon-maven-moduleset, [src$='mavenmoduleset.png'] {
+  .icon(@size-xl);
+  .icon-img('../plugin/material-theme/resources/images/owl.svg', @color-grey);
+}
+
+// Multi-job project
+.div.default-icon {
+  .icon(@size-xl);
+  .icon-img('../plugin/material-theme/resources/images/file-document-multiple.svg', @color-grey);
 }
 
 // Pipeline
@@ -592,13 +609,44 @@ div.icon {
 
 // Hour glass
 .icon-hourglass, [src$='hourglass.png'], [src$='hourglass.svg'], [src$='hourglass.gif'] {
-  .icon-img('../plugin/material-theme/resources/images/timer-sand.svg', @color-grey);
+  .icon-img('../plugin/materil-theme/resources/images/timer-sand.svg', @color-grey);
+}
+
+// Credentials Page
+.icon-credentials-credentials, [src$='credential.png'] {
+  .icon-img('../plugin/material-theme/resources/images/key.svg', @color-grey);
+}
+.icon-credentials-userpass, [src$='userpass.png'] {
+  .icon-img('../plugin/material-theme/resources/images/account-key.svg', @color-grey);
+}
+.icon-ssh-credentials-ssh-key, [src$='ssh-key.png'] {
+  .icon-img('../plugin/material-theme/resources/images/ssh.svg', @color-grey);
+}
+.icon-credentials-system-store, [src$='system-store.png'] {
+  .icon-img('../plugin/material-theme/resources/images/shield-lock.svg', @color-grey);
+}
+.icon-credentials-credential, [src$='new-credential.png'] {
+  .icon-img('../plugin/material-theme/resources/images/form-textbox-password.svg', @color-grey);
+}
+.icon-credentials-certificate, [src$='certificate.png'] {
+  .icon-img('../plugin/material-theme/resources/images/certificate.svg', @color-grey);
+}
+
+// Attribute (label/tag)
+.icon-attribute, [src$='attribute.png'] {
+  .icon-img('../plugin/material-theme/resources/images/tag-text.svg', @color-grey);
 }
 
 // Extension sizes
+.icon-attribute, [src$='attribute.png'],
 .icon-computer-user-offline, [src$="computer-user-offline.png"],
 .icon-config, [src$='logo-head.svg'], [src$='matrixproject.png'],
 [src$='copy.png'],
+.icon-credentials-credentials, [src$='credential.png'],
+.icon-credentials-userpass, [src$='userpass.png'],
+.icon-credentials-system-store, [src$='system-store.png'],
+.icon-credentials-credential, [src$='new-credential.png'],
+.icon-credentials-certificate, [src$='certificate.png'],
 .icon-device, [src$='device-24x24.png'], [src$='device-48x48.png'],
 .icon-disk, [src$='disk.png'],
 .icon-docker, [src$='docker.png'],
@@ -606,12 +654,14 @@ div.icon {
 .icon-document-properties, [src$='document-properties.png'],
 .icon-freestyle-project, [src$='freestyleproject.png'],
 .icon-hourglass, [src$='hourglass.png'], [src$='hourglass.svg'], [src$='hourglass.gif'],
+.icon-maven-moduleset, [src$='mavenmoduleset.png'],
 .icon-monitor, [src$='monitor.gif'], [src$='systemmonitor.png'],
 .icon-orange-square, [src$='orange-square.png'], [src$='orange-square.svg'],
 [src$='pause.png'], [src$='48x48/pipelinejob.png'],
 .icon-pipeine-multibranch-project, [src$='pipelinemultibranchproject.png'],
 [src$='pipelinejob.png'],
 .icon-repo, [src$='redo.png'],
+.icon-ssh-credentials-ssh-key, [src$='ssh-key.png'],
 [src$='test-results-analyzer/images/icon.png'] {
   // Replace icons with ones with the appropriate size.
   // This relies on:
