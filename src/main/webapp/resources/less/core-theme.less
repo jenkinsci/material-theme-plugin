@@ -5,9 +5,11 @@
 .icon-img(@url, @icon-color) {
   display: block;
   background-color: @icon-color !important;
-  -webkit-mask-image: url(@url) !important;
   mask-image: url(@url) !important;
   mask-repeat: no-repeat !important;
+  // Backwards compatibility (inc. Chrome) for masks
+  -webkit-mask-image: url(@url) !important;
+  -webkit-mask-repeat: no-repeat;
 }
 
 //.icon-img(@url, @icon-color) {
@@ -29,6 +31,8 @@
     height: 0 !important;
     width: 0 !important;
     mask-size: @icon-size @icon-size !important;
+    // Backwards compatibility (inc. Chrome) for mask size
+    -webkit-mask-size: @icon-size @icon-size !important;
     background-size: 100% 100% !important;
     font-size: 0 !important;
   }
@@ -578,7 +582,7 @@ div.icon {
   .icon-img('../plugin/material-theme/resources/images/owl.svg', @color-grey);
 }
 
-// Multi-job project
+// Multi-job project - not used yet (need to replace div)
 .div.default-icon {
   .icon(@size-xl);
   .icon-img('../plugin/material-theme/resources/images/file-document-multiple.svg', @color-grey);
@@ -638,6 +642,7 @@ div.icon {
 }
 
 // Extension sizes
+.div.default-icon,
 .icon-attribute, [src$='attribute.png'],
 .icon-computer-user-offline, [src$="computer-user-offline.png"],
 .icon-config, [src$='logo-head.svg'], [src$='matrixproject.png'],
