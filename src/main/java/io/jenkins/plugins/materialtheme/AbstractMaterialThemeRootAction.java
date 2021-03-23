@@ -15,7 +15,7 @@ import org.kohsuke.stapler.WebMethod;
 import static java.util.Objects.requireNonNull;
 
 abstract class AbstractMaterialThemeRootAction implements UnprotectedRootAction {
-    public static final String ICON_CSS = "style/core-theme.css";
+    public static final String LIGHT_THEME_CSS = "style/light-theme.css";
     public static final String MATERIAL_THEME_CSS = "material-theme.css";
 
     @Override
@@ -30,8 +30,8 @@ abstract class AbstractMaterialThemeRootAction implements UnprotectedRootAction 
 
     public abstract String getThemeCss() throws IOException;
 
-    public String getIconCss() throws IOException {
-        return readCssFile(this.ICON_CSS);
+    public String getLightTheme() throws IOException {
+        return readCssFile(this.LIGHT_THEME_CSS);
     }
 
     String readCssFile(String css_filename) throws IOException  {
@@ -44,6 +44,6 @@ abstract class AbstractMaterialThemeRootAction implements UnprotectedRootAction 
     protected void doRedoThemeCss(StaplerRequest req, StaplerResponse res) throws IOException {
         res.setContentType("text/css");
         res.getWriter().print(this.getThemeCss());
-        res.getWriter().print(this.getIconCss());
+        res.getWriter().print(this.getLightTheme());
     }
 }

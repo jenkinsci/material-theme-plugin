@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
+
 :root {
+    /* Dynamic theme colors */
     --material-primary: <MATERIAL_PRIMARY>;
     --material-secondary: <MATERIAL_SECONDARY>;
 
@@ -58,7 +60,7 @@
     padding: 12px 10px;
 }
 
-/* Change tab background so tabs down float when there are multiple rows 
+/* Change tab background so tabs don't float when there are multiple rows
 this doesn't look great, but I think it's less bad than when it's left white. */
 .tabBarFrame {
     position: relative;
@@ -77,4 +79,18 @@ a, a:link, a:hover, a:visited {
 .jenkins_ver:after {
     margin-left: 15px;
     content:"Material Theme Plugin"
+}
+
+/* Console readablity improvements */
+.console-output {
+    padding: 10px 20px;
+}
+
+.console-output, .console-output * {
+  position: relative;
+  font-family: Roboto Mono,monospace!important;
+  font-size: 14px;
+  background: #263238;
+  color: #e9eded;
+  cursor: text;
 }

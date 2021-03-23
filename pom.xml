@@ -97,7 +97,7 @@
           <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
           <wroFile>${basedir}/src/main/config/wro.xml</wroFile>
           <extraConfigFile>${basedir}/src/main/config/wro.properties</extraConfigFile>
-          <targetGroups>core-theme</targetGroups>
+          <targetGroups>light-theme</targetGroups>
           <cssDestinationFolder>${project.build.directory}/../src/main/resources/io/jenkins/plugins/materialtheme/style/</cssDestinationFolder>
           <jsDestinationFolder>${project.build.directory}/../src/main/resources/io/jenkins/plugins/materialtheme/script/</jsDestinationFolder>
           <contextFolder>${basedir}/src/main/webapp/</contextFolder>
