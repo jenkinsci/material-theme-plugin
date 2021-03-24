@@ -25,12 +25,15 @@ To build and run this plugin you should only need to run:
 mvn clean hpi:run
 ```
 
+## Releasing
+To release a new versioned of this plugin, please follow these steps: 
+https://www.jenkins.io/doc/developer/publishing/releasing/
+
 ## Disclaimer
 I am not a front-end web or Java developer. The CCS in the project has mostly been copied from http://afonsof.com/jenkins-material-theme/. The Java in this project has modified from the dark theme plugin (https://github.com/jenkinsci/dark-theme-plugin). 
 
 ## Future work
 - Add the ability for users to define custom theme pallets.
-- Add icons for widely used Plugins icons (e.g. Docker, JCasC, Locked Resources)
 - Need to add tests to check:
   - That when a theme is loaded through the UI, that the correct theme is loaded.
 
