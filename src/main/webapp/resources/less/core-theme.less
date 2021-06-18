@@ -77,58 +77,6 @@
 // Src
 // Reminder: Each selector using `.icon-img` must be declared bellow using .icon-size too
 
-[src$='blue.png'] {
-  .icon-img('../plugin/material-theme/resources/images/check_circle.svg', @color-green);
-}
-
-[src$='red.png'] {
-  .icon-img('../plugin/material-theme/resources/images/error.svg', @color-red);
-}
-
-[src$='yellow.png'] {
-  .icon-img('../plugin/material-theme/resources/images/warning.svg', @color-yellow);
-}
-
-[src$='grey.png'], [src$='aborted.png'], [src$='nobuilt.png'], [src$='disabled.png'] {
-  .icon-img('../plugin/material-theme/resources/images/remove_circle.svg', @color-grey);
-}
-
-.icon-health-80plus {
-  .icon-img('../plugin/material-theme/resources/images/weather-sunny.svg', @color-grey);
-}
-
-.icon-health-60to79 {
-  .icon-img('../plugin/material-theme/resources/images/weather-partlycloudy.svg', @color-grey);
-}
-
-.icon-health-40to59 {
-  .icon-img('../plugin/material-theme/resources/images/weather-cloudy.svg', @color-grey);
-}
-
-.icon-health-20to39 {
-  .icon-img('../plugin/material-theme/resources/images/weather-rainy.svg', @color-grey);
-}
-
-.icon-health-00to19 {
-  .icon-img('../plugin/material-theme/resources/images/weather-pouring.svg', @color-grey);
-}
-
-.icon-blue-anime, [src$='blue_anime.gif'] {
-  .icon-img('../plugin/material-theme/resources/images/autorenew.svg', @color-green);
-}
-
-.icon-red-anime, [src$='red_anime.gif'] {
-  .icon-img('../plugin/material-theme/resources/images/autorenew.svg', @color-red);
-}
-
-.icon-grey-anime, [src$='grey_anime.gif'], .icon-nobuilt-anime, .icon-aborted-anime {
-  .icon-img('../plugin/material-theme/resources/images/autorenew.svg', @color-grey);
-}
-
-.icon-yellow-anime, [src$='yellow_anime.gif'] {
-  .icon-img('../plugin/material-theme/resources/images/autorenew.svg', @color-yellow);
-}
-
 .icon-new-package, [src$='new-package.png'] {
   .icon-img('../plugin/material-theme/resources/images/add_circle_outline.svg', @color-grey);
 }
@@ -339,20 +287,6 @@
 }
 
 // Size
-
-[src$='red.png'],
-[src$='blue.png'],
-[src$='yellow.png'],
-[src$='grey.png'], [src$='aborted.png'], [src$='nobuilt.png'], [src$='disabled.png'],
-.icon-health-80plus,
-.icon-health-60to79,
-.icon-health-40to59,
-.icon-health-20to39,
-.icon-health-00to19,
-.icon-blue-anime, [src$='blue_anime.gif'],
-.icon-red-anime, [src$='red_anime.gif'],
-.icon-grey-anime, [src$='grey_anime.gif'], .icon-nobuilt-anime, .icon-aborted-anime,
-.icon-yellow-anime, [src$='yellow_anime.gif'],
 .icon-new-package, [src$='new-package.png'],
 .icon-user, [src$='user.png'],
 .icon-notepad, [src$='notepad.png'],
@@ -429,25 +363,6 @@
   .icon-help {
     filter: brightness(10000);
   }
-}
-
-// Animations
-
-.icon-clock-anime {
-  .animate-pulse()
-}
-
-[src$='blue_anime.gif'],
-[src$='red_anime.gif'],
-[src$='grey_anime.gif'],
-[src$='yellow_anime.gif'],
-.icon-blue-anime,
-.icon-red-anime,
-.icon-grey-anime,
-.icon-yellow-anime,
-.icon-nobuilt-anime,
-.icon-aborted-anime {
-  .animate-rotate();
 }
 
 // Hacks
@@ -685,3 +600,4 @@ div.icon {
     .icon(@size-sm);
   }
 }
+
