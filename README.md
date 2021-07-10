@@ -25,6 +25,12 @@ To build and run this plugin you should only need to run:
 mvn clean hpi:run
 ```
 
+## Development tools
+Here is a list of the tools (and versions) I have in my development enviornment - outside of those handeled in the pom.xml.
+Java 11
+Maven 3.5
+
+
 ## Releasing
 To release a new version of this plugin, please follow these steps: 
 https://www.jenkins.io/doc/developer/publishing/releasing/
