@@ -26,7 +26,7 @@ mvn clean hpi:run
 ```
 
 ## Releasing
-To release a new versioned of this plugin, please follow these steps: 
+To release a new version of this plugin, please follow these steps: 
 https://www.jenkins.io/doc/developer/publishing/releasing/
 
 ## Disclaimer
