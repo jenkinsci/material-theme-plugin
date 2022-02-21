@@ -29,8 +29,9 @@ public class MaterialIndigoThemeRootAction extends AbstractMaterialThemeRootActi
     @Override
     public String getThemeCss() throws IOException {
         String base_css = this.readCssFile(MATERIAL_THEME_CSS);
-        base_css = base_css.replace("<MATERIAL_PRIMARY>", "#3f51b5");
-        base_css = base_css.replace("<MATERIAL_SECONDARY>", "#606FC7");
+        base_css = base_css.replace("<MATERIAL_PRIMARY>", "#3f51b5")
+                .replace("<MATERIAL_SECONDARY>", "#606FC7")
+                .replace("material-red", "material-indigo");
         return base_css;
     }
 

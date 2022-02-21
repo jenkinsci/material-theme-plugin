@@ -31,7 +31,7 @@ abstract class AbstractMaterialThemeRootAction implements UnprotectedRootAction 
     public abstract String getThemeCss() throws IOException;
 
     public String getLightTheme() throws IOException {
-        return readCssFile(this.LIGHT_THEME_CSS);
+        return readCssFile(LIGHT_THEME_CSS);
     }
 
     String readCssFile(String css_filename) throws IOException  {

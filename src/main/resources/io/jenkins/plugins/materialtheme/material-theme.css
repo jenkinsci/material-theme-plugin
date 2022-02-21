@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
 
-:root {
+[data-theme=material-red], .app-theme-picker__picker[data-theme=material-red], [data-theme=material-indigo], .app-theme-picker__picker[data-theme=material-indigo] {
     /* Dynamic theme colors */
     --material-primary: <MATERIAL_PRIMARY>;
     --material-secondary: <MATERIAL_SECONDARY>;
@@ -54,7 +54,7 @@
 }
 
 /* Manually change some header settings (these aren't available through theme.less */
-#header {
+[data-theme=material-red] #header, [data-theme=material-indigo] #header {
     height: 64px;
     text-transform: uppercase;
     padding: 12px 10px;
@@ -62,31 +62,37 @@
 
 /* Change tab background so tabs don't float when there are multiple rows
 this doesn't look great, but I think it's less bad than when it's left white. */
-.tabBarFrame {
+[data-theme=material-red] .tabBarFrame, [data-theme=material-indigo] .tabBarFrame {
     position: relative;
     background: var(--very-light-grey);
 }
 
-.yui-button button {
+[data-theme=material-red] .yui-button button, [data-theme=material-indigo] .yui-button button {
     text-transform: uppercase;
 }
 
-a, a:link, a:hover, a:visited {
+[data-theme=material-red] a, [data-theme=material-indigo] a,
+[data-theme=material-red] a:link, [data-theme=material-indigo] a:link,
+[data-theme=material-red] a:hover, [data-theme=material-indigo] a:hover,
+[data-theme=material-red] a:visited, [data-theme=material-indigo] a:visited
+{
     text-decoration: none!important;
     color: var(--material-primary);
 }
 
-.jenkins_ver:after {
+[data-theme=material-red] .jenkins_ver:after , [data-theme=material-indigo] .jenkins_ver:after {
     margin-left: 15px;
     content:"Material Theme Plugin"
 }
 
 /* Console readablity improvements */
-.console-output {
+[data-theme=material-red] .console-output, [data-theme=material-indigo] .console-output {
     padding: 10px 20px;
 }
 
-.console-output, .console-output * {
+[data-theme=material-red] .console-output, [data-theme=material-indigo] .console-output,
+[data-theme=material-red] .console-output *, [data-theme=material-indigo] .console-output *
+{
   position: relative;
   font-family: Roboto Mono,monospace!important;
   font-size: 14px;

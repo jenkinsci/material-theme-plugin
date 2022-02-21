@@ -51,5 +51,15 @@ public class MaterialIndigoThemeManagerFactory extends ThemeManagerFactory {
         public String getThemeId() {
             return MATERIAL_INDIGO_SYMBOL;
         }
+
+        @Override
+        public String getThemeKey() {
+            return getThemeId();
+        }
+
+        @Override
+        public boolean isNamespaced() {
+            return true;
+        }
     }
 }
