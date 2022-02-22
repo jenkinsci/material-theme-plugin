@@ -8,27 +8,19 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-public class MaterialIndigoThemeManagerFactory extends ThemeManagerFactory {
+public class MaterialIndigoThemeManagerFactory extends AbstractMaterialTheme {
 
     public static final String MATERIAL_INDIGO_CSS = "theme-indigo.css";
     public static final String MATERIAL_INDIGO_SYMBOL = "material-indigo";
-    // Seems like this needs to be 'theme-<descriptor_symbol>'
-    public static final String MATERIAL_INDIGO_URL_NAME = "theme-material-indigo";
 
     @DataBoundConstructor
     public MaterialIndigoThemeManagerFactory() {
     }
 
-    @Override
-    public Theme getTheme() {
-        return Theme.builder()
-                .withCssUrl(getCssUrl())
-                .build();
-    }
-    
+
     @Extension
     @Symbol(MATERIAL_INDIGO_SYMBOL)
-    public static class MaterialIndigoThemeManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
+    public static class MaterialIndigoThemeManagerFactoryDescriptor extends AbstractMaterialThemeDescriptor {
 
         @NonNull
         @Override
@@ -46,20 +38,9 @@ public class MaterialIndigoThemeManagerFactory extends ThemeManagerFactory {
             return MATERIAL_INDIGO_CSS;
         }
 
-        @NonNull
-        @Override
-        public String getThemeId() {
-            return MATERIAL_INDIGO_SYMBOL;
-        }
-
         @Override
         public String getThemeKey() {
-            return getThemeId();
-        }
-
-        @Override
-        public boolean isNamespaced() {
-            return true;
+            return ID + "-indigo";
         }
     }
 }

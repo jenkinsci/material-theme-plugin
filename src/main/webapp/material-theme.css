@@ -2,10 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
 
 [data-theme=material-red], .app-theme-picker__picker[data-theme=material-red], [data-theme=material-indigo], .app-theme-picker__picker[data-theme=material-indigo] {
-    /* Dynamic theme colors */
-    --material-primary: <MATERIAL_PRIMARY>;
-    --material-secondary: <MATERIAL_SECONDARY>;
-
     /* Font */
     --font-family-sans: Roboto !important;
 

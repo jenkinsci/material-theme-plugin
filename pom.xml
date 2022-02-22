@@ -101,8 +101,7 @@
           <wroFile>${basedir}/src/main/config/wro.xml</wroFile>
           <extraConfigFile>${basedir}/src/main/config/wro.properties</extraConfigFile>
           <targetGroups>light-theme</targetGroups>
-          <cssDestinationFolder>${project.build.directory}/../src/main/resources/io/jenkins/plugins/materialtheme/style/</cssDestinationFolder>
-          <jsDestinationFolder>${project.build.directory}/../src/main/resources/io/jenkins/plugins/materialtheme/script/</jsDestinationFolder>
+          <cssDestinationFolder>${project.build.directory}/../src/main/webapp/</cssDestinationFolder>
           <contextFolder>${basedir}/src/main/webapp/</contextFolder>
           <ignoreMissingResources>true</ignoreMissingResources>
         </configuration>
