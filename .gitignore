@@ -1,0 +1,20 @@
+light-theme.css
+target
+
+# mvn hpi:run
+work
+
+# IntelliJ IDEA project files
+*.iml
+*.iws
+*.ipr
+.idea
+
+# Eclipse project files
+.settings
+.classpath
+.project
+
+# VS code project files
+.vscode
+>>>>>>> Add grey and light blue theme

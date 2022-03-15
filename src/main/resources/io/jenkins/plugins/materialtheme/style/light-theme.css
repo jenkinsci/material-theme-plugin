@@ -1,0 +1,3654 @@
+#main-panel > pre {
+  font-family: Roboto Mono,monospace!important;
+}
+@keyframes keyframes-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes keyframes-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.icon-new-package,
+[src$='new-package.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/add_circle_outline.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/add_circle_outline.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-user,
+[src$='user.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/people.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/people.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-notepad,
+[src$='notepad.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/history.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/history.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-setting,
+[src$='setting.png'],
+.icon-gear2,
+[src$='gear2.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/settings.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/settings.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-up,
+.task-icon-link[href='/'] img {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/arrow_back.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/arrow_back.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-edit-delete {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/delete.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/delete.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-fingerprint,
+[src$='fingerprint.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/fingerprint.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/fingerprint.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-graph,
+[src$='graph.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/insert_chart.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/insert_chart.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-collapse {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/expand_less.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/expand_less.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-expand {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/expand_more.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/expand_more.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-help,
+[src$='help.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/help_outline.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/help_outline.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-secure,
+.icon-lock,
+[src$='secure.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/lock.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/lock.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-plugin,
+[src$='plugin.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/extension.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/extension.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-system-log-out,
+[src$='system-log-out.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/power_settings_new.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/power_settings_new.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-refresh,
+[src$='refresh.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/refresh.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/refresh.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-computer,
+[src$='computer.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/computer.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/computer.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-computer-x {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/computer_offline.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/computer_offline.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-new-computer {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/computer_new.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/computer_new.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-clipboard,
+[src$='clipboard.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/assignment.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/assignment.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-monitor,
+[src$='monitor.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/chart-areaspline.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/chart-areaspline.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-terminal,
+[src$='terminal.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/console.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/console.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-network,
+[src$='network.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/server-network.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/server-network.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-document,
+.icon-text {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/file.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/file.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-folder,
+[src$='folder.png'],
+[src$='/directory16.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/folder.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/folder.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-clock,
+.icon-clock-anime,
+[src$='clock.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/play_circle_outline.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/play_circle_outline.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-folder-delete,
+[src$='edit-delete.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/folder-remove.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/folder-remove.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-previous {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/skip_previous.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/skip_previous.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-next {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/skip_next.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/skip_next.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-save,
+[src$='/save.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/save.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/save.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-package,
+[src$='package.gif'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/package-down.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/package-down.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-search,
+[src$='search.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/info_outline.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/info_outline.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-stop {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/stop.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/stop.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='/move.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/folder-move.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/folder-move.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='/atom.gif'] {
+  padding-left: 28.799999999999997px !important;
+  padding-top: 28.799999999999997px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 28.799999999999997px 28.799999999999997px !important;
+  -webkit-mask-size: 28.799999999999997px 28.799999999999997px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #ffc107 !important;
+  mask-image: url('../plugin/material-theme/resources/images/rss-box.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/rss-box.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='credentials.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/key.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/key.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='confighistory.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/build.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/build.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='domain.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/domain.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/domain.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+#description-link img,
+.icon-gear,
+[src$='gear.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/pencil.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/pencil.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-go-next {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/arrow_forward.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/arrow_forward.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='diskusage48.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/storage.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/storage.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='git-32x32.png'] {
+  padding-left: 28.799999999999997px !important;
+  padding-top: 28.799999999999997px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 28.799999999999997px 28.799999999999997px !important;
+  -webkit-mask-size: 28.799999999999997px 28.799999999999997px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/git.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/git.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='git-48x48.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/git.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/git.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='logov3.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/github-circle.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/github-circle.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='findbugs-24x24.png'],
+[src$='findbugs-48x48.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/bug_report.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/bug_report.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='dry-24x24.png'],
+[src$='dry-48x48.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/compare.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/compare.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='checkstyle-24x24.png'],
+[src$='checkstyle-48x48.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/flag.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/flag.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='pmd-24x24.png'],
+[src$='pmd-48x48.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/feedback.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/feedback.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='tasks-24x24.png'],
+[src$='tasks-48x48.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/assignment_late.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/assignment_late.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='analysis-24x24.png'],
+[src$='analysis-48x48.png'],
+[src$='go-24x24.png'],
+[src$='go-48x48.png'],
+[src$='idea-24x24.png'],
+[src$='idea-48x48.png'],
+[src$='java-24x24.png'],
+[src$='java-48x48.png'],
+[src$='resharper-24x24.png'],
+[src$='resharper-48x48.png'],
+[src$='scala-24x24.png'],
+[src$='scala-48x48.png'],
+[src$='warnings-24x24.png'],
+[src$='warnings-48x48.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/warning.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/warning.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-new-package.icon-xlg,
+[src$='new-package.png'].icon-xlg,
+.icon-user.icon-xlg,
+[src$='user.png'].icon-xlg,
+.icon-notepad.icon-xlg,
+[src$='notepad.png'].icon-xlg,
+.icon-setting.icon-xlg,
+[src$='setting.png'].icon-xlg,
+.icon-gear2.icon-xlg,
+[src$='gear2.png'].icon-xlg,
+.icon-up.icon-xlg,
+.icon-edit-delete.icon-xlg,
+.icon-fingerprint.icon-xlg,
+[src$='fingerprint.png'].icon-xlg,
+.icon-graph.icon-xlg,
+[src$='graph.png'].icon-xlg,
+.icon-collapse.icon-xlg,
+.icon-expand.icon-xlg,
+.icon-help.icon-xlg,
+[src$='help.png'].icon-xlg,
+.icon-secure.icon-xlg,
+.icon-lock.icon-xlg,
+[src$='secure.png'].icon-xlg,
+.icon-plugin.icon-xlg,
+[src$='plugin.png'].icon-xlg,
+.icon-system-log-out.icon-xlg,
+[src$='system-log-out.png'].icon-xlg,
+.icon-refresh.icon-xlg,
+[src$='refresh.png'].icon-xlg,
+.icon-computer.icon-xlg,
+[src$='computer.png'].icon-xlg,
+.icon-computer-x.icon-xlg,
+.icon-new-computer.icon-xlg,
+.icon-clipboard.icon-xlg,
+[src$='clipboard.png'].icon-xlg,
+.icon-monitor.icon-xlg,
+[src$='monitor.png'].icon-xlg,
+.icon-terminal.icon-xlg,
+[src$='terminal.png'].icon-xlg,
+.icon-network.icon-xlg,
+[src$='network.png'].icon-xlg,
+.icon-document.icon-xlg,
+.icon-text.icon-xlg,
+.icon-folder.icon-xlg,
+[src$='folder.png'].icon-xlg,
+[src$='/directory16.png'].icon-xlg,
+.icon-clock.icon-xlg,
+.icon-clock-anime.icon-xlg,
+[src$='clock.png'].icon-xlg,
+.icon-folder-delete.icon-xlg,
+[src$='edit-delete.png'].icon-xlg,
+.icon-previous.icon-xlg,
+.icon-next.icon-xlg,
+.icon-save.icon-xlg,
+[src$='/save.png'].icon-xlg,
+.icon-package.icon-xlg,
+[src$='package.gif'].icon-xlg,
+.icon-search.icon-xlg,
+[src$='search.png'].icon-xlg,
+.icon-stop.icon-xlg,
+[src$='/move.png'].icon-xlg,
+[src$='/atom.gif'].icon-xlg,
+[src$='credentials.png'].icon-xlg,
+[src$='confighistory.png'].icon-xlg,
+[src$='domain.png'].icon-xlg,
+#description-link img.icon-xlg,
+.icon-gear.icon-xlg,
+[src$='gear.png'].icon-xlg,
+.icon-go-next.icon-xlg,
+[src$='diskusage48.png'].icon-xlg,
+[src$='findbugs-24x24.png'].icon-xlg,
+[src$='findbugs-48x48.png'].icon-xlg,
+[src$='checkstyle-24x24.png'].icon-xlg,
+[src$='checkstyle-48x48.png'].icon-xlg,
+[src$='analysis-24x24.png'].icon-xlg,
+[src$='analysis-48x48.png'].icon-xlg,
+[src$='go-24x24.png'].icon-xlg,
+[src$='go-48x48.png'].icon-xlg,
+[src$='idea-24x24.png'].icon-xlg,
+[src$='idea-48x48.png'].icon-xlg,
+[src$='java-24x24.png'].icon-xlg,
+[src$='java-48x48.png'].icon-xlg,
+[src$='resharper-24x24.png'].icon-xlg,
+[src$='resharper-48x48.png'].icon-xlg,
+[src$='scala-24x24.png'].icon-xlg,
+[src$='scala-48x48.png'].icon-xlg,
+[src$='warnings-24x24.png'].icon-xlg,
+[src$='warnings-48x48.png'].icon-xlg,
+[src$='dry-24x24.png'].icon-xlg,
+[src$='dry-48x48.png'].icon-xlg,
+[src$='pmd-24x24.png'].icon-xlg,
+[src$='pmd-48x48.png'].icon-xlg,
+[src$='tasks-24x24.png'].icon-xlg,
+[src$='tasks-48x48.png'].icon-xlg,
+[src$='logov3.png'].icon-xlg,
+.icon-new-package[src*='48x'],
+[src$='new-package.png'][src*='48x'],
+.icon-user[src*='48x'],
+[src$='user.png'][src*='48x'],
+.icon-notepad[src*='48x'],
+[src$='notepad.png'][src*='48x'],
+.icon-setting[src*='48x'],
+[src$='setting.png'][src*='48x'],
+.icon-gear2[src*='48x'],
+[src$='gear2.png'][src*='48x'],
+.icon-up[src*='48x'],
+.icon-edit-delete[src*='48x'],
+.icon-fingerprint[src*='48x'],
+[src$='fingerprint.png'][src*='48x'],
+.icon-graph[src*='48x'],
+[src$='graph.png'][src*='48x'],
+.icon-collapse[src*='48x'],
+.icon-expand[src*='48x'],
+.icon-help[src*='48x'],
+[src$='help.png'][src*='48x'],
+.icon-secure[src*='48x'],
+.icon-lock[src*='48x'],
+[src$='secure.png'][src*='48x'],
+.icon-plugin[src*='48x'],
+[src$='plugin.png'][src*='48x'],
+.icon-system-log-out[src*='48x'],
+[src$='system-log-out.png'][src*='48x'],
+.icon-refresh[src*='48x'],
+[src$='refresh.png'][src*='48x'],
+.icon-computer[src*='48x'],
+[src$='computer.png'][src*='48x'],
+.icon-computer-x[src*='48x'],
+.icon-new-computer[src*='48x'],
+.icon-clipboard[src*='48x'],
+[src$='clipboard.png'][src*='48x'],
+.icon-monitor[src*='48x'],
+[src$='monitor.png'][src*='48x'],
+.icon-terminal[src*='48x'],
+[src$='terminal.png'][src*='48x'],
+.icon-network[src*='48x'],
+[src$='network.png'][src*='48x'],
+.icon-document[src*='48x'],
+.icon-text[src*='48x'],
+.icon-folder[src*='48x'],
+[src$='folder.png'][src*='48x'],
+[src$='/directory16.png'][src*='48x'],
+.icon-clock[src*='48x'],
+.icon-clock-anime[src*='48x'],
+[src$='clock.png'][src*='48x'],
+.icon-folder-delete[src*='48x'],
+[src$='edit-delete.png'][src*='48x'],
+.icon-previous[src*='48x'],
+.icon-next[src*='48x'],
+.icon-save[src*='48x'],
+[src$='/save.png'][src*='48x'],
+.icon-package[src*='48x'],
+[src$='package.gif'][src*='48x'],
+.icon-search[src*='48x'],
+[src$='search.png'][src*='48x'],
+.icon-stop[src*='48x'],
+[src$='/move.png'][src*='48x'],
+[src$='/atom.gif'][src*='48x'],
+[src$='credentials.png'][src*='48x'],
+[src$='confighistory.png'][src*='48x'],
+[src$='domain.png'][src*='48x'],
+#description-link img[src*='48x'],
+.icon-gear[src*='48x'],
+[src$='gear.png'][src*='48x'],
+.icon-go-next[src*='48x'],
+[src$='diskusage48.png'][src*='48x'],
+[src$='findbugs-24x24.png'][src*='48x'],
+[src$='findbugs-48x48.png'][src*='48x'],
+[src$='checkstyle-24x24.png'][src*='48x'],
+[src$='checkstyle-48x48.png'][src*='48x'],
+[src$='analysis-24x24.png'][src*='48x'],
+[src$='analysis-48x48.png'][src*='48x'],
+[src$='go-24x24.png'][src*='48x'],
+[src$='go-48x48.png'][src*='48x'],
+[src$='idea-24x24.png'][src*='48x'],
+[src$='idea-48x48.png'][src*='48x'],
+[src$='java-24x24.png'][src*='48x'],
+[src$='java-48x48.png'][src*='48x'],
+[src$='resharper-24x24.png'][src*='48x'],
+[src$='resharper-48x48.png'][src*='48x'],
+[src$='scala-24x24.png'][src*='48x'],
+[src$='scala-48x48.png'][src*='48x'],
+[src$='warnings-24x24.png'][src*='48x'],
+[src$='warnings-48x48.png'][src*='48x'],
+[src$='dry-24x24.png'][src*='48x'],
+[src$='dry-48x48.png'][src*='48x'],
+[src$='pmd-24x24.png'][src*='48x'],
+[src$='pmd-48x48.png'][src*='48x'],
+[src$='tasks-24x24.png'][src*='48x'],
+[src$='tasks-48x48.png'][src*='48x'],
+[src$='logov3.png'][src*='48x'],
+.icon-new-package.icon48x48,
+[src$='new-package.png'].icon48x48,
+.icon-user.icon48x48,
+[src$='user.png'].icon48x48,
+.icon-notepad.icon48x48,
+[src$='notepad.png'].icon48x48,
+.icon-setting.icon48x48,
+[src$='setting.png'].icon48x48,
+.icon-gear2.icon48x48,
+[src$='gear2.png'].icon48x48,
+.icon-up.icon48x48,
+.icon-edit-delete.icon48x48,
+.icon-fingerprint.icon48x48,
+[src$='fingerprint.png'].icon48x48,
+.icon-graph.icon48x48,
+[src$='graph.png'].icon48x48,
+.icon-collapse.icon48x48,
+.icon-expand.icon48x48,
+.icon-help.icon48x48,
+[src$='help.png'].icon48x48,
+.icon-secure.icon48x48,
+.icon-lock.icon48x48,
+[src$='secure.png'].icon48x48,
+.icon-plugin.icon48x48,
+[src$='plugin.png'].icon48x48,
+.icon-system-log-out.icon48x48,
+[src$='system-log-out.png'].icon48x48,
+.icon-refresh.icon48x48,
+[src$='refresh.png'].icon48x48,
+.icon-computer.icon48x48,
+[src$='computer.png'].icon48x48,
+.icon-computer-x.icon48x48,
+.icon-new-computer.icon48x48,
+.icon-clipboard.icon48x48,
+[src$='clipboard.png'].icon48x48,
+.icon-monitor.icon48x48,
+[src$='monitor.png'].icon48x48,
+.icon-terminal.icon48x48,
+[src$='terminal.png'].icon48x48,
+.icon-network.icon48x48,
+[src$='network.png'].icon48x48,
+.icon-document.icon48x48,
+.icon-text.icon48x48,
+.icon-folder.icon48x48,
+[src$='folder.png'].icon48x48,
+[src$='/directory16.png'].icon48x48,
+.icon-clock.icon48x48,
+.icon-clock-anime.icon48x48,
+[src$='clock.png'].icon48x48,
+.icon-folder-delete.icon48x48,
+[src$='edit-delete.png'].icon48x48,
+.icon-previous.icon48x48,
+.icon-next.icon48x48,
+.icon-save.icon48x48,
+[src$='/save.png'].icon48x48,
+.icon-package.icon48x48,
+[src$='package.gif'].icon48x48,
+.icon-search.icon48x48,
+[src$='search.png'].icon48x48,
+.icon-stop.icon48x48,
+[src$='/move.png'].icon48x48,
+[src$='/atom.gif'].icon48x48,
+[src$='credentials.png'].icon48x48,
+[src$='confighistory.png'].icon48x48,
+[src$='domain.png'].icon48x48,
+#description-link img.icon48x48,
+.icon-gear.icon48x48,
+[src$='gear.png'].icon48x48,
+.icon-go-next.icon48x48,
+[src$='diskusage48.png'].icon48x48,
+[src$='findbugs-24x24.png'].icon48x48,
+[src$='findbugs-48x48.png'].icon48x48,
+[src$='checkstyle-24x24.png'].icon48x48,
+[src$='checkstyle-48x48.png'].icon48x48,
+[src$='analysis-24x24.png'].icon48x48,
+[src$='analysis-48x48.png'].icon48x48,
+[src$='go-24x24.png'].icon48x48,
+[src$='go-48x48.png'].icon48x48,
+[src$='idea-24x24.png'].icon48x48,
+[src$='idea-48x48.png'].icon48x48,
+[src$='java-24x24.png'].icon48x48,
+[src$='java-48x48.png'].icon48x48,
+[src$='resharper-24x24.png'].icon48x48,
+[src$='resharper-48x48.png'].icon48x48,
+[src$='scala-24x24.png'].icon48x48,
+[src$='scala-48x48.png'].icon48x48,
+[src$='warnings-24x24.png'].icon48x48,
+[src$='warnings-48x48.png'].icon48x48,
+[src$='dry-24x24.png'].icon48x48,
+[src$='dry-48x48.png'].icon48x48,
+[src$='pmd-24x24.png'].icon48x48,
+[src$='pmd-48x48.png'].icon48x48,
+[src$='tasks-24x24.png'].icon48x48,
+[src$='tasks-48x48.png'].icon48x48,
+[src$='logov3.png'].icon48x48 {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+}
+.icon-new-package.icon-lg,
+[src$='new-package.png'].icon-lg,
+.icon-user.icon-lg,
+[src$='user.png'].icon-lg,
+.icon-notepad.icon-lg,
+[src$='notepad.png'].icon-lg,
+.icon-setting.icon-lg,
+[src$='setting.png'].icon-lg,
+.icon-gear2.icon-lg,
+[src$='gear2.png'].icon-lg,
+.icon-up.icon-lg,
+.icon-edit-delete.icon-lg,
+.icon-fingerprint.icon-lg,
+[src$='fingerprint.png'].icon-lg,
+.icon-graph.icon-lg,
+[src$='graph.png'].icon-lg,
+.icon-collapse.icon-lg,
+.icon-expand.icon-lg,
+.icon-help.icon-lg,
+[src$='help.png'].icon-lg,
+.icon-secure.icon-lg,
+.icon-lock.icon-lg,
+[src$='secure.png'].icon-lg,
+.icon-plugin.icon-lg,
+[src$='plugin.png'].icon-lg,
+.icon-system-log-out.icon-lg,
+[src$='system-log-out.png'].icon-lg,
+.icon-refresh.icon-lg,
+[src$='refresh.png'].icon-lg,
+.icon-computer.icon-lg,
+[src$='computer.png'].icon-lg,
+.icon-computer-x.icon-lg,
+.icon-new-computer.icon-lg,
+.icon-clipboard.icon-lg,
+[src$='clipboard.png'].icon-lg,
+.icon-monitor.icon-lg,
+[src$='monitor.png'].icon-lg,
+.icon-terminal.icon-lg,
+[src$='terminal.png'].icon-lg,
+.icon-network.icon-lg,
+[src$='network.png'].icon-lg,
+.icon-document.icon-lg,
+.icon-text.icon-lg,
+.icon-folder.icon-lg,
+[src$='folder.png'].icon-lg,
+[src$='/directory16.png'].icon-lg,
+.icon-clock.icon-lg,
+.icon-clock-anime.icon-lg,
+[src$='clock.png'].icon-lg,
+.icon-folder-delete.icon-lg,
+[src$='edit-delete.png'].icon-lg,
+.icon-previous.icon-lg,
+.icon-next.icon-lg,
+.icon-save.icon-lg,
+[src$='/save.png'].icon-lg,
+.icon-package.icon-lg,
+[src$='package.gif'].icon-lg,
+.icon-search.icon-lg,
+[src$='search.png'].icon-lg,
+.icon-stop.icon-lg,
+[src$='/move.png'].icon-lg,
+[src$='/atom.gif'].icon-lg,
+[src$='credentials.png'].icon-lg,
+[src$='confighistory.png'].icon-lg,
+[src$='domain.png'].icon-lg,
+#description-link img.icon-lg,
+.icon-gear.icon-lg,
+[src$='gear.png'].icon-lg,
+.icon-go-next.icon-lg,
+[src$='diskusage48.png'].icon-lg,
+[src$='findbugs-24x24.png'].icon-lg,
+[src$='findbugs-48x48.png'].icon-lg,
+[src$='checkstyle-24x24.png'].icon-lg,
+[src$='checkstyle-48x48.png'].icon-lg,
+[src$='analysis-24x24.png'].icon-lg,
+[src$='analysis-48x48.png'].icon-lg,
+[src$='go-24x24.png'].icon-lg,
+[src$='go-48x48.png'].icon-lg,
+[src$='idea-24x24.png'].icon-lg,
+[src$='idea-48x48.png'].icon-lg,
+[src$='java-24x24.png'].icon-lg,
+[src$='java-48x48.png'].icon-lg,
+[src$='resharper-24x24.png'].icon-lg,
+[src$='resharper-48x48.png'].icon-lg,
+[src$='scala-24x24.png'].icon-lg,
+[src$='scala-48x48.png'].icon-lg,
+[src$='warnings-24x24.png'].icon-lg,
+[src$='warnings-48x48.png'].icon-lg,
+[src$='dry-24x24.png'].icon-lg,
+[src$='dry-48x48.png'].icon-lg,
+[src$='pmd-24x24.png'].icon-lg,
+[src$='pmd-48x48.png'].icon-lg,
+[src$='tasks-24x24.png'].icon-lg,
+[src$='tasks-48x48.png'].icon-lg,
+[src$='logov3.png'].icon-lg,
+.icon-new-package[src*='32x'],
+[src$='new-package.png'][src*='32x'],
+.icon-user[src*='32x'],
+[src$='user.png'][src*='32x'],
+.icon-notepad[src*='32x'],
+[src$='notepad.png'][src*='32x'],
+.icon-setting[src*='32x'],
+[src$='setting.png'][src*='32x'],
+.icon-gear2[src*='32x'],
+[src$='gear2.png'][src*='32x'],
+.icon-up[src*='32x'],
+.icon-edit-delete[src*='32x'],
+.icon-fingerprint[src*='32x'],
+[src$='fingerprint.png'][src*='32x'],
+.icon-graph[src*='32x'],
+[src$='graph.png'][src*='32x'],
+.icon-collapse[src*='32x'],
+.icon-expand[src*='32x'],
+.icon-help[src*='32x'],
+[src$='help.png'][src*='32x'],
+.icon-secure[src*='32x'],
+.icon-lock[src*='32x'],
+[src$='secure.png'][src*='32x'],
+.icon-plugin[src*='32x'],
+[src$='plugin.png'][src*='32x'],
+.icon-system-log-out[src*='32x'],
+[src$='system-log-out.png'][src*='32x'],
+.icon-refresh[src*='32x'],
+[src$='refresh.png'][src*='32x'],
+.icon-computer[src*='32x'],
+[src$='computer.png'][src*='32x'],
+.icon-computer-x[src*='32x'],
+.icon-new-computer[src*='32x'],
+.icon-clipboard[src*='32x'],
+[src$='clipboard.png'][src*='32x'],
+.icon-monitor[src*='32x'],
+[src$='monitor.png'][src*='32x'],
+.icon-terminal[src*='32x'],
+[src$='terminal.png'][src*='32x'],
+.icon-network[src*='32x'],
+[src$='network.png'][src*='32x'],
+.icon-document[src*='32x'],
+.icon-text[src*='32x'],
+.icon-folder[src*='32x'],
+[src$='folder.png'][src*='32x'],
+[src$='/directory16.png'][src*='32x'],
+.icon-clock[src*='32x'],
+.icon-clock-anime[src*='32x'],
+[src$='clock.png'][src*='32x'],
+.icon-folder-delete[src*='32x'],
+[src$='edit-delete.png'][src*='32x'],
+.icon-previous[src*='32x'],
+.icon-next[src*='32x'],
+.icon-save[src*='32x'],
+[src$='/save.png'][src*='32x'],
+.icon-package[src*='32x'],
+[src$='package.gif'][src*='32x'],
+.icon-search[src*='32x'],
+[src$='search.png'][src*='32x'],
+.icon-stop[src*='32x'],
+[src$='/move.png'][src*='32x'],
+[src$='/atom.gif'][src*='32x'],
+[src$='credentials.png'][src*='32x'],
+[src$='confighistory.png'][src*='32x'],
+[src$='domain.png'][src*='32x'],
+#description-link img[src*='32x'],
+.icon-gear[src*='32x'],
+[src$='gear.png'][src*='32x'],
+.icon-go-next[src*='32x'],
+[src$='diskusage48.png'][src*='32x'],
+[src$='findbugs-24x24.png'][src*='32x'],
+[src$='findbugs-48x48.png'][src*='32x'],
+[src$='checkstyle-24x24.png'][src*='32x'],
+[src$='checkstyle-48x48.png'][src*='32x'],
+[src$='analysis-24x24.png'][src*='32x'],
+[src$='analysis-48x48.png'][src*='32x'],
+[src$='go-24x24.png'][src*='32x'],
+[src$='go-48x48.png'][src*='32x'],
+[src$='idea-24x24.png'][src*='32x'],
+[src$='idea-48x48.png'][src*='32x'],
+[src$='java-24x24.png'][src*='32x'],
+[src$='java-48x48.png'][src*='32x'],
+[src$='resharper-24x24.png'][src*='32x'],
+[src$='resharper-48x48.png'][src*='32x'],
+[src$='scala-24x24.png'][src*='32x'],
+[src$='scala-48x48.png'][src*='32x'],
+[src$='warnings-24x24.png'][src*='32x'],
+[src$='warnings-48x48.png'][src*='32x'],
+[src$='dry-24x24.png'][src*='32x'],
+[src$='dry-48x48.png'][src*='32x'],
+[src$='pmd-24x24.png'][src*='32x'],
+[src$='pmd-48x48.png'][src*='32x'],
+[src$='tasks-24x24.png'][src*='32x'],
+[src$='tasks-48x48.png'][src*='32x'],
+[src$='logov3.png'][src*='32x'],
+.icon-new-package.icon32x32,
+[src$='new-package.png'].icon32x32,
+.icon-user.icon32x32,
+[src$='user.png'].icon32x32,
+.icon-notepad.icon32x32,
+[src$='notepad.png'].icon32x32,
+.icon-setting.icon32x32,
+[src$='setting.png'].icon32x32,
+.icon-gear2.icon32x32,
+[src$='gear2.png'].icon32x32,
+.icon-up.icon32x32,
+.icon-edit-delete.icon32x32,
+.icon-fingerprint.icon32x32,
+[src$='fingerprint.png'].icon32x32,
+.icon-graph.icon32x32,
+[src$='graph.png'].icon32x32,
+.icon-collapse.icon32x32,
+.icon-expand.icon32x32,
+.icon-help.icon32x32,
+[src$='help.png'].icon32x32,
+.icon-secure.icon32x32,
+.icon-lock.icon32x32,
+[src$='secure.png'].icon32x32,
+.icon-plugin.icon32x32,
+[src$='plugin.png'].icon32x32,
+.icon-system-log-out.icon32x32,
+[src$='system-log-out.png'].icon32x32,
+.icon-refresh.icon32x32,
+[src$='refresh.png'].icon32x32,
+.icon-computer.icon32x32,
+[src$='computer.png'].icon32x32,
+.icon-computer-x.icon32x32,
+.icon-new-computer.icon32x32,
+.icon-clipboard.icon32x32,
+[src$='clipboard.png'].icon32x32,
+.icon-monitor.icon32x32,
+[src$='monitor.png'].icon32x32,
+.icon-terminal.icon32x32,
+[src$='terminal.png'].icon32x32,
+.icon-network.icon32x32,
+[src$='network.png'].icon32x32,
+.icon-document.icon32x32,
+.icon-text.icon32x32,
+.icon-folder.icon32x32,
+[src$='folder.png'].icon32x32,
+[src$='/directory16.png'].icon32x32,
+.icon-clock.icon32x32,
+.icon-clock-anime.icon32x32,
+[src$='clock.png'].icon32x32,
+.icon-folder-delete.icon32x32,
+[src$='edit-delete.png'].icon32x32,
+.icon-previous.icon32x32,
+.icon-next.icon32x32,
+.icon-save.icon32x32,
+[src$='/save.png'].icon32x32,
+.icon-package.icon32x32,
+[src$='package.gif'].icon32x32,
+.icon-search.icon32x32,
+[src$='search.png'].icon32x32,
+.icon-stop.icon32x32,
+[src$='/move.png'].icon32x32,
+[src$='/atom.gif'].icon32x32,
+[src$='credentials.png'].icon32x32,
+[src$='confighistory.png'].icon32x32,
+[src$='domain.png'].icon32x32,
+#description-link img.icon32x32,
+.icon-gear.icon32x32,
+[src$='gear.png'].icon32x32,
+.icon-go-next.icon32x32,
+[src$='diskusage48.png'].icon32x32,
+[src$='findbugs-24x24.png'].icon32x32,
+[src$='findbugs-48x48.png'].icon32x32,
+[src$='checkstyle-24x24.png'].icon32x32,
+[src$='checkstyle-48x48.png'].icon32x32,
+[src$='analysis-24x24.png'].icon32x32,
+[src$='analysis-48x48.png'].icon32x32,
+[src$='go-24x24.png'].icon32x32,
+[src$='go-48x48.png'].icon32x32,
+[src$='idea-24x24.png'].icon32x32,
+[src$='idea-48x48.png'].icon32x32,
+[src$='java-24x24.png'].icon32x32,
+[src$='java-48x48.png'].icon32x32,
+[src$='resharper-24x24.png'].icon32x32,
+[src$='resharper-48x48.png'].icon32x32,
+[src$='scala-24x24.png'].icon32x32,
+[src$='scala-48x48.png'].icon32x32,
+[src$='warnings-24x24.png'].icon32x32,
+[src$='warnings-48x48.png'].icon32x32,
+[src$='dry-24x24.png'].icon32x32,
+[src$='dry-48x48.png'].icon32x32,
+[src$='pmd-24x24.png'].icon32x32,
+[src$='pmd-48x48.png'].icon32x32,
+[src$='tasks-24x24.png'].icon32x32,
+[src$='tasks-48x48.png'].icon32x32,
+[src$='logov3.png'].icon32x32,
+.icon-new-package[style*='width: 32p'],
+[src$='new-package.png'][style*='width: 32p'],
+.icon-user[style*='width: 32p'],
+[src$='user.png'][style*='width: 32p'],
+.icon-notepad[style*='width: 32p'],
+[src$='notepad.png'][style*='width: 32p'],
+.icon-setting[style*='width: 32p'],
+[src$='setting.png'][style*='width: 32p'],
+.icon-gear2[style*='width: 32p'],
+[src$='gear2.png'][style*='width: 32p'],
+.icon-up[style*='width: 32p'],
+.icon-edit-delete[style*='width: 32p'],
+.icon-fingerprint[style*='width: 32p'],
+[src$='fingerprint.png'][style*='width: 32p'],
+.icon-graph[style*='width: 32p'],
+[src$='graph.png'][style*='width: 32p'],
+.icon-collapse[style*='width: 32p'],
+.icon-expand[style*='width: 32p'],
+.icon-help[style*='width: 32p'],
+[src$='help.png'][style*='width: 32p'],
+.icon-secure[style*='width: 32p'],
+.icon-lock[style*='width: 32p'],
+[src$='secure.png'][style*='width: 32p'],
+.icon-plugin[style*='width: 32p'],
+[src$='plugin.png'][style*='width: 32p'],
+.icon-system-log-out[style*='width: 32p'],
+[src$='system-log-out.png'][style*='width: 32p'],
+.icon-refresh[style*='width: 32p'],
+[src$='refresh.png'][style*='width: 32p'],
+.icon-computer[style*='width: 32p'],
+[src$='computer.png'][style*='width: 32p'],
+.icon-computer-x[style*='width: 32p'],
+.icon-new-computer[style*='width: 32p'],
+.icon-clipboard[style*='width: 32p'],
+[src$='clipboard.png'][style*='width: 32p'],
+.icon-monitor[style*='width: 32p'],
+[src$='monitor.png'][style*='width: 32p'],
+.icon-terminal[style*='width: 32p'],
+[src$='terminal.png'][style*='width: 32p'],
+.icon-network[style*='width: 32p'],
+[src$='network.png'][style*='width: 32p'],
+.icon-document[style*='width: 32p'],
+.icon-text[style*='width: 32p'],
+.icon-folder[style*='width: 32p'],
+[src$='folder.png'][style*='width: 32p'],
+[src$='/directory16.png'][style*='width: 32p'],
+.icon-clock[style*='width: 32p'],
+.icon-clock-anime[style*='width: 32p'],
+[src$='clock.png'][style*='width: 32p'],
+.icon-folder-delete[style*='width: 32p'],
+[src$='edit-delete.png'][style*='width: 32p'],
+.icon-previous[style*='width: 32p'],
+.icon-next[style*='width: 32p'],
+.icon-save[style*='width: 32p'],
+[src$='/save.png'][style*='width: 32p'],
+.icon-package[style*='width: 32p'],
+[src$='package.gif'][style*='width: 32p'],
+.icon-search[style*='width: 32p'],
+[src$='search.png'][style*='width: 32p'],
+.icon-stop[style*='width: 32p'],
+[src$='/move.png'][style*='width: 32p'],
+[src$='/atom.gif'][style*='width: 32p'],
+[src$='credentials.png'][style*='width: 32p'],
+[src$='confighistory.png'][style*='width: 32p'],
+[src$='domain.png'][style*='width: 32p'],
+#description-link img[style*='width: 32p'],
+.icon-gear[style*='width: 32p'],
+[src$='gear.png'][style*='width: 32p'],
+.icon-go-next[style*='width: 32p'],
+[src$='diskusage48.png'][style*='width: 32p'],
+[src$='findbugs-24x24.png'][style*='width: 32p'],
+[src$='findbugs-48x48.png'][style*='width: 32p'],
+[src$='checkstyle-24x24.png'][style*='width: 32p'],
+[src$='checkstyle-48x48.png'][style*='width: 32p'],
+[src$='analysis-24x24.png'][style*='width: 32p'],
+[src$='analysis-48x48.png'][style*='width: 32p'],
+[src$='go-24x24.png'][style*='width: 32p'],
+[src$='go-48x48.png'][style*='width: 32p'],
+[src$='idea-24x24.png'][style*='width: 32p'],
+[src$='idea-48x48.png'][style*='width: 32p'],
+[src$='java-24x24.png'][style*='width: 32p'],
+[src$='java-48x48.png'][style*='width: 32p'],
+[src$='resharper-24x24.png'][style*='width: 32p'],
+[src$='resharper-48x48.png'][style*='width: 32p'],
+[src$='scala-24x24.png'][style*='width: 32p'],
+[src$='scala-48x48.png'][style*='width: 32p'],
+[src$='warnings-24x24.png'][style*='width: 32p'],
+[src$='warnings-48x48.png'][style*='width: 32p'],
+[src$='dry-24x24.png'][style*='width: 32p'],
+[src$='dry-48x48.png'][style*='width: 32p'],
+[src$='pmd-24x24.png'][style*='width: 32p'],
+[src$='pmd-48x48.png'][style*='width: 32p'],
+[src$='tasks-24x24.png'][style*='width: 32p'],
+[src$='tasks-48x48.png'][style*='width: 32p'],
+[src$='logov3.png'][style*='width: 32p'],
+.icon-new-package[width="32"],
+[src$='new-package.png'][width="32"],
+.icon-user[width="32"],
+[src$='user.png'][width="32"],
+.icon-notepad[width="32"],
+[src$='notepad.png'][width="32"],
+.icon-setting[width="32"],
+[src$='setting.png'][width="32"],
+.icon-gear2[width="32"],
+[src$='gear2.png'][width="32"],
+.icon-up[width="32"],
+.icon-edit-delete[width="32"],
+.icon-fingerprint[width="32"],
+[src$='fingerprint.png'][width="32"],
+.icon-graph[width="32"],
+[src$='graph.png'][width="32"],
+.icon-collapse[width="32"],
+.icon-expand[width="32"],
+.icon-help[width="32"],
+[src$='help.png'][width="32"],
+.icon-secure[width="32"],
+.icon-lock[width="32"],
+[src$='secure.png'][width="32"],
+.icon-plugin[width="32"],
+[src$='plugin.png'][width="32"],
+.icon-system-log-out[width="32"],
+[src$='system-log-out.png'][width="32"],
+.icon-refresh[width="32"],
+[src$='refresh.png'][width="32"],
+.icon-computer[width="32"],
+[src$='computer.png'][width="32"],
+.icon-computer-x[width="32"],
+.icon-new-computer[width="32"],
+.icon-clipboard[width="32"],
+[src$='clipboard.png'][width="32"],
+.icon-monitor[width="32"],
+[src$='monitor.png'][width="32"],
+.icon-terminal[width="32"],
+[src$='terminal.png'][width="32"],
+.icon-network[width="32"],
+[src$='network.png'][width="32"],
+.icon-document[width="32"],
+.icon-text[width="32"],
+.icon-folder[width="32"],
+[src$='folder.png'][width="32"],
+[src$='/directory16.png'][width="32"],
+.icon-clock[width="32"],
+.icon-clock-anime[width="32"],
+[src$='clock.png'][width="32"],
+.icon-folder-delete[width="32"],
+[src$='edit-delete.png'][width="32"],
+.icon-previous[width="32"],
+.icon-next[width="32"],
+.icon-save[width="32"],
+[src$='/save.png'][width="32"],
+.icon-package[width="32"],
+[src$='package.gif'][width="32"],
+.icon-search[width="32"],
+[src$='search.png'][width="32"],
+.icon-stop[width="32"],
+[src$='/move.png'][width="32"],
+[src$='/atom.gif'][width="32"],
+[src$='credentials.png'][width="32"],
+[src$='confighistory.png'][width="32"],
+[src$='domain.png'][width="32"],
+#description-link img[width="32"],
+.icon-gear[width="32"],
+[src$='gear.png'][width="32"],
+.icon-go-next[width="32"],
+[src$='diskusage48.png'][width="32"],
+[src$='findbugs-24x24.png'][width="32"],
+[src$='findbugs-48x48.png'][width="32"],
+[src$='checkstyle-24x24.png'][width="32"],
+[src$='checkstyle-48x48.png'][width="32"],
+[src$='analysis-24x24.png'][width="32"],
+[src$='analysis-48x48.png'][width="32"],
+[src$='go-24x24.png'][width="32"],
+[src$='go-48x48.png'][width="32"],
+[src$='idea-24x24.png'][width="32"],
+[src$='idea-48x48.png'][width="32"],
+[src$='java-24x24.png'][width="32"],
+[src$='java-48x48.png'][width="32"],
+[src$='resharper-24x24.png'][width="32"],
+[src$='resharper-48x48.png'][width="32"],
+[src$='scala-24x24.png'][width="32"],
+[src$='scala-48x48.png'][width="32"],
+[src$='warnings-24x24.png'][width="32"],
+[src$='warnings-48x48.png'][width="32"],
+[src$='dry-24x24.png'][width="32"],
+[src$='dry-48x48.png'][width="32"],
+[src$='pmd-24x24.png'][width="32"],
+[src$='pmd-48x48.png'][width="32"],
+[src$='tasks-24x24.png'][width="32"],
+[src$='tasks-48x48.png'][width="32"],
+[src$='logov3.png'][width="32"] {
+  padding-left: 43.199999999999996px !important;
+  padding-top: 43.199999999999996px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 43.199999999999996px 43.199999999999996px !important;
+  -webkit-mask-size: 43.199999999999996px 43.199999999999996px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+}
+.icon-new-package.icon-md,
+[src$='new-package.png'].icon-md,
+.icon-user.icon-md,
+[src$='user.png'].icon-md,
+.icon-notepad.icon-md,
+[src$='notepad.png'].icon-md,
+.icon-setting.icon-md,
+[src$='setting.png'].icon-md,
+.icon-gear2.icon-md,
+[src$='gear2.png'].icon-md,
+.icon-up.icon-md,
+.icon-edit-delete.icon-md,
+.icon-fingerprint.icon-md,
+[src$='fingerprint.png'].icon-md,
+.icon-graph.icon-md,
+[src$='graph.png'].icon-md,
+.icon-collapse.icon-md,
+.icon-expand.icon-md,
+.icon-help.icon-md,
+[src$='help.png'].icon-md,
+.icon-secure.icon-md,
+.icon-lock.icon-md,
+[src$='secure.png'].icon-md,
+.icon-plugin.icon-md,
+[src$='plugin.png'].icon-md,
+.icon-system-log-out.icon-md,
+[src$='system-log-out.png'].icon-md,
+.icon-refresh.icon-md,
+[src$='refresh.png'].icon-md,
+.icon-computer.icon-md,
+[src$='computer.png'].icon-md,
+.icon-computer-x.icon-md,
+.icon-new-computer.icon-md,
+.icon-clipboard.icon-md,
+[src$='clipboard.png'].icon-md,
+.icon-monitor.icon-md,
+[src$='monitor.png'].icon-md,
+.icon-terminal.icon-md,
+[src$='terminal.png'].icon-md,
+.icon-network.icon-md,
+[src$='network.png'].icon-md,
+.icon-document.icon-md,
+.icon-text.icon-md,
+.icon-folder.icon-md,
+[src$='folder.png'].icon-md,
+[src$='/directory16.png'].icon-md,
+.icon-clock.icon-md,
+.icon-clock-anime.icon-md,
+[src$='clock.png'].icon-md,
+.icon-folder-delete.icon-md,
+[src$='edit-delete.png'].icon-md,
+.icon-previous.icon-md,
+.icon-next.icon-md,
+.icon-save.icon-md,
+[src$='/save.png'].icon-md,
+.icon-package.icon-md,
+[src$='package.gif'].icon-md,
+.icon-search.icon-md,
+[src$='search.png'].icon-md,
+.icon-stop.icon-md,
+[src$='/move.png'].icon-md,
+[src$='/atom.gif'].icon-md,
+[src$='credentials.png'].icon-md,
+[src$='confighistory.png'].icon-md,
+[src$='domain.png'].icon-md,
+#description-link img.icon-md,
+.icon-gear.icon-md,
+[src$='gear.png'].icon-md,
+.icon-go-next.icon-md,
+[src$='diskusage48.png'].icon-md,
+[src$='findbugs-24x24.png'].icon-md,
+[src$='findbugs-48x48.png'].icon-md,
+[src$='checkstyle-24x24.png'].icon-md,
+[src$='checkstyle-48x48.png'].icon-md,
+[src$='analysis-24x24.png'].icon-md,
+[src$='analysis-48x48.png'].icon-md,
+[src$='go-24x24.png'].icon-md,
+[src$='go-48x48.png'].icon-md,
+[src$='idea-24x24.png'].icon-md,
+[src$='idea-48x48.png'].icon-md,
+[src$='java-24x24.png'].icon-md,
+[src$='java-48x48.png'].icon-md,
+[src$='resharper-24x24.png'].icon-md,
+[src$='resharper-48x48.png'].icon-md,
+[src$='scala-24x24.png'].icon-md,
+[src$='scala-48x48.png'].icon-md,
+[src$='warnings-24x24.png'].icon-md,
+[src$='warnings-48x48.png'].icon-md,
+[src$='dry-24x24.png'].icon-md,
+[src$='dry-48x48.png'].icon-md,
+[src$='pmd-24x24.png'].icon-md,
+[src$='pmd-48x48.png'].icon-md,
+[src$='tasks-24x24.png'].icon-md,
+[src$='tasks-48x48.png'].icon-md,
+[src$='logov3.png'].icon-md,
+.icon-new-package[src*='24x'],
+[src$='new-package.png'][src*='24x'],
+.icon-user[src*='24x'],
+[src$='user.png'][src*='24x'],
+.icon-notepad[src*='24x'],
+[src$='notepad.png'][src*='24x'],
+.icon-setting[src*='24x'],
+[src$='setting.png'][src*='24x'],
+.icon-gear2[src*='24x'],
+[src$='gear2.png'][src*='24x'],
+.icon-up[src*='24x'],
+.icon-edit-delete[src*='24x'],
+.icon-fingerprint[src*='24x'],
+[src$='fingerprint.png'][src*='24x'],
+.icon-graph[src*='24x'],
+[src$='graph.png'][src*='24x'],
+.icon-collapse[src*='24x'],
+.icon-expand[src*='24x'],
+.icon-help[src*='24x'],
+[src$='help.png'][src*='24x'],
+.icon-secure[src*='24x'],
+.icon-lock[src*='24x'],
+[src$='secure.png'][src*='24x'],
+.icon-plugin[src*='24x'],
+[src$='plugin.png'][src*='24x'],
+.icon-system-log-out[src*='24x'],
+[src$='system-log-out.png'][src*='24x'],
+.icon-refresh[src*='24x'],
+[src$='refresh.png'][src*='24x'],
+.icon-computer[src*='24x'],
+[src$='computer.png'][src*='24x'],
+.icon-computer-x[src*='24x'],
+.icon-new-computer[src*='24x'],
+.icon-clipboard[src*='24x'],
+[src$='clipboard.png'][src*='24x'],
+.icon-monitor[src*='24x'],
+[src$='monitor.png'][src*='24x'],
+.icon-terminal[src*='24x'],
+[src$='terminal.png'][src*='24x'],
+.icon-network[src*='24x'],
+[src$='network.png'][src*='24x'],
+.icon-document[src*='24x'],
+.icon-text[src*='24x'],
+.icon-folder[src*='24x'],
+[src$='folder.png'][src*='24x'],
+[src$='/directory16.png'][src*='24x'],
+.icon-clock[src*='24x'],
+.icon-clock-anime[src*='24x'],
+[src$='clock.png'][src*='24x'],
+.icon-folder-delete[src*='24x'],
+[src$='edit-delete.png'][src*='24x'],
+.icon-previous[src*='24x'],
+.icon-next[src*='24x'],
+.icon-save[src*='24x'],
+[src$='/save.png'][src*='24x'],
+.icon-package[src*='24x'],
+[src$='package.gif'][src*='24x'],
+.icon-search[src*='24x'],
+[src$='search.png'][src*='24x'],
+.icon-stop[src*='24x'],
+[src$='/move.png'][src*='24x'],
+[src$='/atom.gif'][src*='24x'],
+[src$='credentials.png'][src*='24x'],
+[src$='confighistory.png'][src*='24x'],
+[src$='domain.png'][src*='24x'],
+#description-link img[src*='24x'],
+.icon-gear[src*='24x'],
+[src$='gear.png'][src*='24x'],
+.icon-go-next[src*='24x'],
+[src$='diskusage48.png'][src*='24x'],
+[src$='findbugs-24x24.png'][src*='24x'],
+[src$='findbugs-48x48.png'][src*='24x'],
+[src$='checkstyle-24x24.png'][src*='24x'],
+[src$='checkstyle-48x48.png'][src*='24x'],
+[src$='analysis-24x24.png'][src*='24x'],
+[src$='analysis-48x48.png'][src*='24x'],
+[src$='go-24x24.png'][src*='24x'],
+[src$='go-48x48.png'][src*='24x'],
+[src$='idea-24x24.png'][src*='24x'],
+[src$='idea-48x48.png'][src*='24x'],
+[src$='java-24x24.png'][src*='24x'],
+[src$='java-48x48.png'][src*='24x'],
+[src$='resharper-24x24.png'][src*='24x'],
+[src$='resharper-48x48.png'][src*='24x'],
+[src$='scala-24x24.png'][src*='24x'],
+[src$='scala-48x48.png'][src*='24x'],
+[src$='warnings-24x24.png'][src*='24x'],
+[src$='warnings-48x48.png'][src*='24x'],
+[src$='dry-24x24.png'][src*='24x'],
+[src$='dry-48x48.png'][src*='24x'],
+[src$='pmd-24x24.png'][src*='24x'],
+[src$='pmd-48x48.png'][src*='24x'],
+[src$='tasks-24x24.png'][src*='24x'],
+[src$='tasks-48x48.png'][src*='24x'],
+[src$='logov3.png'][src*='24x'],
+.icon-new-package.icon24x24,
+[src$='new-package.png'].icon24x24,
+.icon-user.icon24x24,
+[src$='user.png'].icon24x24,
+.icon-notepad.icon24x24,
+[src$='notepad.png'].icon24x24,
+.icon-setting.icon24x24,
+[src$='setting.png'].icon24x24,
+.icon-gear2.icon24x24,
+[src$='gear2.png'].icon24x24,
+.icon-up.icon24x24,
+.icon-edit-delete.icon24x24,
+.icon-fingerprint.icon24x24,
+[src$='fingerprint.png'].icon24x24,
+.icon-graph.icon24x24,
+[src$='graph.png'].icon24x24,
+.icon-collapse.icon24x24,
+.icon-expand.icon24x24,
+.icon-help.icon24x24,
+[src$='help.png'].icon24x24,
+.icon-secure.icon24x24,
+.icon-lock.icon24x24,
+[src$='secure.png'].icon24x24,
+.icon-plugin.icon24x24,
+[src$='plugin.png'].icon24x24,
+.icon-system-log-out.icon24x24,
+[src$='system-log-out.png'].icon24x24,
+.icon-refresh.icon24x24,
+[src$='refresh.png'].icon24x24,
+.icon-computer.icon24x24,
+[src$='computer.png'].icon24x24,
+.icon-computer-x.icon24x24,
+.icon-new-computer.icon24x24,
+.icon-clipboard.icon24x24,
+[src$='clipboard.png'].icon24x24,
+.icon-monitor.icon24x24,
+[src$='monitor.png'].icon24x24,
+.icon-terminal.icon24x24,
+[src$='terminal.png'].icon24x24,
+.icon-network.icon24x24,
+[src$='network.png'].icon24x24,
+.icon-document.icon24x24,
+.icon-text.icon24x24,
+.icon-folder.icon24x24,
+[src$='folder.png'].icon24x24,
+[src$='/directory16.png'].icon24x24,
+.icon-clock.icon24x24,
+.icon-clock-anime.icon24x24,
+[src$='clock.png'].icon24x24,
+.icon-folder-delete.icon24x24,
+[src$='edit-delete.png'].icon24x24,
+.icon-previous.icon24x24,
+.icon-next.icon24x24,
+.icon-save.icon24x24,
+[src$='/save.png'].icon24x24,
+.icon-package.icon24x24,
+[src$='package.gif'].icon24x24,
+.icon-search.icon24x24,
+[src$='search.png'].icon24x24,
+.icon-stop.icon24x24,
+[src$='/move.png'].icon24x24,
+[src$='/atom.gif'].icon24x24,
+[src$='credentials.png'].icon24x24,
+[src$='confighistory.png'].icon24x24,
+[src$='domain.png'].icon24x24,
+#description-link img.icon24x24,
+.icon-gear.icon24x24,
+[src$='gear.png'].icon24x24,
+.icon-go-next.icon24x24,
+[src$='diskusage48.png'].icon24x24,
+[src$='findbugs-24x24.png'].icon24x24,
+[src$='findbugs-48x48.png'].icon24x24,
+[src$='checkstyle-24x24.png'].icon24x24,
+[src$='checkstyle-48x48.png'].icon24x24,
+[src$='analysis-24x24.png'].icon24x24,
+[src$='analysis-48x48.png'].icon24x24,
+[src$='go-24x24.png'].icon24x24,
+[src$='go-48x48.png'].icon24x24,
+[src$='idea-24x24.png'].icon24x24,
+[src$='idea-48x48.png'].icon24x24,
+[src$='java-24x24.png'].icon24x24,
+[src$='java-48x48.png'].icon24x24,
+[src$='resharper-24x24.png'].icon24x24,
+[src$='resharper-48x48.png'].icon24x24,
+[src$='scala-24x24.png'].icon24x24,
+[src$='scala-48x48.png'].icon24x24,
+[src$='warnings-24x24.png'].icon24x24,
+[src$='warnings-48x48.png'].icon24x24,
+[src$='dry-24x24.png'].icon24x24,
+[src$='dry-48x48.png'].icon24x24,
+[src$='pmd-24x24.png'].icon24x24,
+[src$='pmd-48x48.png'].icon24x24,
+[src$='tasks-24x24.png'].icon24x24,
+[src$='tasks-48x48.png'].icon24x24,
+[src$='logov3.png'].icon24x24,
+.icon-new-package[style*='width: 24p'],
+[src$='new-package.png'][style*='width: 24p'],
+.icon-user[style*='width: 24p'],
+[src$='user.png'][style*='width: 24p'],
+.icon-notepad[style*='width: 24p'],
+[src$='notepad.png'][style*='width: 24p'],
+.icon-setting[style*='width: 24p'],
+[src$='setting.png'][style*='width: 24p'],
+.icon-gear2[style*='width: 24p'],
+[src$='gear2.png'][style*='width: 24p'],
+.icon-up[style*='width: 24p'],
+.icon-edit-delete[style*='width: 24p'],
+.icon-fingerprint[style*='width: 24p'],
+[src$='fingerprint.png'][style*='width: 24p'],
+.icon-graph[style*='width: 24p'],
+[src$='graph.png'][style*='width: 24p'],
+.icon-collapse[style*='width: 24p'],
+.icon-expand[style*='width: 24p'],
+.icon-help[style*='width: 24p'],
+[src$='help.png'][style*='width: 24p'],
+.icon-secure[style*='width: 24p'],
+.icon-lock[style*='width: 24p'],
+[src$='secure.png'][style*='width: 24p'],
+.icon-plugin[style*='width: 24p'],
+[src$='plugin.png'][style*='width: 24p'],
+.icon-system-log-out[style*='width: 24p'],
+[src$='system-log-out.png'][style*='width: 24p'],
+.icon-refresh[style*='width: 24p'],
+[src$='refresh.png'][style*='width: 24p'],
+.icon-computer[style*='width: 24p'],
+[src$='computer.png'][style*='width: 24p'],
+.icon-computer-x[style*='width: 24p'],
+.icon-new-computer[style*='width: 24p'],
+.icon-clipboard[style*='width: 24p'],
+[src$='clipboard.png'][style*='width: 24p'],
+.icon-monitor[style*='width: 24p'],
+[src$='monitor.png'][style*='width: 24p'],
+.icon-terminal[style*='width: 24p'],
+[src$='terminal.png'][style*='width: 24p'],
+.icon-network[style*='width: 24p'],
+[src$='network.png'][style*='width: 24p'],
+.icon-document[style*='width: 24p'],
+.icon-text[style*='width: 24p'],
+.icon-folder[style*='width: 24p'],
+[src$='folder.png'][style*='width: 24p'],
+[src$='/directory16.png'][style*='width: 24p'],
+.icon-clock[style*='width: 24p'],
+.icon-clock-anime[style*='width: 24p'],
+[src$='clock.png'][style*='width: 24p'],
+.icon-folder-delete[style*='width: 24p'],
+[src$='edit-delete.png'][style*='width: 24p'],
+.icon-previous[style*='width: 24p'],
+.icon-next[style*='width: 24p'],
+.icon-save[style*='width: 24p'],
+[src$='/save.png'][style*='width: 24p'],
+.icon-package[style*='width: 24p'],
+[src$='package.gif'][style*='width: 24p'],
+.icon-search[style*='width: 24p'],
+[src$='search.png'][style*='width: 24p'],
+.icon-stop[style*='width: 24p'],
+[src$='/move.png'][style*='width: 24p'],
+[src$='/atom.gif'][style*='width: 24p'],
+[src$='credentials.png'][style*='width: 24p'],
+[src$='confighistory.png'][style*='width: 24p'],
+[src$='domain.png'][style*='width: 24p'],
+#description-link img[style*='width: 24p'],
+.icon-gear[style*='width: 24p'],
+[src$='gear.png'][style*='width: 24p'],
+.icon-go-next[style*='width: 24p'],
+[src$='diskusage48.png'][style*='width: 24p'],
+[src$='findbugs-24x24.png'][style*='width: 24p'],
+[src$='findbugs-48x48.png'][style*='width: 24p'],
+[src$='checkstyle-24x24.png'][style*='width: 24p'],
+[src$='checkstyle-48x48.png'][style*='width: 24p'],
+[src$='analysis-24x24.png'][style*='width: 24p'],
+[src$='analysis-48x48.png'][style*='width: 24p'],
+[src$='go-24x24.png'][style*='width: 24p'],
+[src$='go-48x48.png'][style*='width: 24p'],
+[src$='idea-24x24.png'][style*='width: 24p'],
+[src$='idea-48x48.png'][style*='width: 24p'],
+[src$='java-24x24.png'][style*='width: 24p'],
+[src$='java-48x48.png'][style*='width: 24p'],
+[src$='resharper-24x24.png'][style*='width: 24p'],
+[src$='resharper-48x48.png'][style*='width: 24p'],
+[src$='scala-24x24.png'][style*='width: 24p'],
+[src$='scala-48x48.png'][style*='width: 24p'],
+[src$='warnings-24x24.png'][style*='width: 24p'],
+[src$='warnings-48x48.png'][style*='width: 24p'],
+[src$='dry-24x24.png'][style*='width: 24p'],
+[src$='dry-48x48.png'][style*='width: 24p'],
+[src$='pmd-24x24.png'][style*='width: 24p'],
+[src$='pmd-48x48.png'][style*='width: 24p'],
+[src$='tasks-24x24.png'][style*='width: 24p'],
+[src$='tasks-48x48.png'][style*='width: 24p'],
+[src$='logov3.png'][style*='width: 24p'],
+.icon-new-package[width="24"],
+[src$='new-package.png'][width="24"],
+.icon-user[width="24"],
+[src$='user.png'][width="24"],
+.icon-notepad[width="24"],
+[src$='notepad.png'][width="24"],
+.icon-setting[width="24"],
+[src$='setting.png'][width="24"],
+.icon-gear2[width="24"],
+[src$='gear2.png'][width="24"],
+.icon-up[width="24"],
+.icon-edit-delete[width="24"],
+.icon-fingerprint[width="24"],
+[src$='fingerprint.png'][width="24"],
+.icon-graph[width="24"],
+[src$='graph.png'][width="24"],
+.icon-collapse[width="24"],
+.icon-expand[width="24"],
+.icon-help[width="24"],
+[src$='help.png'][width="24"],
+.icon-secure[width="24"],
+.icon-lock[width="24"],
+[src$='secure.png'][width="24"],
+.icon-plugin[width="24"],
+[src$='plugin.png'][width="24"],
+.icon-system-log-out[width="24"],
+[src$='system-log-out.png'][width="24"],
+.icon-refresh[width="24"],
+[src$='refresh.png'][width="24"],
+.icon-computer[width="24"],
+[src$='computer.png'][width="24"],
+.icon-computer-x[width="24"],
+.icon-new-computer[width="24"],
+.icon-clipboard[width="24"],
+[src$='clipboard.png'][width="24"],
+.icon-monitor[width="24"],
+[src$='monitor.png'][width="24"],
+.icon-terminal[width="24"],
+[src$='terminal.png'][width="24"],
+.icon-network[width="24"],
+[src$='network.png'][width="24"],
+.icon-document[width="24"],
+.icon-text[width="24"],
+.icon-folder[width="24"],
+[src$='folder.png'][width="24"],
+[src$='/directory16.png'][width="24"],
+.icon-clock[width="24"],
+.icon-clock-anime[width="24"],
+[src$='clock.png'][width="24"],
+.icon-folder-delete[width="24"],
+[src$='edit-delete.png'][width="24"],
+.icon-previous[width="24"],
+.icon-next[width="24"],
+.icon-save[width="24"],
+[src$='/save.png'][width="24"],
+.icon-package[width="24"],
+[src$='package.gif'][width="24"],
+.icon-search[width="24"],
+[src$='search.png'][width="24"],
+.icon-stop[width="24"],
+[src$='/move.png'][width="24"],
+[src$='/atom.gif'][width="24"],
+[src$='credentials.png'][width="24"],
+[src$='confighistory.png'][width="24"],
+[src$='domain.png'][width="24"],
+#description-link img[width="24"],
+.icon-gear[width="24"],
+[src$='gear.png'][width="24"],
+.icon-go-next[width="24"],
+[src$='diskusage48.png'][width="24"],
+[src$='findbugs-24x24.png'][width="24"],
+[src$='findbugs-48x48.png'][width="24"],
+[src$='checkstyle-24x24.png'][width="24"],
+[src$='checkstyle-48x48.png'][width="24"],
+[src$='analysis-24x24.png'][width="24"],
+[src$='analysis-48x48.png'][width="24"],
+[src$='go-24x24.png'][width="24"],
+[src$='go-48x48.png'][width="24"],
+[src$='idea-24x24.png'][width="24"],
+[src$='idea-48x48.png'][width="24"],
+[src$='java-24x24.png'][width="24"],
+[src$='java-48x48.png'][width="24"],
+[src$='resharper-24x24.png'][width="24"],
+[src$='resharper-48x48.png'][width="24"],
+[src$='scala-24x24.png'][width="24"],
+[src$='scala-48x48.png'][width="24"],
+[src$='warnings-24x24.png'][width="24"],
+[src$='warnings-48x48.png'][width="24"],
+[src$='dry-24x24.png'][width="24"],
+[src$='dry-48x48.png'][width="24"],
+[src$='pmd-24x24.png'][width="24"],
+[src$='pmd-48x48.png'][width="24"],
+[src$='tasks-24x24.png'][width="24"],
+[src$='tasks-48x48.png'][width="24"],
+[src$='logov3.png'][width="24"] {
+  padding-left: 28.799999999999997px !important;
+  padding-top: 28.799999999999997px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 28.799999999999997px 28.799999999999997px !important;
+  -webkit-mask-size: 28.799999999999997px 28.799999999999997px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+}
+.icon-new-package.icon-sm,
+[src$='new-package.png'].icon-sm,
+.icon-user.icon-sm,
+[src$='user.png'].icon-sm,
+.icon-notepad.icon-sm,
+[src$='notepad.png'].icon-sm,
+.icon-setting.icon-sm,
+[src$='setting.png'].icon-sm,
+.icon-gear2.icon-sm,
+[src$='gear2.png'].icon-sm,
+.icon-up.icon-sm,
+.icon-edit-delete.icon-sm,
+.icon-fingerprint.icon-sm,
+[src$='fingerprint.png'].icon-sm,
+.icon-graph.icon-sm,
+[src$='graph.png'].icon-sm,
+.icon-collapse.icon-sm,
+.icon-expand.icon-sm,
+.icon-help.icon-sm,
+[src$='help.png'].icon-sm,
+.icon-secure.icon-sm,
+.icon-lock.icon-sm,
+[src$='secure.png'].icon-sm,
+.icon-plugin.icon-sm,
+[src$='plugin.png'].icon-sm,
+.icon-system-log-out.icon-sm,
+[src$='system-log-out.png'].icon-sm,
+.icon-refresh.icon-sm,
+[src$='refresh.png'].icon-sm,
+.icon-computer.icon-sm,
+[src$='computer.png'].icon-sm,
+.icon-computer-x.icon-sm,
+.icon-new-computer.icon-sm,
+.icon-clipboard.icon-sm,
+[src$='clipboard.png'].icon-sm,
+.icon-monitor.icon-sm,
+[src$='monitor.png'].icon-sm,
+.icon-terminal.icon-sm,
+[src$='terminal.png'].icon-sm,
+.icon-network.icon-sm,
+[src$='network.png'].icon-sm,
+.icon-document.icon-sm,
+.icon-text.icon-sm,
+.icon-folder.icon-sm,
+[src$='folder.png'].icon-sm,
+[src$='/directory16.png'].icon-sm,
+.icon-clock.icon-sm,
+.icon-clock-anime.icon-sm,
+[src$='clock.png'].icon-sm,
+.icon-folder-delete.icon-sm,
+[src$='edit-delete.png'].icon-sm,
+.icon-previous.icon-sm,
+.icon-next.icon-sm,
+.icon-save.icon-sm,
+[src$='/save.png'].icon-sm,
+.icon-package.icon-sm,
+[src$='package.gif'].icon-sm,
+.icon-search.icon-sm,
+[src$='search.png'].icon-sm,
+.icon-stop.icon-sm,
+[src$='/move.png'].icon-sm,
+[src$='/atom.gif'].icon-sm,
+[src$='credentials.png'].icon-sm,
+[src$='confighistory.png'].icon-sm,
+[src$='domain.png'].icon-sm,
+#description-link img.icon-sm,
+.icon-gear.icon-sm,
+[src$='gear.png'].icon-sm,
+.icon-go-next.icon-sm,
+[src$='diskusage48.png'].icon-sm,
+[src$='findbugs-24x24.png'].icon-sm,
+[src$='findbugs-48x48.png'].icon-sm,
+[src$='checkstyle-24x24.png'].icon-sm,
+[src$='checkstyle-48x48.png'].icon-sm,
+[src$='analysis-24x24.png'].icon-sm,
+[src$='analysis-48x48.png'].icon-sm,
+[src$='go-24x24.png'].icon-sm,
+[src$='go-48x48.png'].icon-sm,
+[src$='idea-24x24.png'].icon-sm,
+[src$='idea-48x48.png'].icon-sm,
+[src$='java-24x24.png'].icon-sm,
+[src$='java-48x48.png'].icon-sm,
+[src$='resharper-24x24.png'].icon-sm,
+[src$='resharper-48x48.png'].icon-sm,
+[src$='scala-24x24.png'].icon-sm,
+[src$='scala-48x48.png'].icon-sm,
+[src$='warnings-24x24.png'].icon-sm,
+[src$='warnings-48x48.png'].icon-sm,
+[src$='dry-24x24.png'].icon-sm,
+[src$='dry-48x48.png'].icon-sm,
+[src$='pmd-24x24.png'].icon-sm,
+[src$='pmd-48x48.png'].icon-sm,
+[src$='tasks-24x24.png'].icon-sm,
+[src$='tasks-48x48.png'].icon-sm,
+[src$='logov3.png'].icon-sm,
+.icon-new-package[src*='16x'],
+[src$='new-package.png'][src*='16x'],
+.icon-user[src*='16x'],
+[src$='user.png'][src*='16x'],
+.icon-notepad[src*='16x'],
+[src$='notepad.png'][src*='16x'],
+.icon-setting[src*='16x'],
+[src$='setting.png'][src*='16x'],
+.icon-gear2[src*='16x'],
+[src$='gear2.png'][src*='16x'],
+.icon-up[src*='16x'],
+.icon-edit-delete[src*='16x'],
+.icon-fingerprint[src*='16x'],
+[src$='fingerprint.png'][src*='16x'],
+.icon-graph[src*='16x'],
+[src$='graph.png'][src*='16x'],
+.icon-collapse[src*='16x'],
+.icon-expand[src*='16x'],
+.icon-help[src*='16x'],
+[src$='help.png'][src*='16x'],
+.icon-secure[src*='16x'],
+.icon-lock[src*='16x'],
+[src$='secure.png'][src*='16x'],
+.icon-plugin[src*='16x'],
+[src$='plugin.png'][src*='16x'],
+.icon-system-log-out[src*='16x'],
+[src$='system-log-out.png'][src*='16x'],
+.icon-refresh[src*='16x'],
+[src$='refresh.png'][src*='16x'],
+.icon-computer[src*='16x'],
+[src$='computer.png'][src*='16x'],
+.icon-computer-x[src*='16x'],
+.icon-new-computer[src*='16x'],
+.icon-clipboard[src*='16x'],
+[src$='clipboard.png'][src*='16x'],
+.icon-monitor[src*='16x'],
+[src$='monitor.png'][src*='16x'],
+.icon-terminal[src*='16x'],
+[src$='terminal.png'][src*='16x'],
+.icon-network[src*='16x'],
+[src$='network.png'][src*='16x'],
+.icon-document[src*='16x'],
+.icon-text[src*='16x'],
+.icon-folder[src*='16x'],
+[src$='folder.png'][src*='16x'],
+[src$='/directory16.png'][src*='16x'],
+.icon-clock[src*='16x'],
+.icon-clock-anime[src*='16x'],
+[src$='clock.png'][src*='16x'],
+.icon-folder-delete[src*='16x'],
+[src$='edit-delete.png'][src*='16x'],
+.icon-previous[src*='16x'],
+.icon-next[src*='16x'],
+.icon-save[src*='16x'],
+[src$='/save.png'][src*='16x'],
+.icon-package[src*='16x'],
+[src$='package.gif'][src*='16x'],
+.icon-search[src*='16x'],
+[src$='search.png'][src*='16x'],
+.icon-stop[src*='16x'],
+[src$='/move.png'][src*='16x'],
+[src$='/atom.gif'][src*='16x'],
+[src$='credentials.png'][src*='16x'],
+[src$='confighistory.png'][src*='16x'],
+[src$='domain.png'][src*='16x'],
+#description-link img[src*='16x'],
+.icon-gear[src*='16x'],
+[src$='gear.png'][src*='16x'],
+.icon-go-next[src*='16x'],
+[src$='diskusage48.png'][src*='16x'],
+[src$='findbugs-24x24.png'][src*='16x'],
+[src$='findbugs-48x48.png'][src*='16x'],
+[src$='checkstyle-24x24.png'][src*='16x'],
+[src$='checkstyle-48x48.png'][src*='16x'],
+[src$='analysis-24x24.png'][src*='16x'],
+[src$='analysis-48x48.png'][src*='16x'],
+[src$='go-24x24.png'][src*='16x'],
+[src$='go-48x48.png'][src*='16x'],
+[src$='idea-24x24.png'][src*='16x'],
+[src$='idea-48x48.png'][src*='16x'],
+[src$='java-24x24.png'][src*='16x'],
+[src$='java-48x48.png'][src*='16x'],
+[src$='resharper-24x24.png'][src*='16x'],
+[src$='resharper-48x48.png'][src*='16x'],
+[src$='scala-24x24.png'][src*='16x'],
+[src$='scala-48x48.png'][src*='16x'],
+[src$='warnings-24x24.png'][src*='16x'],
+[src$='warnings-48x48.png'][src*='16x'],
+[src$='dry-24x24.png'][src*='16x'],
+[src$='dry-48x48.png'][src*='16x'],
+[src$='pmd-24x24.png'][src*='16x'],
+[src$='pmd-48x48.png'][src*='16x'],
+[src$='tasks-24x24.png'][src*='16x'],
+[src$='tasks-48x48.png'][src*='16x'],
+[src$='logov3.png'][src*='16x'],
+.icon-new-package.icon16x16,
+[src$='new-package.png'].icon16x16,
+.icon-user.icon16x16,
+[src$='user.png'].icon16x16,
+.icon-notepad.icon16x16,
+[src$='notepad.png'].icon16x16,
+.icon-setting.icon16x16,
+[src$='setting.png'].icon16x16,
+.icon-gear2.icon16x16,
+[src$='gear2.png'].icon16x16,
+.icon-up.icon16x16,
+.icon-edit-delete.icon16x16,
+.icon-fingerprint.icon16x16,
+[src$='fingerprint.png'].icon16x16,
+.icon-graph.icon16x16,
+[src$='graph.png'].icon16x16,
+.icon-collapse.icon16x16,
+.icon-expand.icon16x16,
+.icon-help.icon16x16,
+[src$='help.png'].icon16x16,
+.icon-secure.icon16x16,
+.icon-lock.icon16x16,
+[src$='secure.png'].icon16x16,
+.icon-plugin.icon16x16,
+[src$='plugin.png'].icon16x16,
+.icon-system-log-out.icon16x16,
+[src$='system-log-out.png'].icon16x16,
+.icon-refresh.icon16x16,
+[src$='refresh.png'].icon16x16,
+.icon-computer.icon16x16,
+[src$='computer.png'].icon16x16,
+.icon-computer-x.icon16x16,
+.icon-new-computer.icon16x16,
+.icon-clipboard.icon16x16,
+[src$='clipboard.png'].icon16x16,
+.icon-monitor.icon16x16,
+[src$='monitor.png'].icon16x16,
+.icon-terminal.icon16x16,
+[src$='terminal.png'].icon16x16,
+.icon-network.icon16x16,
+[src$='network.png'].icon16x16,
+.icon-document.icon16x16,
+.icon-text.icon16x16,
+.icon-folder.icon16x16,
+[src$='folder.png'].icon16x16,
+[src$='/directory16.png'].icon16x16,
+.icon-clock.icon16x16,
+.icon-clock-anime.icon16x16,
+[src$='clock.png'].icon16x16,
+.icon-folder-delete.icon16x16,
+[src$='edit-delete.png'].icon16x16,
+.icon-previous.icon16x16,
+.icon-next.icon16x16,
+.icon-save.icon16x16,
+[src$='/save.png'].icon16x16,
+.icon-package.icon16x16,
+[src$='package.gif'].icon16x16,
+.icon-search.icon16x16,
+[src$='search.png'].icon16x16,
+.icon-stop.icon16x16,
+[src$='/move.png'].icon16x16,
+[src$='/atom.gif'].icon16x16,
+[src$='credentials.png'].icon16x16,
+[src$='confighistory.png'].icon16x16,
+[src$='domain.png'].icon16x16,
+#description-link img.icon16x16,
+.icon-gear.icon16x16,
+[src$='gear.png'].icon16x16,
+.icon-go-next.icon16x16,
+[src$='diskusage48.png'].icon16x16,
+[src$='findbugs-24x24.png'].icon16x16,
+[src$='findbugs-48x48.png'].icon16x16,
+[src$='checkstyle-24x24.png'].icon16x16,
+[src$='checkstyle-48x48.png'].icon16x16,
+[src$='analysis-24x24.png'].icon16x16,
+[src$='analysis-48x48.png'].icon16x16,
+[src$='go-24x24.png'].icon16x16,
+[src$='go-48x48.png'].icon16x16,
+[src$='idea-24x24.png'].icon16x16,
+[src$='idea-48x48.png'].icon16x16,
+[src$='java-24x24.png'].icon16x16,
+[src$='java-48x48.png'].icon16x16,
+[src$='resharper-24x24.png'].icon16x16,
+[src$='resharper-48x48.png'].icon16x16,
+[src$='scala-24x24.png'].icon16x16,
+[src$='scala-48x48.png'].icon16x16,
+[src$='warnings-24x24.png'].icon16x16,
+[src$='warnings-48x48.png'].icon16x16,
+[src$='dry-24x24.png'].icon16x16,
+[src$='dry-48x48.png'].icon16x16,
+[src$='pmd-24x24.png'].icon16x16,
+[src$='pmd-48x48.png'].icon16x16,
+[src$='tasks-24x24.png'].icon16x16,
+[src$='tasks-48x48.png'].icon16x16,
+[src$='logov3.png'].icon16x16,
+.icon-new-package[style*='width: 16p'],
+[src$='new-package.png'][style*='width: 16p'],
+.icon-user[style*='width: 16p'],
+[src$='user.png'][style*='width: 16p'],
+.icon-notepad[style*='width: 16p'],
+[src$='notepad.png'][style*='width: 16p'],
+.icon-setting[style*='width: 16p'],
+[src$='setting.png'][style*='width: 16p'],
+.icon-gear2[style*='width: 16p'],
+[src$='gear2.png'][style*='width: 16p'],
+.icon-up[style*='width: 16p'],
+.icon-edit-delete[style*='width: 16p'],
+.icon-fingerprint[style*='width: 16p'],
+[src$='fingerprint.png'][style*='width: 16p'],
+.icon-graph[style*='width: 16p'],
+[src$='graph.png'][style*='width: 16p'],
+.icon-collapse[style*='width: 16p'],
+.icon-expand[style*='width: 16p'],
+.icon-help[style*='width: 16p'],
+[src$='help.png'][style*='width: 16p'],
+.icon-secure[style*='width: 16p'],
+.icon-lock[style*='width: 16p'],
+[src$='secure.png'][style*='width: 16p'],
+.icon-plugin[style*='width: 16p'],
+[src$='plugin.png'][style*='width: 16p'],
+.icon-system-log-out[style*='width: 16p'],
+[src$='system-log-out.png'][style*='width: 16p'],
+.icon-refresh[style*='width: 16p'],
+[src$='refresh.png'][style*='width: 16p'],
+.icon-computer[style*='width: 16p'],
+[src$='computer.png'][style*='width: 16p'],
+.icon-computer-x[style*='width: 16p'],
+.icon-new-computer[style*='width: 16p'],
+.icon-clipboard[style*='width: 16p'],
+[src$='clipboard.png'][style*='width: 16p'],
+.icon-monitor[style*='width: 16p'],
+[src$='monitor.png'][style*='width: 16p'],
+.icon-terminal[style*='width: 16p'],
+[src$='terminal.png'][style*='width: 16p'],
+.icon-network[style*='width: 16p'],
+[src$='network.png'][style*='width: 16p'],
+.icon-document[style*='width: 16p'],
+.icon-text[style*='width: 16p'],
+.icon-folder[style*='width: 16p'],
+[src$='folder.png'][style*='width: 16p'],
+[src$='/directory16.png'][style*='width: 16p'],
+.icon-clock[style*='width: 16p'],
+.icon-clock-anime[style*='width: 16p'],
+[src$='clock.png'][style*='width: 16p'],
+.icon-folder-delete[style*='width: 16p'],
+[src$='edit-delete.png'][style*='width: 16p'],
+.icon-previous[style*='width: 16p'],
+.icon-next[style*='width: 16p'],
+.icon-save[style*='width: 16p'],
+[src$='/save.png'][style*='width: 16p'],
+.icon-package[style*='width: 16p'],
+[src$='package.gif'][style*='width: 16p'],
+.icon-search[style*='width: 16p'],
+[src$='search.png'][style*='width: 16p'],
+.icon-stop[style*='width: 16p'],
+[src$='/move.png'][style*='width: 16p'],
+[src$='/atom.gif'][style*='width: 16p'],
+[src$='credentials.png'][style*='width: 16p'],
+[src$='confighistory.png'][style*='width: 16p'],
+[src$='domain.png'][style*='width: 16p'],
+#description-link img[style*='width: 16p'],
+.icon-gear[style*='width: 16p'],
+[src$='gear.png'][style*='width: 16p'],
+.icon-go-next[style*='width: 16p'],
+[src$='diskusage48.png'][style*='width: 16p'],
+[src$='findbugs-24x24.png'][style*='width: 16p'],
+[src$='findbugs-48x48.png'][style*='width: 16p'],
+[src$='checkstyle-24x24.png'][style*='width: 16p'],
+[src$='checkstyle-48x48.png'][style*='width: 16p'],
+[src$='analysis-24x24.png'][style*='width: 16p'],
+[src$='analysis-48x48.png'][style*='width: 16p'],
+[src$='go-24x24.png'][style*='width: 16p'],
+[src$='go-48x48.png'][style*='width: 16p'],
+[src$='idea-24x24.png'][style*='width: 16p'],
+[src$='idea-48x48.png'][style*='width: 16p'],
+[src$='java-24x24.png'][style*='width: 16p'],
+[src$='java-48x48.png'][style*='width: 16p'],
+[src$='resharper-24x24.png'][style*='width: 16p'],
+[src$='resharper-48x48.png'][style*='width: 16p'],
+[src$='scala-24x24.png'][style*='width: 16p'],
+[src$='scala-48x48.png'][style*='width: 16p'],
+[src$='warnings-24x24.png'][style*='width: 16p'],
+[src$='warnings-48x48.png'][style*='width: 16p'],
+[src$='dry-24x24.png'][style*='width: 16p'],
+[src$='dry-48x48.png'][style*='width: 16p'],
+[src$='pmd-24x24.png'][style*='width: 16p'],
+[src$='pmd-48x48.png'][style*='width: 16p'],
+[src$='tasks-24x24.png'][style*='width: 16p'],
+[src$='tasks-48x48.png'][style*='width: 16p'],
+[src$='logov3.png'][style*='width: 16p'],
+.icon-new-package[width="16"],
+[src$='new-package.png'][width="16"],
+.icon-user[width="16"],
+[src$='user.png'][width="16"],
+.icon-notepad[width="16"],
+[src$='notepad.png'][width="16"],
+.icon-setting[width="16"],
+[src$='setting.png'][width="16"],
+.icon-gear2[width="16"],
+[src$='gear2.png'][width="16"],
+.icon-up[width="16"],
+.icon-edit-delete[width="16"],
+.icon-fingerprint[width="16"],
+[src$='fingerprint.png'][width="16"],
+.icon-graph[width="16"],
+[src$='graph.png'][width="16"],
+.icon-collapse[width="16"],
+.icon-expand[width="16"],
+.icon-help[width="16"],
+[src$='help.png'][width="16"],
+.icon-secure[width="16"],
+.icon-lock[width="16"],
+[src$='secure.png'][width="16"],
+.icon-plugin[width="16"],
+[src$='plugin.png'][width="16"],
+.icon-system-log-out[width="16"],
+[src$='system-log-out.png'][width="16"],
+.icon-refresh[width="16"],
+[src$='refresh.png'][width="16"],
+.icon-computer[width="16"],
+[src$='computer.png'][width="16"],
+.icon-computer-x[width="16"],
+.icon-new-computer[width="16"],
+.icon-clipboard[width="16"],
+[src$='clipboard.png'][width="16"],
+.icon-monitor[width="16"],
+[src$='monitor.png'][width="16"],
+.icon-terminal[width="16"],
+[src$='terminal.png'][width="16"],
+.icon-network[width="16"],
+[src$='network.png'][width="16"],
+.icon-document[width="16"],
+.icon-text[width="16"],
+.icon-folder[width="16"],
+[src$='folder.png'][width="16"],
+[src$='/directory16.png'][width="16"],
+.icon-clock[width="16"],
+.icon-clock-anime[width="16"],
+[src$='clock.png'][width="16"],
+.icon-folder-delete[width="16"],
+[src$='edit-delete.png'][width="16"],
+.icon-previous[width="16"],
+.icon-next[width="16"],
+.icon-save[width="16"],
+[src$='/save.png'][width="16"],
+.icon-package[width="16"],
+[src$='package.gif'][width="16"],
+.icon-search[width="16"],
+[src$='search.png'][width="16"],
+.icon-stop[width="16"],
+[src$='/move.png'][width="16"],
+[src$='/atom.gif'][width="16"],
+[src$='credentials.png'][width="16"],
+[src$='confighistory.png'][width="16"],
+[src$='domain.png'][width="16"],
+#description-link img[width="16"],
+.icon-gear[width="16"],
+[src$='gear.png'][width="16"],
+.icon-go-next[width="16"],
+[src$='diskusage48.png'][width="16"],
+[src$='findbugs-24x24.png'][width="16"],
+[src$='findbugs-48x48.png'][width="16"],
+[src$='checkstyle-24x24.png'][width="16"],
+[src$='checkstyle-48x48.png'][width="16"],
+[src$='analysis-24x24.png'][width="16"],
+[src$='analysis-48x48.png'][width="16"],
+[src$='go-24x24.png'][width="16"],
+[src$='go-48x48.png'][width="16"],
+[src$='idea-24x24.png'][width="16"],
+[src$='idea-48x48.png'][width="16"],
+[src$='java-24x24.png'][width="16"],
+[src$='java-48x48.png'][width="16"],
+[src$='resharper-24x24.png'][width="16"],
+[src$='resharper-48x48.png'][width="16"],
+[src$='scala-24x24.png'][width="16"],
+[src$='scala-48x48.png'][width="16"],
+[src$='warnings-24x24.png'][width="16"],
+[src$='warnings-48x48.png'][width="16"],
+[src$='dry-24x24.png'][width="16"],
+[src$='dry-48x48.png'][width="16"],
+[src$='pmd-24x24.png'][width="16"],
+[src$='pmd-48x48.png'][width="16"],
+[src$='tasks-24x24.png'][width="16"],
+[src$='tasks-48x48.png'][width="16"],
+[src$='logov3.png'][width="16"] {
+  padding-left: 21.599999999999998px !important;
+  padding-top: 21.599999999999998px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 21.599999999999998px 21.599999999999998px !important;
+  -webkit-mask-size: 21.599999999999998px 21.599999999999998px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+}
+#header .icon-help {
+  filter: brightness(10000);
+}
+[src*='www.gravatar.com'] {
+  height: auto !important;
+  width: auto !important;
+  padding: 0 !important;
+}
+.task-icon-link[href='/'] img {
+  padding: 36px 0 0 36px !important;
+  filter: brightness(10000);
+}
+.icon-pipeine-multibranch-project,
+[src$='pipelinemultibranchproject.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/source-repository-multiple.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/source-repository-multiple.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-device,
+[src$='device-24x24.png'],
+[src$='device-48x48.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/devices.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/devices.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-document,
+[src$='document.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/file-document.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/file-document.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-disk,
+[src$='disk.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/harddisk.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/harddisk.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-config,
+[src$='logo-head.svg'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/wrench.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/wrench.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-docker,
+[src$='docker.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/docker.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/docker.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-monitor,
+[src$='monitor.gif'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/clipboard-pulse.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/clipboard-pulse.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='pause.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/play-pause.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/play-pause.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-repo,
+[src$='redo.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/replay.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/replay.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-document-properties,
+[src$='document-properties.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/file-cog.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/file-cog.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-computer-user-offline,
+[src$="computer-user-offline.png"] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/laptop-off.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/laptop-off.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+div.icon {
+  height: 0% !important;
+  width: 0% !important;
+  content: none;
+  border: none !important;
+  left: 0px !important;
+  top: 7px !important;
+}
+.icon-freestyle-project,
+[src$='freestyleproject.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/file-plus.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/file-plus.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='matrixproject.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/file-table.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/file-table.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='externaljob.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/plus-network.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/plus-network.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-maven-moduleset,
+[src$='mavenmoduleset.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/owl.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/owl.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.div.default-icon {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/file-document-multiple.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/file-document-multiple.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='pipelinejob.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/pipe.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/pipe.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='claim.png'] {
+  padding-left: 28.799999999999997px !important;
+  padding-top: 28.799999999999997px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 28.799999999999997px 28.799999999999997px !important;
+  -webkit-mask-size: 28.799999999999997px 28.799999999999997px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/account-arrow-left.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/account-arrow-left.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='copy.png'] {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/content-copy.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/content-copy.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='restart-stage.png'] {
+  padding-left: 28.799999999999997px !important;
+  padding-top: 28.799999999999997px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 28.799999999999997px 28.799999999999997px !important;
+  -webkit-mask-size: 28.799999999999997px 28.799999999999997px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/restart.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/restart.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+[src$='test-results-analyzer/images/icon.png'] {
+  padding-left: 28.799999999999997px !important;
+  padding-top: 28.799999999999997px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 28.799999999999997px 28.799999999999997px !important;
+  -webkit-mask-size: 28.799999999999997px 28.799999999999997px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/clipboard-check.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/clipboard-check.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-orange-square,
+[src$='orange-square.png'],
+[src$='orange-square.svg'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/comment-arrow-right.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/comment-arrow-right.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-hourglass,
+[src$='hourglass.png'],
+[src$='hourglass.svg'],
+[src$='hourglass.gif'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/materil-theme/resources/images/timer-sand.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/materil-theme/resources/images/timer-sand.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-credentials-credentials,
+[src$='credential.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/key.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/key.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-credentials-userpass,
+[src$='userpass.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/account-key.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/account-key.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-ssh-credentials-ssh-key,
+[src$='ssh-key.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/ssh.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/ssh.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-credentials-system-store,
+[src$='system-store.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/shield-lock.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/shield-lock.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-credentials-credential,
+[src$='new-credential.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/form-textbox-password.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/form-textbox-password.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-credentials-certificate,
+[src$='certificate.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/certificate.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/certificate.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.icon-attribute,
+[src$='attribute.png'] {
+  display: inline !important;
+  background-color: #9e9e9e !important;
+  mask-image: url('../plugin/material-theme/resources/images/tag-text.svg') !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-image: url('../plugin/material-theme/resources/images/tag-text.svg') !important;
+  -webkit-mask-repeat: no-repeat;
+}
+.div.default-icon.icon-xlg,
+.icon-attribute.icon-xlg,
+[src$='attribute.png'].icon-xlg,
+.icon-computer-user-offline.icon-xlg,
+[src$="computer-user-offline.png"].icon-xlg,
+.icon-config.icon-xlg,
+[src$='logo-head.svg'].icon-xlg,
+[src$='matrixproject.png'].icon-xlg,
+[src$='copy.png'].icon-xlg,
+.icon-credentials-credentials.icon-xlg,
+[src$='credential.png'].icon-xlg,
+.icon-credentials-userpass.icon-xlg,
+[src$='userpass.png'].icon-xlg,
+.icon-credentials-system-store.icon-xlg,
+[src$='system-store.png'].icon-xlg,
+.icon-credentials-credential.icon-xlg,
+[src$='new-credential.png'].icon-xlg,
+.icon-credentials-certificate.icon-xlg,
+[src$='certificate.png'].icon-xlg,
+.icon-device.icon-xlg,
+[src$='device-24x24.png'].icon-xlg,
+[src$='device-48x48.png'].icon-xlg,
+.icon-disk.icon-xlg,
+[src$='disk.png'].icon-xlg,
+.icon-docker.icon-xlg,
+[src$='docker.png'].icon-xlg,
+.icon-document.icon-xlg,
+[src$='document.png'].icon-xlg,
+.icon-document-properties.icon-xlg,
+[src$='document-properties.png'].icon-xlg,
+.icon-freestyle-project.icon-xlg,
+[src$='freestyleproject.png'].icon-xlg,
+.icon-hourglass.icon-xlg,
+[src$='hourglass.png'].icon-xlg,
+[src$='hourglass.svg'].icon-xlg,
+[src$='hourglass.gif'].icon-xlg,
+.icon-maven-moduleset.icon-xlg,
+[src$='mavenmoduleset.png'].icon-xlg,
+.icon-monitor.icon-xlg,
+[src$='monitor.gif'].icon-xlg,
+[src$='systemmonitor.png'].icon-xlg,
+.icon-orange-square.icon-xlg,
+[src$='orange-square.png'].icon-xlg,
+[src$='orange-square.svg'].icon-xlg,
+[src$='pause.png'].icon-xlg,
+[src$='48x48/pipelinejob.png'].icon-xlg,
+.icon-pipeine-multibranch-project.icon-xlg,
+[src$='pipelinemultibranchproject.png'].icon-xlg,
+[src$='pipelinejob.png'].icon-xlg,
+.icon-repo.icon-xlg,
+[src$='redo.png'].icon-xlg,
+.icon-ssh-credentials-ssh-key.icon-xlg,
+[src$='ssh-key.png'].icon-xlg,
+[src$='test-results-analyzer/images/icon.png'].icon-xlg,
+.div.default-icon[src*='48x'],
+.icon-attribute[src*='48x'],
+[src$='attribute.png'][src*='48x'],
+.icon-computer-user-offline[src*='48x'],
+[src$="computer-user-offline.png"][src*='48x'],
+.icon-config[src*='48x'],
+[src$='logo-head.svg'][src*='48x'],
+[src$='matrixproject.png'][src*='48x'],
+[src$='copy.png'][src*='48x'],
+.icon-credentials-credentials[src*='48x'],
+[src$='credential.png'][src*='48x'],
+.icon-credentials-userpass[src*='48x'],
+[src$='userpass.png'][src*='48x'],
+.icon-credentials-system-store[src*='48x'],
+[src$='system-store.png'][src*='48x'],
+.icon-credentials-credential[src*='48x'],
+[src$='new-credential.png'][src*='48x'],
+.icon-credentials-certificate[src*='48x'],
+[src$='certificate.png'][src*='48x'],
+.icon-device[src*='48x'],
+[src$='device-24x24.png'][src*='48x'],
+[src$='device-48x48.png'][src*='48x'],
+.icon-disk[src*='48x'],
+[src$='disk.png'][src*='48x'],
+.icon-docker[src*='48x'],
+[src$='docker.png'][src*='48x'],
+.icon-document[src*='48x'],
+[src$='document.png'][src*='48x'],
+.icon-document-properties[src*='48x'],
+[src$='document-properties.png'][src*='48x'],
+.icon-freestyle-project[src*='48x'],
+[src$='freestyleproject.png'][src*='48x'],
+.icon-hourglass[src*='48x'],
+[src$='hourglass.png'][src*='48x'],
+[src$='hourglass.svg'][src*='48x'],
+[src$='hourglass.gif'][src*='48x'],
+.icon-maven-moduleset[src*='48x'],
+[src$='mavenmoduleset.png'][src*='48x'],
+.icon-monitor[src*='48x'],
+[src$='monitor.gif'][src*='48x'],
+[src$='systemmonitor.png'][src*='48x'],
+.icon-orange-square[src*='48x'],
+[src$='orange-square.png'][src*='48x'],
+[src$='orange-square.svg'][src*='48x'],
+[src$='pause.png'][src*='48x'],
+[src$='48x48/pipelinejob.png'][src*='48x'],
+.icon-pipeine-multibranch-project[src*='48x'],
+[src$='pipelinemultibranchproject.png'][src*='48x'],
+[src$='pipelinejob.png'][src*='48x'],
+.icon-repo[src*='48x'],
+[src$='redo.png'][src*='48x'],
+.icon-ssh-credentials-ssh-key[src*='48x'],
+[src$='ssh-key.png'][src*='48x'],
+[src$='test-results-analyzer/images/icon.png'][src*='48x'],
+.div.default-icon.icon48x48,
+.icon-attribute.icon48x48,
+[src$='attribute.png'].icon48x48,
+.icon-computer-user-offline.icon48x48,
+[src$="computer-user-offline.png"].icon48x48,
+.icon-config.icon48x48,
+[src$='logo-head.svg'].icon48x48,
+[src$='matrixproject.png'].icon48x48,
+[src$='copy.png'].icon48x48,
+.icon-credentials-credentials.icon48x48,
+[src$='credential.png'].icon48x48,
+.icon-credentials-userpass.icon48x48,
+[src$='userpass.png'].icon48x48,
+.icon-credentials-system-store.icon48x48,
+[src$='system-store.png'].icon48x48,
+.icon-credentials-credential.icon48x48,
+[src$='new-credential.png'].icon48x48,
+.icon-credentials-certificate.icon48x48,
+[src$='certificate.png'].icon48x48,
+.icon-device.icon48x48,
+[src$='device-24x24.png'].icon48x48,
+[src$='device-48x48.png'].icon48x48,
+.icon-disk.icon48x48,
+[src$='disk.png'].icon48x48,
+.icon-docker.icon48x48,
+[src$='docker.png'].icon48x48,
+.icon-document.icon48x48,
+[src$='document.png'].icon48x48,
+.icon-document-properties.icon48x48,
+[src$='document-properties.png'].icon48x48,
+.icon-freestyle-project.icon48x48,
+[src$='freestyleproject.png'].icon48x48,
+.icon-hourglass.icon48x48,
+[src$='hourglass.png'].icon48x48,
+[src$='hourglass.svg'].icon48x48,
+[src$='hourglass.gif'].icon48x48,
+.icon-maven-moduleset.icon48x48,
+[src$='mavenmoduleset.png'].icon48x48,
+.icon-monitor.icon48x48,
+[src$='monitor.gif'].icon48x48,
+[src$='systemmonitor.png'].icon48x48,
+.icon-orange-square.icon48x48,
+[src$='orange-square.png'].icon48x48,
+[src$='orange-square.svg'].icon48x48,
+[src$='pause.png'].icon48x48,
+[src$='48x48/pipelinejob.png'].icon48x48,
+.icon-pipeine-multibranch-project.icon48x48,
+[src$='pipelinemultibranchproject.png'].icon48x48,
+[src$='pipelinejob.png'].icon48x48,
+.icon-repo.icon48x48,
+[src$='redo.png'].icon48x48,
+.icon-ssh-credentials-ssh-key.icon48x48,
+[src$='ssh-key.png'].icon48x48,
+[src$='test-results-analyzer/images/icon.png'].icon48x48 {
+  padding-left: 57.599999999999994px !important;
+  padding-top: 57.599999999999994px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 57.599999999999994px 57.599999999999994px !important;
+  -webkit-mask-size: 57.599999999999994px 57.599999999999994px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+}
+.div.default-icon.icon-lg,
+.icon-attribute.icon-lg,
+[src$='attribute.png'].icon-lg,
+.icon-computer-user-offline.icon-lg,
+[src$="computer-user-offline.png"].icon-lg,
+.icon-config.icon-lg,
+[src$='logo-head.svg'].icon-lg,
+[src$='matrixproject.png'].icon-lg,
+[src$='copy.png'].icon-lg,
+.icon-credentials-credentials.icon-lg,
+[src$='credential.png'].icon-lg,
+.icon-credentials-userpass.icon-lg,
+[src$='userpass.png'].icon-lg,
+.icon-credentials-system-store.icon-lg,
+[src$='system-store.png'].icon-lg,
+.icon-credentials-credential.icon-lg,
+[src$='new-credential.png'].icon-lg,
+.icon-credentials-certificate.icon-lg,
+[src$='certificate.png'].icon-lg,
+.icon-device.icon-lg,
+[src$='device-24x24.png'].icon-lg,
+[src$='device-48x48.png'].icon-lg,
+.icon-disk.icon-lg,
+[src$='disk.png'].icon-lg,
+.icon-docker.icon-lg,
+[src$='docker.png'].icon-lg,
+.icon-document.icon-lg,
+[src$='document.png'].icon-lg,
+.icon-document-properties.icon-lg,
+[src$='document-properties.png'].icon-lg,
+.icon-freestyle-project.icon-lg,
+[src$='freestyleproject.png'].icon-lg,
+.icon-hourglass.icon-lg,
+[src$='hourglass.png'].icon-lg,
+[src$='hourglass.svg'].icon-lg,
+[src$='hourglass.gif'].icon-lg,
+.icon-maven-moduleset.icon-lg,
+[src$='mavenmoduleset.png'].icon-lg,
+.icon-monitor.icon-lg,
+[src$='monitor.gif'].icon-lg,
+[src$='systemmonitor.png'].icon-lg,
+.icon-orange-square.icon-lg,
+[src$='orange-square.png'].icon-lg,
+[src$='orange-square.svg'].icon-lg,
+[src$='pause.png'].icon-lg,
+[src$='48x48/pipelinejob.png'].icon-lg,
+.icon-pipeine-multibranch-project.icon-lg,
+[src$='pipelinemultibranchproject.png'].icon-lg,
+[src$='pipelinejob.png'].icon-lg,
+.icon-repo.icon-lg,
+[src$='redo.png'].icon-lg,
+.icon-ssh-credentials-ssh-key.icon-lg,
+[src$='ssh-key.png'].icon-lg,
+[src$='test-results-analyzer/images/icon.png'].icon-lg,
+.div.default-icon[src*='32x'],
+.icon-attribute[src*='32x'],
+[src$='attribute.png'][src*='32x'],
+.icon-computer-user-offline[src*='32x'],
+[src$="computer-user-offline.png"][src*='32x'],
+.icon-config[src*='32x'],
+[src$='logo-head.svg'][src*='32x'],
+[src$='matrixproject.png'][src*='32x'],
+[src$='copy.png'][src*='32x'],
+.icon-credentials-credentials[src*='32x'],
+[src$='credential.png'][src*='32x'],
+.icon-credentials-userpass[src*='32x'],
+[src$='userpass.png'][src*='32x'],
+.icon-credentials-system-store[src*='32x'],
+[src$='system-store.png'][src*='32x'],
+.icon-credentials-credential[src*='32x'],
+[src$='new-credential.png'][src*='32x'],
+.icon-credentials-certificate[src*='32x'],
+[src$='certificate.png'][src*='32x'],
+.icon-device[src*='32x'],
+[src$='device-24x24.png'][src*='32x'],
+[src$='device-48x48.png'][src*='32x'],
+.icon-disk[src*='32x'],
+[src$='disk.png'][src*='32x'],
+.icon-docker[src*='32x'],
+[src$='docker.png'][src*='32x'],
+.icon-document[src*='32x'],
+[src$='document.png'][src*='32x'],
+.icon-document-properties[src*='32x'],
+[src$='document-properties.png'][src*='32x'],
+.icon-freestyle-project[src*='32x'],
+[src$='freestyleproject.png'][src*='32x'],
+.icon-hourglass[src*='32x'],
+[src$='hourglass.png'][src*='32x'],
+[src$='hourglass.svg'][src*='32x'],
+[src$='hourglass.gif'][src*='32x'],
+.icon-maven-moduleset[src*='32x'],
+[src$='mavenmoduleset.png'][src*='32x'],
+.icon-monitor[src*='32x'],
+[src$='monitor.gif'][src*='32x'],
+[src$='systemmonitor.png'][src*='32x'],
+.icon-orange-square[src*='32x'],
+[src$='orange-square.png'][src*='32x'],
+[src$='orange-square.svg'][src*='32x'],
+[src$='pause.png'][src*='32x'],
+[src$='48x48/pipelinejob.png'][src*='32x'],
+.icon-pipeine-multibranch-project[src*='32x'],
+[src$='pipelinemultibranchproject.png'][src*='32x'],
+[src$='pipelinejob.png'][src*='32x'],
+.icon-repo[src*='32x'],
+[src$='redo.png'][src*='32x'],
+.icon-ssh-credentials-ssh-key[src*='32x'],
+[src$='ssh-key.png'][src*='32x'],
+[src$='test-results-analyzer/images/icon.png'][src*='32x'],
+.div.default-icon.icon32x32,
+.icon-attribute.icon32x32,
+[src$='attribute.png'].icon32x32,
+.icon-computer-user-offline.icon32x32,
+[src$="computer-user-offline.png"].icon32x32,
+.icon-config.icon32x32,
+[src$='logo-head.svg'].icon32x32,
+[src$='matrixproject.png'].icon32x32,
+[src$='copy.png'].icon32x32,
+.icon-credentials-credentials.icon32x32,
+[src$='credential.png'].icon32x32,
+.icon-credentials-userpass.icon32x32,
+[src$='userpass.png'].icon32x32,
+.icon-credentials-system-store.icon32x32,
+[src$='system-store.png'].icon32x32,
+.icon-credentials-credential.icon32x32,
+[src$='new-credential.png'].icon32x32,
+.icon-credentials-certificate.icon32x32,
+[src$='certificate.png'].icon32x32,
+.icon-device.icon32x32,
+[src$='device-24x24.png'].icon32x32,
+[src$='device-48x48.png'].icon32x32,
+.icon-disk.icon32x32,
+[src$='disk.png'].icon32x32,
+.icon-docker.icon32x32,
+[src$='docker.png'].icon32x32,
+.icon-document.icon32x32,
+[src$='document.png'].icon32x32,
+.icon-document-properties.icon32x32,
+[src$='document-properties.png'].icon32x32,
+.icon-freestyle-project.icon32x32,
+[src$='freestyleproject.png'].icon32x32,
+.icon-hourglass.icon32x32,
+[src$='hourglass.png'].icon32x32,
+[src$='hourglass.svg'].icon32x32,
+[src$='hourglass.gif'].icon32x32,
+.icon-maven-moduleset.icon32x32,
+[src$='mavenmoduleset.png'].icon32x32,
+.icon-monitor.icon32x32,
+[src$='monitor.gif'].icon32x32,
+[src$='systemmonitor.png'].icon32x32,
+.icon-orange-square.icon32x32,
+[src$='orange-square.png'].icon32x32,
+[src$='orange-square.svg'].icon32x32,
+[src$='pause.png'].icon32x32,
+[src$='48x48/pipelinejob.png'].icon32x32,
+.icon-pipeine-multibranch-project.icon32x32,
+[src$='pipelinemultibranchproject.png'].icon32x32,
+[src$='pipelinejob.png'].icon32x32,
+.icon-repo.icon32x32,
+[src$='redo.png'].icon32x32,
+.icon-ssh-credentials-ssh-key.icon32x32,
+[src$='ssh-key.png'].icon32x32,
+[src$='test-results-analyzer/images/icon.png'].icon32x32,
+.div.default-icon[style*='width: 32p'],
+.icon-attribute[style*='width: 32p'],
+[src$='attribute.png'][style*='width: 32p'],
+.icon-computer-user-offline[style*='width: 32p'],
+[src$="computer-user-offline.png"][style*='width: 32p'],
+.icon-config[style*='width: 32p'],
+[src$='logo-head.svg'][style*='width: 32p'],
+[src$='matrixproject.png'][style*='width: 32p'],
+[src$='copy.png'][style*='width: 32p'],
+.icon-credentials-credentials[style*='width: 32p'],
+[src$='credential.png'][style*='width: 32p'],
+.icon-credentials-userpass[style*='width: 32p'],
+[src$='userpass.png'][style*='width: 32p'],
+.icon-credentials-system-store[style*='width: 32p'],
+[src$='system-store.png'][style*='width: 32p'],
+.icon-credentials-credential[style*='width: 32p'],
+[src$='new-credential.png'][style*='width: 32p'],
+.icon-credentials-certificate[style*='width: 32p'],
+[src$='certificate.png'][style*='width: 32p'],
+.icon-device[style*='width: 32p'],
+[src$='device-24x24.png'][style*='width: 32p'],
+[src$='device-48x48.png'][style*='width: 32p'],
+.icon-disk[style*='width: 32p'],
+[src$='disk.png'][style*='width: 32p'],
+.icon-docker[style*='width: 32p'],
+[src$='docker.png'][style*='width: 32p'],
+.icon-document[style*='width: 32p'],
+[src$='document.png'][style*='width: 32p'],
+.icon-document-properties[style*='width: 32p'],
+[src$='document-properties.png'][style*='width: 32p'],
+.icon-freestyle-project[style*='width: 32p'],
+[src$='freestyleproject.png'][style*='width: 32p'],
+.icon-hourglass[style*='width: 32p'],
+[src$='hourglass.png'][style*='width: 32p'],
+[src$='hourglass.svg'][style*='width: 32p'],
+[src$='hourglass.gif'][style*='width: 32p'],
+.icon-maven-moduleset[style*='width: 32p'],
+[src$='mavenmoduleset.png'][style*='width: 32p'],
+.icon-monitor[style*='width: 32p'],
+[src$='monitor.gif'][style*='width: 32p'],
+[src$='systemmonitor.png'][style*='width: 32p'],
+.icon-orange-square[style*='width: 32p'],
+[src$='orange-square.png'][style*='width: 32p'],
+[src$='orange-square.svg'][style*='width: 32p'],
+[src$='pause.png'][style*='width: 32p'],
+[src$='48x48/pipelinejob.png'][style*='width: 32p'],
+.icon-pipeine-multibranch-project[style*='width: 32p'],
+[src$='pipelinemultibranchproject.png'][style*='width: 32p'],
+[src$='pipelinejob.png'][style*='width: 32p'],
+.icon-repo[style*='width: 32p'],
+[src$='redo.png'][style*='width: 32p'],
+.icon-ssh-credentials-ssh-key[style*='width: 32p'],
+[src$='ssh-key.png'][style*='width: 32p'],
+[src$='test-results-analyzer/images/icon.png'][style*='width: 32p'],
+.div.default-icon[width="32"],
+.icon-attribute[width="32"],
+[src$='attribute.png'][width="32"],
+.icon-computer-user-offline[width="32"],
+[src$="computer-user-offline.png"][width="32"],
+.icon-config[width="32"],
+[src$='logo-head.svg'][width="32"],
+[src$='matrixproject.png'][width="32"],
+[src$='copy.png'][width="32"],
+.icon-credentials-credentials[width="32"],
+[src$='credential.png'][width="32"],
+.icon-credentials-userpass[width="32"],
+[src$='userpass.png'][width="32"],
+.icon-credentials-system-store[width="32"],
+[src$='system-store.png'][width="32"],
+.icon-credentials-credential[width="32"],
+[src$='new-credential.png'][width="32"],
+.icon-credentials-certificate[width="32"],
+[src$='certificate.png'][width="32"],
+.icon-device[width="32"],
+[src$='device-24x24.png'][width="32"],
+[src$='device-48x48.png'][width="32"],
+.icon-disk[width="32"],
+[src$='disk.png'][width="32"],
+.icon-docker[width="32"],
+[src$='docker.png'][width="32"],
+.icon-document[width="32"],
+[src$='document.png'][width="32"],
+.icon-document-properties[width="32"],
+[src$='document-properties.png'][width="32"],
+.icon-freestyle-project[width="32"],
+[src$='freestyleproject.png'][width="32"],
+.icon-hourglass[width="32"],
+[src$='hourglass.png'][width="32"],
+[src$='hourglass.svg'][width="32"],
+[src$='hourglass.gif'][width="32"],
+.icon-maven-moduleset[width="32"],
+[src$='mavenmoduleset.png'][width="32"],
+.icon-monitor[width="32"],
+[src$='monitor.gif'][width="32"],
+[src$='systemmonitor.png'][width="32"],
+.icon-orange-square[width="32"],
+[src$='orange-square.png'][width="32"],
+[src$='orange-square.svg'][width="32"],
+[src$='pause.png'][width="32"],
+[src$='48x48/pipelinejob.png'][width="32"],
+.icon-pipeine-multibranch-project[width="32"],
+[src$='pipelinemultibranchproject.png'][width="32"],
+[src$='pipelinejob.png'][width="32"],
+.icon-repo[width="32"],
+[src$='redo.png'][width="32"],
+.icon-ssh-credentials-ssh-key[width="32"],
+[src$='ssh-key.png'][width="32"],
+[src$='test-results-analyzer/images/icon.png'][width="32"] {
+  padding-left: 43.199999999999996px !important;
+  padding-top: 43.199999999999996px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 43.199999999999996px 43.199999999999996px !important;
+  -webkit-mask-size: 43.199999999999996px 43.199999999999996px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+}
+.div.default-icon.icon-md,
+.icon-attribute.icon-md,
+[src$='attribute.png'].icon-md,
+.icon-computer-user-offline.icon-md,
+[src$="computer-user-offline.png"].icon-md,
+.icon-config.icon-md,
+[src$='logo-head.svg'].icon-md,
+[src$='matrixproject.png'].icon-md,
+[src$='copy.png'].icon-md,
+.icon-credentials-credentials.icon-md,
+[src$='credential.png'].icon-md,
+.icon-credentials-userpass.icon-md,
+[src$='userpass.png'].icon-md,
+.icon-credentials-system-store.icon-md,
+[src$='system-store.png'].icon-md,
+.icon-credentials-credential.icon-md,
+[src$='new-credential.png'].icon-md,
+.icon-credentials-certificate.icon-md,
+[src$='certificate.png'].icon-md,
+.icon-device.icon-md,
+[src$='device-24x24.png'].icon-md,
+[src$='device-48x48.png'].icon-md,
+.icon-disk.icon-md,
+[src$='disk.png'].icon-md,
+.icon-docker.icon-md,
+[src$='docker.png'].icon-md,
+.icon-document.icon-md,
+[src$='document.png'].icon-md,
+.icon-document-properties.icon-md,
+[src$='document-properties.png'].icon-md,
+.icon-freestyle-project.icon-md,
+[src$='freestyleproject.png'].icon-md,
+.icon-hourglass.icon-md,
+[src$='hourglass.png'].icon-md,
+[src$='hourglass.svg'].icon-md,
+[src$='hourglass.gif'].icon-md,
+.icon-maven-moduleset.icon-md,
+[src$='mavenmoduleset.png'].icon-md,
+.icon-monitor.icon-md,
+[src$='monitor.gif'].icon-md,
+[src$='systemmonitor.png'].icon-md,
+.icon-orange-square.icon-md,
+[src$='orange-square.png'].icon-md,
+[src$='orange-square.svg'].icon-md,
+[src$='pause.png'].icon-md,
+[src$='48x48/pipelinejob.png'].icon-md,
+.icon-pipeine-multibranch-project.icon-md,
+[src$='pipelinemultibranchproject.png'].icon-md,
+[src$='pipelinejob.png'].icon-md,
+.icon-repo.icon-md,
+[src$='redo.png'].icon-md,
+.icon-ssh-credentials-ssh-key.icon-md,
+[src$='ssh-key.png'].icon-md,
+[src$='test-results-analyzer/images/icon.png'].icon-md,
+.div.default-icon[src*='24x'],
+.icon-attribute[src*='24x'],
+[src$='attribute.png'][src*='24x'],
+.icon-computer-user-offline[src*='24x'],
+[src$="computer-user-offline.png"][src*='24x'],
+.icon-config[src*='24x'],
+[src$='logo-head.svg'][src*='24x'],
+[src$='matrixproject.png'][src*='24x'],
+[src$='copy.png'][src*='24x'],
+.icon-credentials-credentials[src*='24x'],
+[src$='credential.png'][src*='24x'],
+.icon-credentials-userpass[src*='24x'],
+[src$='userpass.png'][src*='24x'],
+.icon-credentials-system-store[src*='24x'],
+[src$='system-store.png'][src*='24x'],
+.icon-credentials-credential[src*='24x'],
+[src$='new-credential.png'][src*='24x'],
+.icon-credentials-certificate[src*='24x'],
+[src$='certificate.png'][src*='24x'],
+.icon-device[src*='24x'],
+[src$='device-24x24.png'][src*='24x'],
+[src$='device-48x48.png'][src*='24x'],
+.icon-disk[src*='24x'],
+[src$='disk.png'][src*='24x'],
+.icon-docker[src*='24x'],
+[src$='docker.png'][src*='24x'],
+.icon-document[src*='24x'],
+[src$='document.png'][src*='24x'],
+.icon-document-properties[src*='24x'],
+[src$='document-properties.png'][src*='24x'],
+.icon-freestyle-project[src*='24x'],
+[src$='freestyleproject.png'][src*='24x'],
+.icon-hourglass[src*='24x'],
+[src$='hourglass.png'][src*='24x'],
+[src$='hourglass.svg'][src*='24x'],
+[src$='hourglass.gif'][src*='24x'],
+.icon-maven-moduleset[src*='24x'],
+[src$='mavenmoduleset.png'][src*='24x'],
+.icon-monitor[src*='24x'],
+[src$='monitor.gif'][src*='24x'],
+[src$='systemmonitor.png'][src*='24x'],
+.icon-orange-square[src*='24x'],
+[src$='orange-square.png'][src*='24x'],
+[src$='orange-square.svg'][src*='24x'],
+[src$='pause.png'][src*='24x'],
+[src$='48x48/pipelinejob.png'][src*='24x'],
+.icon-pipeine-multibranch-project[src*='24x'],
+[src$='pipelinemultibranchproject.png'][src*='24x'],
+[src$='pipelinejob.png'][src*='24x'],
+.icon-repo[src*='24x'],
+[src$='redo.png'][src*='24x'],
+.icon-ssh-credentials-ssh-key[src*='24x'],
+[src$='ssh-key.png'][src*='24x'],
+[src$='test-results-analyzer/images/icon.png'][src*='24x'],
+.div.default-icon.icon24x24,
+.icon-attribute.icon24x24,
+[src$='attribute.png'].icon24x24,
+.icon-computer-user-offline.icon24x24,
+[src$="computer-user-offline.png"].icon24x24,
+.icon-config.icon24x24,
+[src$='logo-head.svg'].icon24x24,
+[src$='matrixproject.png'].icon24x24,
+[src$='copy.png'].icon24x24,
+.icon-credentials-credentials.icon24x24,
+[src$='credential.png'].icon24x24,
+.icon-credentials-userpass.icon24x24,
+[src$='userpass.png'].icon24x24,
+.icon-credentials-system-store.icon24x24,
+[src$='system-store.png'].icon24x24,
+.icon-credentials-credential.icon24x24,
+[src$='new-credential.png'].icon24x24,
+.icon-credentials-certificate.icon24x24,
+[src$='certificate.png'].icon24x24,
+.icon-device.icon24x24,
+[src$='device-24x24.png'].icon24x24,
+[src$='device-48x48.png'].icon24x24,
+.icon-disk.icon24x24,
+[src$='disk.png'].icon24x24,
+.icon-docker.icon24x24,
+[src$='docker.png'].icon24x24,
+.icon-document.icon24x24,
+[src$='document.png'].icon24x24,
+.icon-document-properties.icon24x24,
+[src$='document-properties.png'].icon24x24,
+.icon-freestyle-project.icon24x24,
+[src$='freestyleproject.png'].icon24x24,
+.icon-hourglass.icon24x24,
+[src$='hourglass.png'].icon24x24,
+[src$='hourglass.svg'].icon24x24,
+[src$='hourglass.gif'].icon24x24,
+.icon-maven-moduleset.icon24x24,
+[src$='mavenmoduleset.png'].icon24x24,
+.icon-monitor.icon24x24,
+[src$='monitor.gif'].icon24x24,
+[src$='systemmonitor.png'].icon24x24,
+.icon-orange-square.icon24x24,
+[src$='orange-square.png'].icon24x24,
+[src$='orange-square.svg'].icon24x24,
+[src$='pause.png'].icon24x24,
+[src$='48x48/pipelinejob.png'].icon24x24,
+.icon-pipeine-multibranch-project.icon24x24,
+[src$='pipelinemultibranchproject.png'].icon24x24,
+[src$='pipelinejob.png'].icon24x24,
+.icon-repo.icon24x24,
+[src$='redo.png'].icon24x24,
+.icon-ssh-credentials-ssh-key.icon24x24,
+[src$='ssh-key.png'].icon24x24,
+[src$='test-results-analyzer/images/icon.png'].icon24x24,
+.div.default-icon[style*='width: 24p'],
+.icon-attribute[style*='width: 24p'],
+[src$='attribute.png'][style*='width: 24p'],
+.icon-computer-user-offline[style*='width: 24p'],
+[src$="computer-user-offline.png"][style*='width: 24p'],
+.icon-config[style*='width: 24p'],
+[src$='logo-head.svg'][style*='width: 24p'],
+[src$='matrixproject.png'][style*='width: 24p'],
+[src$='copy.png'][style*='width: 24p'],
+.icon-credentials-credentials[style*='width: 24p'],
+[src$='credential.png'][style*='width: 24p'],
+.icon-credentials-userpass[style*='width: 24p'],
+[src$='userpass.png'][style*='width: 24p'],
+.icon-credentials-system-store[style*='width: 24p'],
+[src$='system-store.png'][style*='width: 24p'],
+.icon-credentials-credential[style*='width: 24p'],
+[src$='new-credential.png'][style*='width: 24p'],
+.icon-credentials-certificate[style*='width: 24p'],
+[src$='certificate.png'][style*='width: 24p'],
+.icon-device[style*='width: 24p'],
+[src$='device-24x24.png'][style*='width: 24p'],
+[src$='device-48x48.png'][style*='width: 24p'],
+.icon-disk[style*='width: 24p'],
+[src$='disk.png'][style*='width: 24p'],
+.icon-docker[style*='width: 24p'],
+[src$='docker.png'][style*='width: 24p'],
+.icon-document[style*='width: 24p'],
+[src$='document.png'][style*='width: 24p'],
+.icon-document-properties[style*='width: 24p'],
+[src$='document-properties.png'][style*='width: 24p'],
+.icon-freestyle-project[style*='width: 24p'],
+[src$='freestyleproject.png'][style*='width: 24p'],
+.icon-hourglass[style*='width: 24p'],
+[src$='hourglass.png'][style*='width: 24p'],
+[src$='hourglass.svg'][style*='width: 24p'],
+[src$='hourglass.gif'][style*='width: 24p'],
+.icon-maven-moduleset[style*='width: 24p'],
+[src$='mavenmoduleset.png'][style*='width: 24p'],
+.icon-monitor[style*='width: 24p'],
+[src$='monitor.gif'][style*='width: 24p'],
+[src$='systemmonitor.png'][style*='width: 24p'],
+.icon-orange-square[style*='width: 24p'],
+[src$='orange-square.png'][style*='width: 24p'],
+[src$='orange-square.svg'][style*='width: 24p'],
+[src$='pause.png'][style*='width: 24p'],
+[src$='48x48/pipelinejob.png'][style*='width: 24p'],
+.icon-pipeine-multibranch-project[style*='width: 24p'],
+[src$='pipelinemultibranchproject.png'][style*='width: 24p'],
+[src$='pipelinejob.png'][style*='width: 24p'],
+.icon-repo[style*='width: 24p'],
+[src$='redo.png'][style*='width: 24p'],
+.icon-ssh-credentials-ssh-key[style*='width: 24p'],
+[src$='ssh-key.png'][style*='width: 24p'],
+[src$='test-results-analyzer/images/icon.png'][style*='width: 24p'],
+.div.default-icon[width="24"],
+.icon-attribute[width="24"],
+[src$='attribute.png'][width="24"],
+.icon-computer-user-offline[width="24"],
+[src$="computer-user-offline.png"][width="24"],
+.icon-config[width="24"],
+[src$='logo-head.svg'][width="24"],
+[src$='matrixproject.png'][width="24"],
+[src$='copy.png'][width="24"],
+.icon-credentials-credentials[width="24"],
+[src$='credential.png'][width="24"],
+.icon-credentials-userpass[width="24"],
+[src$='userpass.png'][width="24"],
+.icon-credentials-system-store[width="24"],
+[src$='system-store.png'][width="24"],
+.icon-credentials-credential[width="24"],
+[src$='new-credential.png'][width="24"],
+.icon-credentials-certificate[width="24"],
+[src$='certificate.png'][width="24"],
+.icon-device[width="24"],
+[src$='device-24x24.png'][width="24"],
+[src$='device-48x48.png'][width="24"],
+.icon-disk[width="24"],
+[src$='disk.png'][width="24"],
+.icon-docker[width="24"],
+[src$='docker.png'][width="24"],
+.icon-document[width="24"],
+[src$='document.png'][width="24"],
+.icon-document-properties[width="24"],
+[src$='document-properties.png'][width="24"],
+.icon-freestyle-project[width="24"],
+[src$='freestyleproject.png'][width="24"],
+.icon-hourglass[width="24"],
+[src$='hourglass.png'][width="24"],
+[src$='hourglass.svg'][width="24"],
+[src$='hourglass.gif'][width="24"],
+.icon-maven-moduleset[width="24"],
+[src$='mavenmoduleset.png'][width="24"],
+.icon-monitor[width="24"],
+[src$='monitor.gif'][width="24"],
+[src$='systemmonitor.png'][width="24"],
+.icon-orange-square[width="24"],
+[src$='orange-square.png'][width="24"],
+[src$='orange-square.svg'][width="24"],
+[src$='pause.png'][width="24"],
+[src$='48x48/pipelinejob.png'][width="24"],
+.icon-pipeine-multibranch-project[width="24"],
+[src$='pipelinemultibranchproject.png'][width="24"],
+[src$='pipelinejob.png'][width="24"],
+.icon-repo[width="24"],
+[src$='redo.png'][width="24"],
+.icon-ssh-credentials-ssh-key[width="24"],
+[src$='ssh-key.png'][width="24"],
+[src$='test-results-analyzer/images/icon.png'][width="24"] {
+  padding-left: 28.799999999999997px !important;
+  padding-top: 28.799999999999997px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 28.799999999999997px 28.799999999999997px !important;
+  -webkit-mask-size: 28.799999999999997px 28.799999999999997px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+}
+.div.default-icon.icon-sm,
+.icon-attribute.icon-sm,
+[src$='attribute.png'].icon-sm,
+.icon-computer-user-offline.icon-sm,
+[src$="computer-user-offline.png"].icon-sm,
+.icon-config.icon-sm,
+[src$='logo-head.svg'].icon-sm,
+[src$='matrixproject.png'].icon-sm,
+[src$='copy.png'].icon-sm,
+.icon-credentials-credentials.icon-sm,
+[src$='credential.png'].icon-sm,
+.icon-credentials-userpass.icon-sm,
+[src$='userpass.png'].icon-sm,
+.icon-credentials-system-store.icon-sm,
+[src$='system-store.png'].icon-sm,
+.icon-credentials-credential.icon-sm,
+[src$='new-credential.png'].icon-sm,
+.icon-credentials-certificate.icon-sm,
+[src$='certificate.png'].icon-sm,
+.icon-device.icon-sm,
+[src$='device-24x24.png'].icon-sm,
+[src$='device-48x48.png'].icon-sm,
+.icon-disk.icon-sm,
+[src$='disk.png'].icon-sm,
+.icon-docker.icon-sm,
+[src$='docker.png'].icon-sm,
+.icon-document.icon-sm,
+[src$='document.png'].icon-sm,
+.icon-document-properties.icon-sm,
+[src$='document-properties.png'].icon-sm,
+.icon-freestyle-project.icon-sm,
+[src$='freestyleproject.png'].icon-sm,
+.icon-hourglass.icon-sm,
+[src$='hourglass.png'].icon-sm,
+[src$='hourglass.svg'].icon-sm,
+[src$='hourglass.gif'].icon-sm,
+.icon-maven-moduleset.icon-sm,
+[src$='mavenmoduleset.png'].icon-sm,
+.icon-monitor.icon-sm,
+[src$='monitor.gif'].icon-sm,
+[src$='systemmonitor.png'].icon-sm,
+.icon-orange-square.icon-sm,
+[src$='orange-square.png'].icon-sm,
+[src$='orange-square.svg'].icon-sm,
+[src$='pause.png'].icon-sm,
+[src$='48x48/pipelinejob.png'].icon-sm,
+.icon-pipeine-multibranch-project.icon-sm,
+[src$='pipelinemultibranchproject.png'].icon-sm,
+[src$='pipelinejob.png'].icon-sm,
+.icon-repo.icon-sm,
+[src$='redo.png'].icon-sm,
+.icon-ssh-credentials-ssh-key.icon-sm,
+[src$='ssh-key.png'].icon-sm,
+[src$='test-results-analyzer/images/icon.png'].icon-sm,
+.div.default-icon[src*='16x'],
+.icon-attribute[src*='16x'],
+[src$='attribute.png'][src*='16x'],
+.icon-computer-user-offline[src*='16x'],
+[src$="computer-user-offline.png"][src*='16x'],
+.icon-config[src*='16x'],
+[src$='logo-head.svg'][src*='16x'],
+[src$='matrixproject.png'][src*='16x'],
+[src$='copy.png'][src*='16x'],
+.icon-credentials-credentials[src*='16x'],
+[src$='credential.png'][src*='16x'],
+.icon-credentials-userpass[src*='16x'],
+[src$='userpass.png'][src*='16x'],
+.icon-credentials-system-store[src*='16x'],
+[src$='system-store.png'][src*='16x'],
+.icon-credentials-credential[src*='16x'],
+[src$='new-credential.png'][src*='16x'],
+.icon-credentials-certificate[src*='16x'],
+[src$='certificate.png'][src*='16x'],
+.icon-device[src*='16x'],
+[src$='device-24x24.png'][src*='16x'],
+[src$='device-48x48.png'][src*='16x'],
+.icon-disk[src*='16x'],
+[src$='disk.png'][src*='16x'],
+.icon-docker[src*='16x'],
+[src$='docker.png'][src*='16x'],
+.icon-document[src*='16x'],
+[src$='document.png'][src*='16x'],
+.icon-document-properties[src*='16x'],
+[src$='document-properties.png'][src*='16x'],
+.icon-freestyle-project[src*='16x'],
+[src$='freestyleproject.png'][src*='16x'],
+.icon-hourglass[src*='16x'],
+[src$='hourglass.png'][src*='16x'],
+[src$='hourglass.svg'][src*='16x'],
+[src$='hourglass.gif'][src*='16x'],
+.icon-maven-moduleset[src*='16x'],
+[src$='mavenmoduleset.png'][src*='16x'],
+.icon-monitor[src*='16x'],
+[src$='monitor.gif'][src*='16x'],
+[src$='systemmonitor.png'][src*='16x'],
+.icon-orange-square[src*='16x'],
+[src$='orange-square.png'][src*='16x'],
+[src$='orange-square.svg'][src*='16x'],
+[src$='pause.png'][src*='16x'],
+[src$='48x48/pipelinejob.png'][src*='16x'],
+.icon-pipeine-multibranch-project[src*='16x'],
+[src$='pipelinemultibranchproject.png'][src*='16x'],
+[src$='pipelinejob.png'][src*='16x'],
+.icon-repo[src*='16x'],
+[src$='redo.png'][src*='16x'],
+.icon-ssh-credentials-ssh-key[src*='16x'],
+[src$='ssh-key.png'][src*='16x'],
+[src$='test-results-analyzer/images/icon.png'][src*='16x'],
+.div.default-icon.icon16x16,
+.icon-attribute.icon16x16,
+[src$='attribute.png'].icon16x16,
+.icon-computer-user-offline.icon16x16,
+[src$="computer-user-offline.png"].icon16x16,
+.icon-config.icon16x16,
+[src$='logo-head.svg'].icon16x16,
+[src$='matrixproject.png'].icon16x16,
+[src$='copy.png'].icon16x16,
+.icon-credentials-credentials.icon16x16,
+[src$='credential.png'].icon16x16,
+.icon-credentials-userpass.icon16x16,
+[src$='userpass.png'].icon16x16,
+.icon-credentials-system-store.icon16x16,
+[src$='system-store.png'].icon16x16,
+.icon-credentials-credential.icon16x16,
+[src$='new-credential.png'].icon16x16,
+.icon-credentials-certificate.icon16x16,
+[src$='certificate.png'].icon16x16,
+.icon-device.icon16x16,
+[src$='device-24x24.png'].icon16x16,
+[src$='device-48x48.png'].icon16x16,
+.icon-disk.icon16x16,
+[src$='disk.png'].icon16x16,
+.icon-docker.icon16x16,
+[src$='docker.png'].icon16x16,
+.icon-document.icon16x16,
+[src$='document.png'].icon16x16,
+.icon-document-properties.icon16x16,
+[src$='document-properties.png'].icon16x16,
+.icon-freestyle-project.icon16x16,
+[src$='freestyleproject.png'].icon16x16,
+.icon-hourglass.icon16x16,
+[src$='hourglass.png'].icon16x16,
+[src$='hourglass.svg'].icon16x16,
+[src$='hourglass.gif'].icon16x16,
+.icon-maven-moduleset.icon16x16,
+[src$='mavenmoduleset.png'].icon16x16,
+.icon-monitor.icon16x16,
+[src$='monitor.gif'].icon16x16,
+[src$='systemmonitor.png'].icon16x16,
+.icon-orange-square.icon16x16,
+[src$='orange-square.png'].icon16x16,
+[src$='orange-square.svg'].icon16x16,
+[src$='pause.png'].icon16x16,
+[src$='48x48/pipelinejob.png'].icon16x16,
+.icon-pipeine-multibranch-project.icon16x16,
+[src$='pipelinemultibranchproject.png'].icon16x16,
+[src$='pipelinejob.png'].icon16x16,
+.icon-repo.icon16x16,
+[src$='redo.png'].icon16x16,
+.icon-ssh-credentials-ssh-key.icon16x16,
+[src$='ssh-key.png'].icon16x16,
+[src$='test-results-analyzer/images/icon.png'].icon16x16,
+.div.default-icon[style*='width: 16p'],
+.icon-attribute[style*='width: 16p'],
+[src$='attribute.png'][style*='width: 16p'],
+.icon-computer-user-offline[style*='width: 16p'],
+[src$="computer-user-offline.png"][style*='width: 16p'],
+.icon-config[style*='width: 16p'],
+[src$='logo-head.svg'][style*='width: 16p'],
+[src$='matrixproject.png'][style*='width: 16p'],
+[src$='copy.png'][style*='width: 16p'],
+.icon-credentials-credentials[style*='width: 16p'],
+[src$='credential.png'][style*='width: 16p'],
+.icon-credentials-userpass[style*='width: 16p'],
+[src$='userpass.png'][style*='width: 16p'],
+.icon-credentials-system-store[style*='width: 16p'],
+[src$='system-store.png'][style*='width: 16p'],
+.icon-credentials-credential[style*='width: 16p'],
+[src$='new-credential.png'][style*='width: 16p'],
+.icon-credentials-certificate[style*='width: 16p'],
+[src$='certificate.png'][style*='width: 16p'],
+.icon-device[style*='width: 16p'],
+[src$='device-24x24.png'][style*='width: 16p'],
+[src$='device-48x48.png'][style*='width: 16p'],
+.icon-disk[style*='width: 16p'],
+[src$='disk.png'][style*='width: 16p'],
+.icon-docker[style*='width: 16p'],
+[src$='docker.png'][style*='width: 16p'],
+.icon-document[style*='width: 16p'],
+[src$='document.png'][style*='width: 16p'],
+.icon-document-properties[style*='width: 16p'],
+[src$='document-properties.png'][style*='width: 16p'],
+.icon-freestyle-project[style*='width: 16p'],
+[src$='freestyleproject.png'][style*='width: 16p'],
+.icon-hourglass[style*='width: 16p'],
+[src$='hourglass.png'][style*='width: 16p'],
+[src$='hourglass.svg'][style*='width: 16p'],
+[src$='hourglass.gif'][style*='width: 16p'],
+.icon-maven-moduleset[style*='width: 16p'],
+[src$='mavenmoduleset.png'][style*='width: 16p'],
+.icon-monitor[style*='width: 16p'],
+[src$='monitor.gif'][style*='width: 16p'],
+[src$='systemmonitor.png'][style*='width: 16p'],
+.icon-orange-square[style*='width: 16p'],
+[src$='orange-square.png'][style*='width: 16p'],
+[src$='orange-square.svg'][style*='width: 16p'],
+[src$='pause.png'][style*='width: 16p'],
+[src$='48x48/pipelinejob.png'][style*='width: 16p'],
+.icon-pipeine-multibranch-project[style*='width: 16p'],
+[src$='pipelinemultibranchproject.png'][style*='width: 16p'],
+[src$='pipelinejob.png'][style*='width: 16p'],
+.icon-repo[style*='width: 16p'],
+[src$='redo.png'][style*='width: 16p'],
+.icon-ssh-credentials-ssh-key[style*='width: 16p'],
+[src$='ssh-key.png'][style*='width: 16p'],
+[src$='test-results-analyzer/images/icon.png'][style*='width: 16p'],
+.div.default-icon[width="16"],
+.icon-attribute[width="16"],
+[src$='attribute.png'][width="16"],
+.icon-computer-user-offline[width="16"],
+[src$="computer-user-offline.png"][width="16"],
+.icon-config[width="16"],
+[src$='logo-head.svg'][width="16"],
+[src$='matrixproject.png'][width="16"],
+[src$='copy.png'][width="16"],
+.icon-credentials-credentials[width="16"],
+[src$='credential.png'][width="16"],
+.icon-credentials-userpass[width="16"],
+[src$='userpass.png'][width="16"],
+.icon-credentials-system-store[width="16"],
+[src$='system-store.png'][width="16"],
+.icon-credentials-credential[width="16"],
+[src$='new-credential.png'][width="16"],
+.icon-credentials-certificate[width="16"],
+[src$='certificate.png'][width="16"],
+.icon-device[width="16"],
+[src$='device-24x24.png'][width="16"],
+[src$='device-48x48.png'][width="16"],
+.icon-disk[width="16"],
+[src$='disk.png'][width="16"],
+.icon-docker[width="16"],
+[src$='docker.png'][width="16"],
+.icon-document[width="16"],
+[src$='document.png'][width="16"],
+.icon-document-properties[width="16"],
+[src$='document-properties.png'][width="16"],
+.icon-freestyle-project[width="16"],
+[src$='freestyleproject.png'][width="16"],
+.icon-hourglass[width="16"],
+[src$='hourglass.png'][width="16"],
+[src$='hourglass.svg'][width="16"],
+[src$='hourglass.gif'][width="16"],
+.icon-maven-moduleset[width="16"],
+[src$='mavenmoduleset.png'][width="16"],
+.icon-monitor[width="16"],
+[src$='monitor.gif'][width="16"],
+[src$='systemmonitor.png'][width="16"],
+.icon-orange-square[width="16"],
+[src$='orange-square.png'][width="16"],
+[src$='orange-square.svg'][width="16"],
+[src$='pause.png'][width="16"],
+[src$='48x48/pipelinejob.png'][width="16"],
+.icon-pipeine-multibranch-project[width="16"],
+[src$='pipelinemultibranchproject.png'][width="16"],
+[src$='pipelinejob.png'][width="16"],
+.icon-repo[width="16"],
+[src$='redo.png'][width="16"],
+.icon-ssh-credentials-ssh-key[width="16"],
+[src$='ssh-key.png'][width="16"],
+[src$='test-results-analyzer/images/icon.png'][width="16"] {
+  padding-left: 21.599999999999998px !important;
+  padding-top: 21.599999999999998px !important;
+  height: 0 !important;
+  width: 0 !important;
+  mask-size: 21.599999999999998px 21.599999999999998px !important;
+  -webkit-mask-size: 21.599999999999998px 21.599999999999998px !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+}

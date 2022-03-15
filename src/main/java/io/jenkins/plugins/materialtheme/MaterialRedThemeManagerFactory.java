@@ -8,27 +8,18 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-public class MaterialRedThemeManagerFactory extends ThemeManagerFactory {
+public class MaterialRedThemeManagerFactory extends AbstractMaterialTheme {
 
     public static final String MATERIAL_RED_CSS = "theme-red.css";
     public static final String MATERIAL_RED_SYMBOL = "material-red";
-    // Seems like this needs to be 'theme-<descriptor_symbol/theme_id>'
-    public static final String MATERIAL_RED_URL_NAME = "theme-material-red";
 
     @DataBoundConstructor
     public MaterialRedThemeManagerFactory() {
     }
 
-    @Override
-    public Theme getTheme() {
-        return Theme.builder()
-                .withCssUrl(getCssUrl())
-                .build();
-    }
-    
     @Extension
     @Symbol(MATERIAL_RED_SYMBOL)
-    public static class MaterialRedThemeManagerFactoryDescriptor extends ThemeManagerFactoryDescriptor {
+    public static class MaterialRedThemeManagerFactoryDescriptor extends AbstractMaterialThemeDescriptor {
 
         @NonNull
         @Override
@@ -46,10 +37,14 @@ public class MaterialRedThemeManagerFactory extends ThemeManagerFactory {
             return MATERIAL_RED_CSS;
         }
 
-        @NonNull
         @Override
-        public String getThemeId() {
-            return MATERIAL_RED_SYMBOL;
+        public String getThemeKey() {
+            return ID + "-red";
+        }
+
+        @Override
+        public boolean isNamespaced() {
+            return true;
         }
     }
 }

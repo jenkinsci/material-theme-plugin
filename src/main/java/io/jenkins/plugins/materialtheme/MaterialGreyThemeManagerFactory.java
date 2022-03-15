@@ -8,39 +8,39 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-public class MaterialIndigoThemeManagerFactory extends AbstractMaterialTheme {
+public class MaterialGreyThemeManagerFactory extends AbstractMaterialTheme {
 
-    public static final String MATERIAL_INDIGO_CSS = "theme-indigo.css";
-    public static final String MATERIAL_INDIGO_SYMBOL = "material-indigo";
+    public static final String MATERIAL_GREY_CSS = "theme-grey.css";
+    public static final String MATERIAL_GREY_SYMBOL = "material-grey";
 
     @DataBoundConstructor
-    public MaterialIndigoThemeManagerFactory() {
+    public MaterialGreyThemeManagerFactory() {
     }
 
 
     @Extension
-    @Symbol(MATERIAL_INDIGO_SYMBOL)
-    public static class MaterialIndigoThemeManagerFactoryDescriptor extends AbstractMaterialThemeDescriptor {
+    @Symbol(MATERIAL_GREY_SYMBOL)
+    public static class MaterialGreyThemeManagerFactoryDescriptor extends AbstractMaterialThemeDescriptor {
 
         @NonNull
         @Override
         public String getDisplayName() {
-            return "Material - Indigo";
+            return "Material - Light Blue";
         }
 
         @Override
         public ThemeManagerFactory getInstance() {
-            return new MaterialIndigoThemeManagerFactory();
+            return new MaterialGreyThemeManagerFactory();
         }
 
         @Override
         public String getThemeCssSuffix() {
-            return MATERIAL_INDIGO_CSS;
+            return MATERIAL_GREY_CSS;
         }
 
         @Override
         public String getThemeKey() {
-            return ID + "-indigo";
+            return ID + "-grey";
         }
     }
 }
