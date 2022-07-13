@@ -19,6 +19,14 @@ This should allow Jenkins administrators to easily switch themes and allow users
 
 [![Screenshot jenkins-material-red main](screenshots/indigo_main_small.png)](screenshots/indigo_main_large.png)
 
+'Grey':
+
+[![Screenshot jenkins-material-red main](screenshots/grey_main_small.png)](screenshots/grey_main_large.png)
+
+'Light Blue':
+
+[![Screenshot jenkins-material-red main](screenshots/light_blue_main_small.png)](screenshots/light_blue_main_large.png)
+
 ## Installation
 To install this theme search for 'Material theme' in your Jenkins update center.
 
@@ -31,7 +39,7 @@ Or with the [configuration-as-code](https://github.com/jenkinsci/configuration-a
 unclassified:
   themeManager:
     disableUserThemes: true
-    theme: "material-indigo" # or 'material-red'
+    theme: "material-indigo" # or 'material-red' or 'material-grey' or 'material-light-blue' 
 ```
 
 ## Running (development)
