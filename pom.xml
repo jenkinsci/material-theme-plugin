@@ -91,7 +91,7 @@
       <plugin>
         <groupId>ro.isdc.wro4j</groupId>
         <artifactId>wro4j-maven-plugin</artifactId>
-        <version>1.7.0</version>
+        <version>1.10.1</version>
         <configuration>
           <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
           <wroFile>${basedir}/src/main/config/wro.xml</wroFile>
