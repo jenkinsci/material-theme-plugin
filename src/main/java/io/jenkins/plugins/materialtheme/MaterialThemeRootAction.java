@@ -3,15 +3,13 @@ package io.jenkins.plugins.materialtheme;
 import hudson.Extension;
 import hudson.Plugin;
 import hudson.model.UnprotectedRootAction;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import javax.servlet.ServletException;
 import jenkins.model.Jenkins;
-import org.apache.commons.io.IOUtils;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
+
+import javax.servlet.ServletException;
+import java.io.IOException;
+import java.util.Arrays;
 
 import static io.jenkins.plugins.materialtheme.AbstractMaterialTheme.BASE_CSS;
 import static io.jenkins.plugins.materialtheme.AbstractMaterialTheme.CUSTOMISED_CSS;
@@ -19,7 +17,6 @@ import static io.jenkins.plugins.materialtheme.MaterialIndigoThemeManagerFactory
 import static io.jenkins.plugins.materialtheme.MaterialRedThemeManagerFactory.MATERIAL_RED_CSS;
 import static io.jenkins.plugins.materialtheme.MaterialGreyThemeManagerFactory.MATERIAL_GREY_CSS;
 import static io.jenkins.plugins.materialtheme.MaterialLightBlueThemeManagerFactory.MATERIAL_LIGHT_BLUE_CSS;
-import static java.util.Objects.requireNonNull;
 
 @Extension
 public class MaterialThemeRootAction implements UnprotectedRootAction {
