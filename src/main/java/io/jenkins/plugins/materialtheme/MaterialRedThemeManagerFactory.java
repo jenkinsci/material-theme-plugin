@@ -2,9 +2,7 @@ package io.jenkins.plugins.materialtheme;
 
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
-import io.jenkins.plugins.thememanager.Theme;
 import io.jenkins.plugins.thememanager.ThemeManagerFactory;
-import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
