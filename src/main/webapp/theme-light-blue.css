@@ -1,0 +1,4 @@
+[data-theme=material-light-blue], .app-theme-picker__picker[data-theme=material-light-blue] {
+    --material-primary: #4ac3f7;
+    --material-secondary: #3ca2cf;
+}

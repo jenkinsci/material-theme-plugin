@@ -1,0 +1,4 @@
+[data-theme=material-grey], .app-theme-picker__picker[data-theme=material-grey] {
+    --material-primary: #9E9E9E;
+    --material-secondary: #696666;
+}
