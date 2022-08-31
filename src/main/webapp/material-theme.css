@@ -76,7 +76,6 @@ this doesn't look great, but I think it's less bad than when it's left white. */
 [data-theme=material-red] a:visited, [data-theme=material-indigo] a:visited, [data-theme=material-grey] a:visited, [data-theme=material-light-blue] a:visited
 {
     text-decoration: none!important;
-    color: var(--material-primary);
 }
 
 [data-theme=material-red] .jenkins_ver:after, [data-theme=material-indigo] .jenkins_ver:after, [data-theme=material-grey] .jenkins_ver:after, [data-theme=material-light-blue] .jenkins_ver:after {
