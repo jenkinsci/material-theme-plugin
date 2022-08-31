@@ -17,7 +17,7 @@
     <gitHubRepo>jenkinsci/material-theme-plugin</gitHubRepo>
     <revision>0.4.1</revision>
     <changelist>-SNAPSHOT</changelist>
-    <jenkins.version>2.336</jenkins.version>
+    <jenkins.version>2.346.1</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
   </properties>
@@ -27,8 +27,8 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.332.x</artifactId>
-        <version>1155.v77b_fd92a_26fc</version>
+        <artifactId>bom-2.346.x</artifactId>
+        <version>1478.v81d3dc4f9a_43</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -39,9 +39,8 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>theme-manager</artifactId>
-      <version>1.0</version>
+      <version>1.4</version>
     </dependency>
-
     <dependency>
       <groupId>io.jenkins</groupId>
       <artifactId>configuration-as-code</artifactId>
