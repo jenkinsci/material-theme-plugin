@@ -101,6 +101,16 @@
           <contextFolder>${basedir}/src/main/webapp/</contextFolder>
           <ignoreMissingResources>true</ignoreMissingResources>
         </configuration>
+        <dependencies>
+          <!-- Hardcode to 7.1.7 to avoid thia issue
+          [ERROR] Failed to execute goal ro.isdc.wro4j:wro4j-maven-plugin:1.10.1:run (default) on project material-theme: Execution default of goal ro.isdc.wro4j:wro4j-maven-plugin:1.10.1:run failed: Plugin ro.isdc.wro4j:wro4j-maven-plugin:1.10.1 or one of its dependencies could not be resolved: Failed to collect dependencies for ro.isdc.wro4j:wro4j-maven-plugin:jar:1.10.1 (): Could not resolve version conflict among [ro.isdc.wro4j:wro4j-maven-plugin:jar:1.10.1 -> ro.isdc.wro4j:wro4j-extensions:jar:1.10.1 -> org.webjars.npm:jshint:jar:2.11.0 -> org.webjars.npm:minimatch:jar:[3.0.2,3.1), ro.isdc.wro4j:wro4j-maven-plugin:jar:1.10.1 -> ro.isdc.wro4j:wro4j-extensions:jar:1.10.1 -> org.webjars.npm:jshint:jar:2.11.0 -> org.webjars.npm:cli:jar:[1.0.0,1.1) -> org.webjars.npm:glob:jar:[7.1.1,8) -> org.webjars.npm:minimatch:jar:[3.1.1,4)] -> [Help 1]
+          -->
+          <dependency>
+              <groupId>org.webjars.npm</groupId>
+              <artifactId>glob</artifactId>
+              <version>7.1.7</version>
+          </dependency>
+        </dependencies>
         <executions>
           <execution>
             <goals>
