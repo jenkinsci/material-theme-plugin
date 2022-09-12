@@ -12,7 +12,7 @@
   <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
   <properties>
-    <revision>0.5.0</revision>
+    <revision>0.5.1</revision>
     <changelist>-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/material-theme-plugin</gitHubRepo>
     <jenkins.version>2.346.1</jenkins.version>
