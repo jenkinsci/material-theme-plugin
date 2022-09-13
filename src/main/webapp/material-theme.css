@@ -198,7 +198,7 @@ this doesn't look great, but I think it's less bad than when it's left white. */
 }
 
 [data-theme=material-red] .console-output, [data-theme=material-indigo] .console-output,
-[data-theme=material-red] .console-output *, [data-theme=material-indigo] .console-output *
+[data-theme=material-red] .console-output *, [data-theme=material-indigo] .console-output *,
 [data-theme=material-grey] .console-output, [data-theme=material-light-blue] .console-output,
 [data-theme=material-grey] .console-output *, [data-theme=material-light-blue] .console-output *
 {
@@ -209,7 +209,7 @@ this doesn't look great, but I think it's less bad than when it's left white. */
   cursor: text;
 }
 
-[data-theme=material-red] pre.console-output, [data-theme=material-indigo] pre.console-output
+[data-theme=material-red] pre.console-output, [data-theme=material-indigo] pre.console-output, [data-theme=material-grey] pre.console-output, [data-theme=material-light-blue] pre.console-output
 {
   color: #e9eded!important;
 }
