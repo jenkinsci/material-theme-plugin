@@ -7,7 +7,7 @@
 [![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/material-theme.svg?color=blue)](https://plugins.jenkins.io/material-theme)
 
 ## Description
-This is an attempt to port the Afonso F's Jenkins material theme (http://afonsof.com/jenkins-material-theme/) to use Theme Manager plugin (https://github.com/jenkinsci/theme-manager-plugin#configuring-the-plugin).
+This a port of Afonso F's Jenkins material theme (http://afonsof.com/jenkins-material-theme/) to use Theme Manager plugin (https://github.com/jenkinsci/theme-manager-plugin#configuring-the-plugin).
 This should allow Jenkins administrators to easily switch themes and allow users to select their own theme.
 
 ## Screenshots
