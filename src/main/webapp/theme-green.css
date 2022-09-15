@@ -1,0 +1,4 @@
+[data-theme=material-green], .app-theme-picker__picker[data-theme=material-green] {
+    --material-primary: #43A047;
+    --material-secondary: #65AA69;
+}
