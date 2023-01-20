@@ -15,7 +15,7 @@
     <revision>0.5.2</revision>
     <changelist>-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/material-theme-plugin</gitHubRepo>
-    <jenkins.version>2.361.1</jenkins.version>
+    <jenkins.version>2.361.4</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
   </properties>
