@@ -2,4 +2,4 @@
 unclassified:
   themeManager:
     disableUserThemes: true
-    theme: "material-green"
+    theme: "jenkins-bonita"

@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class AbstractMaterialTheme extends ThemeManagerFactory {
 
     public static final String BASE_CSS = "light-theme.css";
-    public static final String CUSTOMISED_CSS = "material-theme.css";
+    public static final String CUSTOMISED_CSS = "bonita-jenkins-theme.css";
 
     @Override
     public Theme getTheme() {

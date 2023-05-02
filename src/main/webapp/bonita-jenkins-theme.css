@@ -1,0 +1,212 @@
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-300.woff') format('woff'), /* Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-500.woff') format('woff'), /* Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-700.woff') format('woff'), /* Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-v30-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+  
+/* roboto-mono-300 - latin */
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-300.woff') format('woff'), /* Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-300.svg#RobotoMono') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-mono-regular - latin */
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-regular.svg#RobotoMono') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-mono-500 - latin */
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-500.woff') format('woff'), /* Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-500.svg#RobotoMono') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-mono-700 - latin */
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-700.woff') format('woff'), /* Modern Browsers */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-700.svg#RobotoMono') format('svg'); /* Legacy iOS */
+}
+
+[data-theme=jenkins-bonita], .app-theme-picker__picker[data-theme=jenkins-bonita]
+{
+    /* Font */
+    --font-family-sans: Roboto !important;
+
+    /* Header */
+    --header-bg-classic: var(--material-primary);
+    --header-link-bg-classic-hover: var(--material-secondary);
+    --header-link-bg-classic-active: var(--material-secondary);
+
+    /* links */
+    --link-color: var(--material-primary);
+    --link-color--hover: var(--material-secondary);
+    --link-color--active: var(--material-secondary);
+
+    /* Pane */
+    --pane-link-color: var(--material-primary);
+    --pane-link-color--visited: var(--material-primary);
+
+    /* Buttons */
+    --btn-primary-bg: var(--material-primary);
+    --btn-primary-bg-hover: var(--material-secondary);
+    --btn-primary-bg-active: var(--primary-active);
+    --btn-secondary-color: var(--material-primary);
+    --btn-secondary-bg: var(--btn-text-color);
+    --btn-secondary-border: var(--material-primary);
+    --btn-text-color: var(--white);
+    --btn-link-bg--hover: var(--very-light-grey);
+    --btn-link-bg--active: var(--light-grey);
+
+    /* Table */
+    --bigtable-header-bg: var(--light-grey);
+    --bigtable-header-border-color: var(--light-grey);
+    --bigtable-header-text-color: var(--dark-grey);
+    --bigtable-row-border-color: var(--light-grey);
+    /* Remove if you don't light the alternating coloured rows */
+    --even-row-color: var(--very-light-grey);
+    --table-striped-bg--hover: var(--very-light-grey);
+
+    /* Tab bar widget */
+    --tab-link-border-color: var(--light-grey);
+    --tab-link-text-color: var(--dark-grey);
+    --tab-link-checked-bg: var(--light-grey);
+    --tab-link-checked-text-color: var(--dark-grey);
+    --tab-link-bg--hover: var(--light-grey);
+    --tab-link-bg--active: var(--light-grey);
+    --tab-link-bg: var(--very-light-grey);
+}
+
+/* Manually change some header settings (these aren't available through theme.less */
+[data-theme=jenkins-bonita] #header
+{
+    height: 64px;
+    text-transform: uppercase;
+    padding: 12px 10px;
+}
+
+/* Change tab background so tabs don't float when there are multiple rows
+this doesn't look great, but I think it's less bad than when it's left white. */
+[data-theme=jenkins-bonita] .tabBarFrame
+{
+    position: relative;
+    background: var(--very-light-grey);
+}
+
+[data-theme=jenkins-bonita] .yui-button button
+{
+    text-transform: uppercase;
+}
+
+[data-theme=jenkins-bonita] a, [data-theme=jenkins-bonita] a:link, [data-theme=jenkins-bonita] a:hover, [data-theme=jenkins-bonita] a:visited
+{
+    text-decoration: none!important;
+}
+
+[data-theme=jenkins-bonita] .jenkins_ver:after
+{
+    margin-left: 15px;
+    content:"Bonita Jenkins Theme Plugin"
+}
+
+/* Console readablity improvements */
+[data-theme=jenkins-bonita] .console-output
+{
+    padding: 10px 20px;
+}
+
+[data-theme=jenkins-bonita] .console-output, [data-theme=jenkins-bonita] .console-output *
+{
+  position: relative;
+  font-family: Roboto Mono,monospace!important;
+  font-size: 14px;
+  background: #263238;
+  cursor: text;
+}
+
+[data-theme=jenkins-bonita] pre.console-output
+{
+  color: #e9eded!important;
+}

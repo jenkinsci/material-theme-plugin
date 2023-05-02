@@ -7,20 +7,20 @@
     <version>4.47</version>
     <relativePath />
   </parent>
-  <groupId>io.jenkins.plugins</groupId>
-  <artifactId>material-theme</artifactId>
+  <groupId>org.bonitasoft.com</groupId>
+  <artifactId>bonita-jenkins-theme</artifactId>
   <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
   <properties>
     <revision>0.5.2</revision>
     <changelist>-SNAPSHOT</changelist>
-    <gitHubRepo>jenkinsci/material-theme-plugin</gitHubRepo>
+    <gitHubRepo>DumitruCorini/material-theme-plugin</gitHubRepo>
     <jenkins.version>2.346.1</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
   </properties>
-  <name>Material Theme</name>
-  <url>https://github.com/jenkinsci/material-theme-plugin</url>
+  <name>Bonita Jenkins Theme</name>
+  <url>https://github.com/DumitruCorini/material-theme-plugin</url>
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -57,13 +57,6 @@
       <url>https://opensource.org/licenses/MIT</url>
     </license>
   </licenses>
-
-  <developers>
-    <developer>
-      <id>timbrown5</id>
-      <name>Tim Brown</name>
-    </developer>
-  </developers>
 
   <scm>
     <connection>scm:git:https://github.com/${gitHubRepo}.git</connection>
@@ -107,6 +100,32 @@
               <goal>run</goal>
             </goals>
             <phase>generate-resources</phase>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.3.1</version>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <!-- here the phase you need -->
+            <phase>package</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/hpi</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>target</directory>
+                  <filtering>false</filtering>
+                  <includes>
+                    <include>bonita-jenkins-theme.hpi</include>
+                  </includes>
+                </resource>
+              </resources>
+            </configuration>
           </execution>
         </executions>
       </plugin>

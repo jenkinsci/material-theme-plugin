@@ -6,38 +6,38 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
-public class MaterialYellowThemeManagerFactory extends AbstractMaterialTheme {
+public class MaterialBonitaThemeManagerFactory extends AbstractMaterialTheme {
 
-    public static final String MATERIAL_YELLOW_CSS = "theme-yellow.css";
-    public static final String MATERIAL_YELLOW_SYMBOL = "material-yellow";
+    public static final String MATERIAL_BONITA_CSS = "theme-bonita.css";
+    public static final String MATERIAL_BONITA_SYMBOL = "jenkins-bonita";
 
     @DataBoundConstructor
-    public MaterialYellowThemeManagerFactory() {
+    public MaterialBonitaThemeManagerFactory() {
     }
 
     @Extension
-    @Symbol(MATERIAL_YELLOW_SYMBOL)
-    public static class MaterialYellowThemeManagerFactoryDescriptor extends AbstractMaterialThemeDescriptor {
+    @Symbol(MATERIAL_BONITA_SYMBOL)
+    public static class MaterialBonitaThemeManagerFactoryDescriptor extends AbstractMaterialThemeDescriptor {
 
         @NonNull
         @Override
         public String getDisplayName() {
-            return "Material - Yellow";
+            return "Bonita Jenkins Theme";
         }
 
         @Override
         public ThemeManagerFactory getInstance() {
-            return new MaterialYellowThemeManagerFactory();
+            return new MaterialBonitaThemeManagerFactory();
         }
 
         @Override
         public String getThemeCssSuffix() {
-            return MATERIAL_YELLOW_CSS;
+            return MATERIAL_BONITA_CSS;
         }
 
         @Override
         public String getThemeKey() {
-            return ID + "-yellow";
+            return ID + "-bonita";
         }
 
         @Override

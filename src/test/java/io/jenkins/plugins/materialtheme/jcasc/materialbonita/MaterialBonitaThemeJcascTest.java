@@ -1,4 +1,4 @@
-package io.jenkins.plugins.materialtheme.jcasc.materialred;
+package io.jenkins.plugins.materialtheme.jcasc.materialbonita;
 
 import io.jenkins.plugins.casc.ConfigurationContext;
 import io.jenkins.plugins.casc.ConfiguratorRegistry;
@@ -9,7 +9,7 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerPageDecorator;
 import org.junit.ClassRule;
 import org.junit.Test;
-import io.jenkins.plugins.materialtheme.MaterialRedThemeManagerFactory;
+import io.jenkins.plugins.materialtheme.MaterialBonitaThemeManagerFactory;
 
 import static io.jenkins.plugins.casc.misc.Util.getUnclassifiedRoot;
 import static io.jenkins.plugins.casc.misc.Util.toStringFromYamlFile;
@@ -19,7 +19,7 @@ import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertNotNull;
 
-public class MaterialRedThemeJcascTest {
+public class MaterialBonitaThemeJcascTest {
 
   @ClassRule
   @ConfiguredWithCode("ConfigurationAsCode.yml")
@@ -33,7 +33,7 @@ public class MaterialRedThemeJcascTest {
     assertNotNull(theme);
 
     assertThat(decorator.isDisableUserThemes(), is(true));
-    assertThat(theme, instanceOf(MaterialRedThemeManagerFactory.class));
+    assertThat(theme, instanceOf(MaterialBonitaThemeManagerFactory.class));
   }
 
   @Test
