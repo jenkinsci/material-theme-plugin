@@ -1,0 +1,10 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core">
+    <div id="loginIntro">
+        <div class="bonitaLogo"></div>
+        <h2>${it.productName}</h2>
+        <j:if test="${!app.securityRealm.allowsSignup()}">
+            <span>${%Please sign in below.}</span>
+        </j:if>
+    </div>
+</j:jelly>

@@ -1,4 +1,4 @@
 <?jelly escape-by-default='true'?>
 <div>
-  Material Theme plugin.
+    This plugin customizes Jenkins look and feel for Bonita Continuous Delivery.
 </div>

@@ -1,4 +1,4 @@
-package io.jenkins.plugins.materialtheme;
+package org.bonitasoft.jenkins.theme;
 
 import hudson.Extension;
 import hudson.Plugin;
@@ -9,11 +9,8 @@ import org.kohsuke.stapler.StaplerResponse;
 
 import javax.servlet.ServletException;
 import java.io.IOException;
-import java.util.Arrays;
 
-import static io.jenkins.plugins.materialtheme.AbstractMaterialTheme.BASE_CSS;
-import static io.jenkins.plugins.materialtheme.AbstractMaterialTheme.CUSTOMISED_CSS;
-import static io.jenkins.plugins.materialtheme.MaterialBonitaThemeManagerFactory.MATERIAL_BONITA_CSS;
+import static org.bonitasoft.jenkins.theme.MaterialBonitaThemeManagerFactory.BONITA_JENKINS_THEME_CSS;
 
 @Extension
 public class MaterialThemeRootAction implements UnprotectedRootAction {
@@ -41,8 +38,7 @@ public class MaterialThemeRootAction implements UnprotectedRootAction {
         if (cssFile.startsWith("/")) {
             cssFile = cssFile.substring(1);
         }
-        if (!Arrays.asList(BASE_CSS, MATERIAL_BONITA_CSS, CUSTOMISED_CSS)
-                .contains(cssFile)) {
+        if (!cssFile.equals(BONITA_JENKINS_THEME_CSS)) {
             rsp.sendError(404);
             return;
         }

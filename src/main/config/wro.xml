@@ -1,6 +1,11 @@
 <groups xmlns="http://www.isdc.ro/wro">
-  <group name="light-theme">
-    <css>/resources/less/light-theme.less</css>
-    <css>/resources/less/core-theme.less</css>
+  <group name="bonita-jenkins-theme">
+    <css>/resources/less/base/light-theme.less</css>
+    <css>/resources/less/base/core-theme.less</css>
+    <css>/resources/less/bonita-colors.less</css>
+    <css>/resources/less/bonita-fonts.less</css>
+    <css>/resources/less/bonita-login-page.less</css>
+    <css>/resources/less/bonita-jenkins-app.less</css>
+    <css>/resources/less/base/widgets.less</css>
   </group>
 </groups>

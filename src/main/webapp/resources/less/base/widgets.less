@@ -110,7 +110,7 @@
         url('../plugin/bonita-jenkins-theme/resources/fonts/roboto-mono-v22-latin-700.svg#RobotoMono') format('svg'); /* Legacy iOS */
 }
 
-[data-theme=jenkins-bonita], .app-theme-picker__picker[data-theme=jenkins-bonita]
+:not([data-theme=jenkins-bonita-login-page]), .app-theme-picker__picker:not([data-theme=jenkins-bonita-login-page])
 {
     /* Font */
     --font-family-sans: Roboto !important;
@@ -160,7 +160,7 @@
 }
 
 /* Manually change some header settings (these aren't available through theme.less */
-[data-theme=jenkins-bonita] #header
+:not([data-theme=jenkins-bonita-login-page]) #header
 {
     height: 64px;
     text-transform: uppercase;
@@ -169,35 +169,35 @@
 
 /* Change tab background so tabs don't float when there are multiple rows
 this doesn't look great, but I think it's less bad than when it's left white. */
-[data-theme=jenkins-bonita] .tabBarFrame
+:not([data-theme=jenkins-bonita-login-page]) .tabBarFrame
 {
     position: relative;
     background: var(--very-light-grey);
 }
 
-[data-theme=jenkins-bonita] .yui-button button
+:not([data-theme=jenkins-bonita-login-page]) .yui-button button
 {
     text-transform: uppercase;
 }
 
-[data-theme=jenkins-bonita] a, [data-theme=jenkins-bonita] a:link, [data-theme=jenkins-bonita] a:hover, [data-theme=jenkins-bonita] a:visited
+:not([data-theme=jenkins-bonita-login-page]) a, :not([data-theme=jenkins-bonita-login-page]) a:link, :not([data-theme=jenkins-bonita-login-page]) a:hover, :not([data-theme=jenkins-bonita-login-page]) a:visited
 {
     text-decoration: none!important;
 }
 
-[data-theme=jenkins-bonita] .jenkins_ver:after
+:not([data-theme=jenkins-bonita-login-page]) .jenkins_ver:after
 {
     margin-left: 15px;
     content:"Bonita Jenkins Theme Plugin"
 }
 
 /* Console readablity improvements */
-[data-theme=jenkins-bonita] .console-output
+:not([data-theme=jenkins-bonita-login-page]) .console-output
 {
     padding: 10px 20px;
 }
 
-[data-theme=jenkins-bonita] .console-output, [data-theme=jenkins-bonita] .console-output *
+:not([data-theme=jenkins-bonita-login-page]) .console-output, :not([data-theme=jenkins-bonita-login-page]) .console-output *
 {
   position: relative;
   font-family: Roboto Mono,monospace!important;
@@ -206,7 +206,7 @@ this doesn't look great, but I think it's less bad than when it's left white. */
   cursor: text;
 }
 
-[data-theme=jenkins-bonita] pre.console-output
+:not([data-theme=jenkins-bonita-login-page]) pre.console-output
 {
   color: #e9eded!important;
 }

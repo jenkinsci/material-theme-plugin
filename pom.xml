@@ -12,10 +12,10 @@
   <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
   <properties>
-    <revision>0.5.2</revision>
+    <revision>1.0.0</revision>
     <changelist>-SNAPSHOT</changelist>
     <gitHubRepo>DumitruCorini/material-theme-plugin</gitHubRepo>
-    <jenkins.version>2.346.1</jenkins.version>
+    <jenkins.version>2.387.2</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
   </properties>
@@ -25,8 +25,8 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.346.x</artifactId>
-        <version>1607.va_c1576527071</version>
+        <artifactId>bom-2.387.x</artifactId>
+        <version>2051.v6884f1c836b_7</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -89,7 +89,7 @@
           <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
           <wroFile>${basedir}/src/main/config/wro.xml</wroFile>
           <extraConfigFile>${basedir}/src/main/config/wro.properties</extraConfigFile>
-          <targetGroups>light-theme</targetGroups>
+          <targetGroups>bonita-jenkins-theme</targetGroups>
           <cssDestinationFolder>${project.build.directory}/../src/main/webapp/</cssDestinationFolder>
           <contextFolder>${basedir}/src/main/webapp/</contextFolder>
           <ignoreMissingResources>true</ignoreMissingResources>

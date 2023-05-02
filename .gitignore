@@ -2,5 +2,5 @@ target/
 work/
 *.iml
 .idea/
-light-theme.css
+bonita-jenkins-theme.css
 .DS_Store

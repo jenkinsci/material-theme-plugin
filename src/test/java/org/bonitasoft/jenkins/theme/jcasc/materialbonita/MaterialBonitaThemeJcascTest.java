@@ -1,4 +1,4 @@
-package io.jenkins.plugins.materialtheme.jcasc.materialbonita;
+package org.bonitasoft.jenkins.theme.jcasc.materialbonita;
 
 import io.jenkins.plugins.casc.ConfigurationContext;
 import io.jenkins.plugins.casc.ConfiguratorRegistry;
@@ -9,7 +9,7 @@ import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerPageDecorator;
 import org.junit.ClassRule;
 import org.junit.Test;
-import io.jenkins.plugins.materialtheme.MaterialBonitaThemeManagerFactory;
+import org.bonitasoft.jenkins.theme.MaterialBonitaThemeManagerFactory;
 
 import static io.jenkins.plugins.casc.misc.Util.getUnclassifiedRoot;
 import static io.jenkins.plugins.casc.misc.Util.toStringFromYamlFile;
