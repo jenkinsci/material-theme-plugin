@@ -41,16 +41,20 @@
     .login {
       position: relative;
       top: 2px;
-      color: #0A4561;
+      color: var(--material-primary);
       margin-right: 10px;
       padding: 15px 12px;
       font-size: 20px;
       font-weight: bold;
 
-      a, a:visited {
+      a, a:hover, a:link, a:visited {
         font-size: 15px;
-        color: #E22936;
+        color: var(--material-secondary);
         background-color: transparent;
+      }
+
+      a:hover, a:hover:hover, a:link:hover, a:visited:hover {
+        opacity: 0.75;
       }
     }
   }
@@ -62,6 +66,29 @@
   #breadcrumbBar .top-sticker-inner {
     overflow: hidden;
     height: 0;
+  }
+
+  #main-panel {
+    a, a:hover, a:link, a:visited {
+      color: var(--material-primary);
+      text-decoration: none;
+    }
+
+    a:hover, a:hover:hover, a:link:hover, a:visited:hover {
+      opacity: 0.75;
+    }
+
+    ul:hover::before, ol:hover::before {
+      background-color: var(--material-white);
+    }
+
+    .svg-icon {
+      color: var(--material-primary);
+    }
+
+    .warning, .warning-inline {
+      color: var(--material-warning);
+    }
   }
 
   footer.page-footer {

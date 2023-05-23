@@ -6,7 +6,7 @@
   }
 
   #loginHeader {
-    background: var(--material-secondary);
+    background: var(--material-primary);
     color: #fff;
     height: 35px;
     line-height: 35px;
@@ -45,11 +45,16 @@
       button[type=submit] {
         font-size: 18px;
 
+        &::before {
+          // It is a bad practice to use !important, but since the jenkins simple-page.css uses !important, we have no other choice
+          background-color: var(--material-secondary) !important;
+        }
+
         &:hover, &:focus, &:active {
           &::before {
             // It is a bad practice to use !important, but since the jenkins simple-page.css uses !important, we have no other choice
-            background-color: var(--material-secondary) !important;
-            border: var(--material-secondary);
+            background-color: var(--material-primary) !important;
+            border: var(--material-primary);
           }
         }
       }
