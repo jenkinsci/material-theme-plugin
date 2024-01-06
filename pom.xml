@@ -4,20 +4,17 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.47</version>
+    <version>4.76</version>
     <relativePath />
   </parent>
   <groupId>io.jenkins.plugins</groupId>
   <artifactId>material-theme</artifactId>
-  <version>${revision}${changelist}</version>
+  <version>${changelist}</version>
   <packaging>hpi</packaging>
   <properties>
-    <revision>0.5.2</revision>
-    <changelist>-SNAPSHOT</changelist>
+    <changelist>999999-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/material-theme-plugin</gitHubRepo>
-    <jenkins.version>2.346.1</jenkins.version>
-    <tagNameFormat>@{project.version}</tagNameFormat>
-    <useBeta>true</useBeta>
+    <jenkins.version>2.414.3</jenkins.version>
   </properties>
   <name>Material Theme</name>
   <url>https://github.com/jenkinsci/material-theme-plugin</url>
@@ -25,8 +22,8 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.346.x</artifactId>
-        <version>1607.va_c1576527071</version>
+        <artifactId>bom-2.414.x</artifactId>
+        <version>2675.v1515e14da_7a_6</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -37,7 +34,6 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>theme-manager</artifactId>
-      <version>1.5</version>
     </dependency>
     <dependency>
       <groupId>io.jenkins</groupId>
@@ -91,7 +87,7 @@
       <plugin>
         <groupId>ro.isdc.wro4j</groupId>
         <artifactId>wro4j-maven-plugin</artifactId>
-        <version>1.7.0</version>
+        <version>2.1.1</version>
         <configuration>
           <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
           <wroFile>${basedir}/src/main/config/wro.xml</wroFile>
