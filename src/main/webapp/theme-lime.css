@@ -1,0 +1,4 @@
+[data-theme=material-lime], .app-theme-picker__picker[data-theme=material-lime] {
+    --material-primary: #AFB42B;
+    --material-secondary: #D3D75B;
+}
