@@ -21,6 +21,7 @@ import static io.jenkins.plugins.materialtheme.MaterialGreenThemeManagerFactory.
 import static io.jenkins.plugins.materialtheme.MaterialYellowThemeManagerFactory.MATERIAL_YELLOW_CSS;
 import static io.jenkins.plugins.materialtheme.MaterialPurpleThemeManagerFactory.MATERIAL_PURPLE_CSS;
 import static io.jenkins.plugins.materialtheme.MaterialLimeThemeManagerFactory.MATERIAL_LIME_CSS;
+import static io.jenkins.plugins.materialtheme.MaterialAmberThemeManagerFactory.MATERIAL_AMBER_CSS;
 
 @Extension
 public class MaterialThemeRootAction implements UnprotectedRootAction {
@@ -49,6 +50,7 @@ public class MaterialThemeRootAction implements UnprotectedRootAction {
         MATERIAL_YELLOW_CSS,
         MATERIAL_PURPLE_CSS,
         MATERIAL_LIME_CSS,
+        MATERIAL_AMBER_CSS,
         CUSTOMISED_CSS
     };
 
