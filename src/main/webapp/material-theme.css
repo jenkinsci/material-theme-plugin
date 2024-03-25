@@ -115,7 +115,10 @@
 [data-theme=material-grey], .app-theme-picker__picker[data-theme=material-grey] ,
 [data-theme=material-light-blue], .app-theme-picker__picker[data-theme=material-light-blue],
 [data-theme=material-green], .app-theme-picker__picker[data-theme=material-green],
-[data-theme=material-yellow], .app-theme-picker__picker[data-theme=material-yellow]
+[data-theme=material-yellow], .app-theme-picker__picker[data-theme=material-yellow],
+[data-theme=material-purple], .app-theme-picker__picker[data-theme=material-purple],
+[data-theme=material-lime], .app-theme-picker__picker[data-theme=material-lime],
+[data-theme=material-amber], .app-theme-picker__picker[data-theme=material-amber]
 {
     /* Font */
     --font-family-sans: Roboto !important;
@@ -170,7 +173,10 @@
 [data-theme=material-grey] #header,
 [data-theme=material-light-blue] #header,
 [data-theme=material-green] #header,
-[data-theme=material-yellow] #header
+[data-theme=material-yellow] #header,
+[data-theme=material-purple] #header,
+[data-theme=material-lime] #header,
+[data-theme=material-amber] #header
 {
     height: 64px;
     text-transform: uppercase;
@@ -184,7 +190,10 @@ this doesn't look great, but I think it's less bad than when it's left white. */
 [data-theme=material-grey] .tabBarFrame,
 [data-theme=material-light-blue] .tabBarFrame,
 [data-theme=material-green] .tabBarFrame,
-[data-theme=material-yellow] .tabBarFrame
+[data-theme=material-yellow] .tabBarFrame,
+[data-theme=material-purple] .tabBarFrame,
+[data-theme=material-lime] .tabBarFrame,
+[data-theme=material-amber] .tabBarFrame
 {
     position: relative;
     background: var(--very-light-grey);
@@ -195,7 +204,10 @@ this doesn't look great, but I think it's less bad than when it's left white. */
 [data-theme=material-grey] .yui-button button,
 [data-theme=material-light-blue] .yui-button button,
 [data-theme=material-green] .yui-button button,
-[data-theme=material-yellow] .yui-button button
+[data-theme=material-yellow] .yui-button button,
+[data-theme=material-purple] .yui-button button,
+[data-theme=material-lime] .yui-button button,
+[data-theme=material-amber] .yui-button button
 {
     text-transform: uppercase;
 }
@@ -205,7 +217,10 @@ this doesn't look great, but I think it's less bad than when it's left white. */
 [data-theme=material-grey] a, [data-theme=material-grey] a:link, [data-theme=material-grey] a:hover, [data-theme=material-grey] a:visited,
 [data-theme=material-light-blue] a, [data-theme=material-light-blue] a:link, [data-theme=material-light-blue] a:hover, [data-theme=material-light-blue] a:visited,
 [data-theme=material-green] a, [data-theme=material-green] a:link, [data-theme=material-green] a:hover, [data-theme=material-green] a:visited,
-[data-theme=material-yellow] a, [data-theme=material-yellow] a:link, [data-theme=material-yellow] a:hover, [data-theme=material-yellow] a:visited
+[data-theme=material-yellow] a, [data-theme=material-yellow] a:link, [data-theme=material-yellow] a:hover, [data-theme=material-yellow] a:visited,
+[data-theme=material-purple] a, [data-theme=material-purple] a:link, [data-theme=material-purple] a:hover, [data-theme=material-purple] a:visited,
+[data-theme=material-lime] a, [data-theme=material-lime] a:link, [data-theme=material-lime] a:hover, [data-theme=material-lime] a:visited,
+[data-theme=material-amber] a, [data-theme=material-amber] a:link, [data-theme=material-amber] a:hover, [data-theme=material-amber] a:visited
 {
     text-decoration: none!important;
 }
@@ -215,7 +230,10 @@ this doesn't look great, but I think it's less bad than when it's left white. */
 [data-theme=material-grey] .jenkins_ver:after,
 [data-theme=material-light-blue] .jenkins_ver:after,
 [data-theme=material-green] .jenkins_ver:after,
-[data-theme=material-yellow] .jenkins_ver:after
+[data-theme=material-yellow] .jenkins_ver:after,
+[data-theme=material-purple] .jenkins_ver:after,
+[data-theme=material-lime] .jenkins_ver:after,
+[data-theme=material-amber] .jenkins_ver:after
 {
     margin-left: 15px;
     content:"Material Theme Plugin"
@@ -227,7 +245,10 @@ this doesn't look great, but I think it's less bad than when it's left white. */
 [data-theme=material-grey] .console-output,
 [data-theme=material-light-blue] .console-output,
 [data-theme=material-green] .console-output,
-[data-theme=material-yellow] .console-output
+[data-theme=material-yellow] .console-output,
+[data-theme=material-purple] .console-output,
+[data-theme=material-lime] .console-output,
+[data-theme=material-amber] .console-output
 {
     padding: 10px 20px;
 }
@@ -237,7 +258,10 @@ this doesn't look great, but I think it's less bad than when it's left white. */
 [data-theme=material-grey] .console-output, [data-theme=material-grey] .console-output *,
 [data-theme=material-light-blue] .console-output, [data-theme=material-light-blue] .console-output *,
 [data-theme=material-green] .console-output, [data-theme=material-green] .console-output *,
-[data-theme=material-yellow] .console-output, [data-theme=material-yellow] .console-output *
+[data-theme=material-yellow] .console-output, [data-theme=material-yellow] .console-output *,
+[data-theme=material-purple] .console-output, [data-theme=material-purple] .console-output *,
+[data-theme=material-lime] .console-output, [data-theme=material-lime] .console-output *,
+[data-theme=material-amber] .console-output, [data-theme=material-amber] .console-output *
 {
   position: relative;
   font-family: Roboto Mono,monospace!important;
@@ -251,7 +275,10 @@ this doesn't look great, but I think it's less bad than when it's left white. */
 [data-theme=material-grey] pre.console-output,
 [data-theme=material-light-blue] pre.console-output,
 [data-theme=material-green] pre.console-output,
-[data-theme=material-yellow] pre.console-output
+[data-theme=material-yellow] pre.console-output,
+[data-theme=material-purple] pre.console-output,
+[data-theme=material-lime] pre.console-output,
+[data-theme=material-amber] pre.console-output
 {
   color: #e9eded!important;
 }

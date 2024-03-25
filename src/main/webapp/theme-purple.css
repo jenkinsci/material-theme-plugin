@@ -1,0 +1,4 @@
+[data-theme=material-purple], .app-theme-picker__picker[data-theme=material-purple] {
+    --material-primary: #9C27B0;
+    --material-secondary: #C758DA;
+}
