@@ -15,7 +15,7 @@
     <revision>1.0.0</revision>
     <changelist>-SNAPSHOT</changelist>
     <gitHubRepo>DumitruCorini/material-theme-plugin</gitHubRepo>
-    <jenkins.version>2.387.2</jenkins.version>
+    <jenkins.version>2.440.2</jenkins.version>
     <tagNameFormat>@{project.version}</tagNameFormat>
     <useBeta>true</useBeta>
   </properties>
@@ -25,8 +25,8 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.387.x</artifactId>
-        <version>2051.v6884f1c836b_7</version>
+        <artifactId>bom-2.440.x</artifactId>
+        <version>2884.vc36b_64ce114a_</version>
         <scope>import</scope>
         <type>pom</type>
       </dependency>
@@ -84,7 +84,7 @@
       <plugin>
         <groupId>ro.isdc.wro4j</groupId>
         <artifactId>wro4j-maven-plugin</artifactId>
-        <version>1.7.0</version>
+        <version>2.1.1</version>
         <configuration>
           <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
           <wroFile>${basedir}/src/main/config/wro.xml</wroFile>
